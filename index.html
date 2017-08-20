@@ -1,212 +1,653 @@
-<!doctype html>
+<!DOCTYPE html>
 <html>
+
 <head>
-  <meta charset="utf-8">
-  <title>SlidesJS Standard Code Example</title>
-  <meta name="description" content="SlidesJS is a simple slideshow plugin for jQuery. Packed with a useful set of features to help novice and advanced developers alike create elegant and user-friendly slideshows.">
-  <meta name="author" content="Nathan Searles">
 
-  <!-- SlidesJS Required (if responsive): Sets the page width to the device width. -->
-  <meta name="viewport" content="width=device-width">
-  <!-- End SlidesJS Required -->
 
-  <!-- CSS for slidesjs.com example -->
-  <link rel="stylesheet" href="css/example.css">
-  <link rel="stylesheet" href="css/font-awesome.min.css">
-  <!-- End CSS for slidesjs.com example -->
 
-  <!-- SlidesJS Optional: If you'd like to use this design -->
+  <meta charset="UTF-8">
+  <link href="hover.css" rel="stylesheet" media="all">
+  <link href="https://fonts.googleapis.com/css?family=Lato:100" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Josefin+Slab:100" rel="stylesheet">
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
+  <link href="https://fonts.googleapis.com/css?family=Oswald" rel="stylesheet">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="slick/slick.css" />
+
+  <link rel="stylesheet" type="text/css" href="slick/slick-theme.css" />
+  <title>Portfolio</title>
+  <script src="smooth-scroll.js"></script>
+  <script>
+    var scroll = new SmoothScroll('a[href*="#"]');
+  </script>
+
+
   <style>
-    body {
-      -webkit-font-smoothing: antialiased;
-      font: normal 15px/1.5 "Helvetica Neue", Helvetica, Arial, sans-serif;
-      color: #232525;
-      padding-top:70px;
+    * {
+      padding: 0;
+      margin: 0;
+      -webkit-box-sizing: border-box;
+      box-sizing: border-box;
     }
 
-    #slides,
-    #slides2,
-    #slides3 {
-      display: none;
-      margin-bottom:50px;
+
+
+    .back {
+      background-image: url(https://media.giphy.com/media/26hisjGhYBD3dNbfa/giphy.gif);
+      background-size: cover;
+      background-attachment: fixed;
+      background-position: center;
+      background-repeat: no-repeat;
+      width: 100vw;
+      height: 100vh;
+      z-index: 1;
     }
 
-    .slidesjs-navigation {
-      margin-top:3px;
+
+
+    .text {
+      display: flex;
+      justify-content: center;
+      padding-top: 36vh;
+      font-size: 9vh;
+      z-index: 9999;
+      color: #dadada;
+      text-shadow: 6px 6px grey;
     }
 
-    .slidesjs-previous {
-      margin-right: 5px;
-      float: left;
+    .pageone {
+      font-family: 'Lato', Arial, sans-serif;
+      ;
+
+      letter-spacing: .75vh;
     }
 
-    .slidesjs-next {
-      margin-right: 5px;
-      float: left;
+    .scroll {
+      display: flex;
+      justify-content: center;
+      vertical-align: middle;
+      padding-top: 27vh;
     }
 
-    .slidesjs-pagination {
-      margin: 6px 0 0;
-      float: right;
-      list-style: none;
+    .pagetwo {
+      height: 100vh;
+      font-family: 'Open Sans', Arial, sans-serif;
+      background-color: #181818;
     }
 
-    .slidesjs-pagination li {
-      float: left;
-      margin: 0 1px;
+    .about {
+      display: flex;
+      justify-content: center;
+
+      font-size: 75px;
     }
 
-    .slidesjs-pagination li a {
-      display: block;
-      width: 13px;
+    #about {
+      margin-top: 7vh;
+      color: white;
+      font-family: 'lato', arial, sans-serif;
+      text-shadow: 2.4px 2.4px grey;
+    }
+
+    html {
+      background-color: #181818;
+    }
+
+    .abouttext {
+      color: white;
+      text-align: center;
+      margin-left: 5vh;
+      margin-right: 5vh;
+      margin-top: 5vh;
+      font-size: 3vh;
+    }
+
+    .seperated {
+      margin-top: 5vh;
+    }
+
+    .scroll2 {
+      display: flex;
+      justify-content: center;
+      margin-top: 8vh;
+    }
+
+    .threeheader {
+      color: white;
+      text-align: center;
+      font-size: 50px;
+    }
+
+    .pagethree {
+      font-family: 'Open Sans', Arial, sans-serif;
+      height: 150vh;
+    }
+
+    #portabout {
+      font-size: 3vh;
+      text-align: center;
+      color: white;
+    }
+
+    .work {
+      display: flex;
+      justify-content: center;
+      font-size: 20px;
+    }
+
+
+    .css,
+    .premiere,
+    .ps {
+      margin: 5vw;
+      max-width: 100%;
+      max-height: 20vh;
+    }
+
+    figcaption {
+      display: flex;
+      justify-content: flex-end;
+    }
+
+    .embed {
+      position: relative;
+      padding-bottom: 56.25%;
+      padding-top: 30px;
       height: 0;
-      padding-top: 13px;
-      background-image: url(img/pagination.png);
-      background-position: 0 0;
-      float: left;
       overflow: hidden;
     }
 
-    .slidesjs-pagination li a.active,
-    .slidesjs-pagination li a:hover.active {
-      background-position: 0 -13px
+    .embed iframe,
+    .embed object,
+    .embed embed {
+      position: absolute;
+      top: 0;
+      left: 0;
+      bottom: 0;
+      width: 100%;
+      height: 100%;
     }
 
-    .slidesjs-pagination li a:hover {
-      background-position: 0 -26px
+    iframe {
+      box-shadow: 4px 4px 1px 1px grey;
     }
 
-    a:link,
-    a:visited {
-      color: #333
+    .thanks {
+      color: white;
+      font-family: 'Open Sans', Arial, sans-serif;
+      padding-top: 5vh;
+      text-align: center;
+      font-size: 2.5vw;
     }
 
-    a:hover,
-    a:active {
-      color: #9e2020
+    #subscribe {
+      font-size: 1.5vw;
     }
 
-    .navbar {
-      overflow: hidden
+    a {
+      color: white;
+      text-decoration: none;
+      text-shadow: 2.4px 2.4px grey;
     }
+
+    a:hover {
+      color: white;
+      text-shadow: 2.4px 2.4px blue;
+    }
+
+    .scroll3 {
+      margin-top: 2vh;
+    }
+
+    #portfolioabout {
+      margin-top: 7vh;
+      color: white;
+      font-family: 'lato', arial, sans-serif;
+      text-shadow: 2.4px 2.4px grey;
+    }
+
+    .portheader {
+      display: flex;
+      justify-content: center;
+
+      font-size: 5vh;
+    }
+
+    .portmore {
+      color: white;
+      text-align: center;
+
+      font-size: 2.5vh;
+    }
+
+
+    .littlebg {
+      width: 100vw;
+      height: 19vh;
+      background-image: url(https://media.giphy.com/media/3o7TKLKBXz6RVuEDDO/giphy.gif);
+      background-attachment: fixed;
+      background-position: center;
+    }
+
+    .your-class {
+      width: 540px;
+      height: 304px;
+      display: flex;
+      justify-content: center;
+      margin-top: 5vh;
+    }
+
+    .carouselcontainer {
+      width: 100vw;
+
+
+      display: flex;
+      justify-content: center;
+    }
+
+    .gifs {
+      color: white;
+      text-align: center;
+      font-size: 1.5vw;
+      margin-top: 2vh;
+    }
+
+    .your-class2 {
+      width: 250px;
+      height: 250px;
+      display: flex;
+      justify-content: center;
+      margin-top: 5vh;
+    }
+
+
+    .your-class3 {
+      width: 1060px;
+      height: 174.5px;
+      display: flex;
+      justify-content: center;
+      margin-top: 5vh;
+    }
+
+    .YTavatar {
+      color: white;
+      text-align: center;
+      font-size: 1.5vw;
+      margin-top: 2vh;
+    }
+
+    .banners {
+      color: white;
+      text-align: center;
+      font-size: 1.5vw;
+      margin-top: 2vh;
+    }
+
+    .scroll4 {
+      margin-top: 4vh;
+      text-align: center;
+    }
+
+    .contactstar {
+      text-align: center;
+      color: white;
+      margin-top: 3vh;
+      font-size: 1vw;
+    }
+
+    .finalpage {
+      height: 90vh;
+      margin-top: 20vh;
+      overflow: hidden;
+    }
+
+    .gotocontact {
+      color: white;
+      text-align: center;
+      font-size: 75px;
+      font-family: 'lato', arial, sans-serif;
+      text-shadow: 2.4px 2.4px grey;
+    }
+
+    .bestplaces {
+      text-align: center;
+      color: white;
+      margin-top: 1vh;
+    }
+
+    #whycontact {
+      font-size: .75vw;
+    }
+
+    .email {
+      font-size: 1.75vw;
+      margin-top: 7vh;
+      text-align: center;
+    }
+
+    #something {
+      text-align: center;
+      color: white;
+      font-size: 1.5vw;
+    }
+
+
+    footer {
+      background-color: #474747;
+      width: 100vw;
+      height: 20vh;
+      overflow: hidden;
+      margin-bottom: 5vh;
+      box-shadow: 4px 4px 1px 1px grey;
+
+    }
+
+    #footer1080 {
+      color: white;
+      margin-left: 2vw;
+      margin-top: 2vh;
+    }
+
+    #copyright {
+      color: white;
+      margin-left: 2vw;
+      margin-top: .5vh;
+      font-size: .75vw;
+
+    }
+
+    #twitter, #insta {
+      width: 50px;
+      height: 50px;
+      display: flex;
+      justify-content: center;
+      margin: 3vw;
+      margin-top: 2vh;
+    }
+
+    .social {
+      display: flex;
+      justify-content: center;
+
+
+    }
+
+    #YT {
+      width: 60px;
+      height: 50px;
+      justify-content: center;
+      margin: 3vw;
+      margin-top: 2vh;
+    }
+
   </style>
-  <!-- End SlidesJS Optional-->
 
-  <!-- SlidesJS Required: These styles are required if you'd like a responsive slideshow -->
-  <style>
-    #slides {
-      display: none
-    }
 
-    .container {
-      margin: 0 auto
-    }
 
-    /* For tablets & smart phones */
-    @media (max-width: 767px) {
-      body {
-        padding-left: 20px;
-        padding-right: 20px;
-      }
-      .container {
-        width: auto
-      }
-    }
 
-    /* For smartphones */
-    @media (max-width: 480px) {
-      .container {
-        width: auto
-      }
-    }
-
-    /* For smaller displays like laptops */
-    @media (min-width: 768px) and (max-width: 979px) {
-      .container {
-        width: 724px
-      }
-    }
-
-    /* For larger displays */
-    @media (min-width: 1200px) {
-      .container {
-        width: 1170px
-      }
-    }
-  </style>
-  <!-- SlidesJS Required: -->
 </head>
+
 <body>
-  <!-- SlidesJS Required: Start Slides -->
-  <!-- The container is used to define the width of the slideshow -->
-  <div class="container">
-    <div id="slides">
-      <img src="img/example-slide-1.jpg" alt="Photo by: Missy S Link: http://www.flickr.com/photos/listenmissy/5087404401/">
-      <img src="img/example-slide-2.jpg" alt="Photo by: Daniel Parks Link: http://www.flickr.com/photos/parksdh/5227623068/">
-      <img src="img/example-slide-3.jpg" alt="Photo by: Mike Ranweiler Link: http://www.flickr.com/photos/27874907@N04/4833059991/">
-      <img src="img/example-slide-4.jpg" alt="Photo by: Stuart SeegerLink: http://www.flickr.com/photos/stuseeger/97577796/">
-      <a href="#" class="slidesjs-previous slidesjs-navigation"><i class="icon-chevron-left"></i></a>
-      <a href="#" class="slidesjs-next slidesjs-navigation"><i class="icon-chevron-right"></i></a>
-    </div>
+  <div class="pageone">
+    <div class="back">
+      <div class="text">
+        <h1 class="animated fadeInDown front" data-wow-duration="2s" data-wow-delay="5s">1080</h1>
+      </div>
 
-    <div id="slides2">
-      <img src="img/example-slide-1.jpg" alt="Photo by: Missy S Link: http://www.flickr.com/photos/listenmissy/5087404401/">
-      <img src="img/example-slide-2.jpg" alt="Photo by: Daniel Parks Link: http://www.flickr.com/photos/parksdh/5227623068/">
-      <img src="img/example-slide-3.jpg" alt="Photo by: Mike Ranweiler Link: http://www.flickr.com/photos/27874907@N04/4833059991/">
-      <img src="img/example-slide-4.jpg" alt="Photo by: Stuart SeegerLink: http://www.flickr.com/photos/stuseeger/97577796/">
-      <a href="#" class="slidesjs-previous slidesjs-navigation"><i class="icon-chevron-left"></i></a>
-      <a href="#" class="slidesjs-next slidesjs-navigation"><i class="icon-chevron-right"></i></a>
+      <div class="scroll animated fadeIn">
+        <a data-scroll href="#aboutpage">
+        <img src="scrolldown.png" alt="" id="down" class="hvr-float" /></a>
+      </div>
     </div>
+    <div id="aboutpage"></div>
+  </div>
+  <div class="pagetwo">
 
-    <div id="slides3">
-      <img src="img/example-slide-1.jpg" alt="Photo by: Missy S Link: http://www.flickr.com/photos/listenmissy/5087404401/">
-      <img src="img/example-slide-2.jpg" alt="Photo by: Daniel Parks Link: http://www.flickr.com/photos/parksdh/5227623068/">
-      <img src="img/example-slide-3.jpg" alt="Photo by: Mike Ranweiler Link: http://www.flickr.com/photos/27874907@N04/4833059991/">
-      <img src="img/example-slide-4.jpg" alt="Photo by: Stuart SeegerLink: http://www.flickr.com/photos/stuseeger/97577796/">
-      <a href="#" class="slidesjs-previous slidesjs-navigation"><i class="icon-chevron-left"></i></a>
-      <a href="#" class="slidesjs-next slidesjs-navigation"><i class="icon-chevron-right"></i></a>
+    <div class="aboutme">
+      <h1 class="wow fadeInUp about" id="about">About Me</h1>
+    </div>
+    <div class="abouttext wow fadeIn">
+      <p>I run a YouTube channel in which I benchmark the performance of computer hardware. I've been uploading content to YouTube for upwards of one year, and have amassed over 80 thousand views in that time period. While I'm not managing my channel I design
+        graphics for others and myself. I design product advertisements, avatars and banners for YouTube, websites, company logos, and more. I am acquainted with a wide variety of softwares such as: Adobe Photoshop, Adobe After Effects, Adobe Premiere
+        Pro, Adobe Lightroom and, Unreal Engine 4. I am also assimilating myself with HTML and CSS.<br>
+        <div class="workcontainer">
+          <div class="work hvr-grow"><img src="ps.png" alt="" class="ps"><img src="premiere.png" alt="" class="premiere"><img src="css.png" alt="" class="css"> </div>
+        </div>
+        <div class="seperated wow fadeInUp">To see my latest YouTube video scroll down.</div>
+
+    </div>
+    <div class="scroll2 wow fadeIn">
+      <a href="#portfolio">
+        <img src="scrolldown.png" alt="" id="down2" class="hvr-float" /></a>
+
+    </div>
+    <h1 id="portfoliod"></h1>
+  </div>
+
+  <div class="pagethree" id="portfolio">
+    <div class='embed'>
+      <figure><iframe src='https://www.youtube.com/embed/videoseries?list=UUNETYZQrE6PEAjB0Pax6c3Q' frameborder='0' allowfullscreen></iframe>
+        <figcaption>Test</figcaption>
+      </figure>
+    </div>
+    <div class="thanks">
+      <h2>Thanks for watching!</h2>
+      <p id="subscribe">To subscribe click <a href="https://goo.gl/25oVXn">here.</a><br>Scroll down to see some of my work.</p>
+      <div class="scroll3 animated fadeIn">
+        <a href="#realportfolio">
+    <img src="scrolldown.png" alt="" id="down" class="hvr-float" /></a>
+      </div>
     </div>
   </div>
-  <!-- End SlidesJS Required: Start Slides -->
+  <div class="littlebg">
 
-  <!-- SlidesJS Required: Link to jQuery -->
-  <script src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
-  <!-- End SlidesJS Required -->
+  </div>
+  <div class="pagethree" id="realportfolio">
+    <div class="portheader wow fadeInUp">
+      <h1 id="portfolioabout">Portfolio</h1>
+    </div>
+    <div class="portmore wow fadeIn">
+      <p>Below are various works of mine all created within the last year.</p>
 
-  <!-- SlidesJS Required: Link to jquery.slides.js -->
-  <script src="js/jquery.slides.min.js"></script>
-  <!-- End SlidesJS Required -->
+    </div>
 
-  <!-- SlidesJS Required: Initialize SlidesJS with a jQuery doc ready -->
+
+    <div class="carouselcontainer">
+      <div class="your-class">
+        <div><img src="gifs/bluewhiteintro.gif" alt=""></div>
+        <div><img src="gifs/bwintro.gif" alt=""></div>
+        <div><img src="gifs/cityintro.gif" alt=""></div>
+        <div><img src="gifs/forestintro.gif" alt=""></div>
+        <div><img src="gifs/liquidintro.gif" alt=""></div>
+        <div><img src="gifs/nightintro.gif" alt=""></div>
+        <div><img src="gifs/purpleyellowintro.gif" alt=""></div>
+        <div><img src="gifs/retrointro.gif" alt=""></div>
+        <div><img src="gifs/strokeintro.gif" alt=""></div>
+        <div><img src="gifs/strokeintro2.gif" alt=""></div>
+        <div><img src="wallpapers/KuebikoWallpaper.png" alt=""></div>
+        <div><img src="wallpapers/Mountains1.png" alt=""></div>
+        <div><img src="wallpapers/Mountains2.png" alt=""></div>
+        <div><img src="wallpapers/MyownFirewatchWallpaper.png" alt=""></div>
+        <div><img src="wallpapers/vaporwaveWallpaper.png" alt=""></div>
+        <div><img src="wallpapers/Wallpaper1.png" alt=""></div>
+        <div><img src="wallpapers/Wallpaper2nd.png" alt=""></div>
+        <div><img src="wallpapers/Wallpaper3.png" alt=""></div>
+        <div><img src="wallpapers/Wallpaper4.png" alt=""></div>
+        <div><img src="wallpapers/yosemite.png" alt=""></div>
+
+      </div>
+    </div>
+    <div class="gifs">
+      <p>Intro Videos / Wallpapers</p>
+    </div>
+    <div class="carouselcontainer">
+      <div class="your-class2">
+        <div><img src="newavatars/1080avatar.png" alt=""></div>
+        <div><img src="newavatars/abstractavatar.png" alt=""></div>
+        <div><img src="newavatars/chemavatar.png" alt=""></div>
+        <div><img src="newavatars/chemavatar.png" alt=""></div>
+        <div><img src="newavatars/cityavatar.png" alt=""></div>
+        <div><img src="newavatars/cleanavatar.png" alt=""></div>
+        <div><img src="newavatars/divisionavatar.png" alt=""></div>
+        <div><img src="newavatars/floralavatar.png" alt=""></div>
+        <div><img src="newavatars/gamingavatar.png" alt=""></div>
+        <div><img src="newavatars/Glitch.png" alt=""></div>
+        <div><img src="newavatars/glitchavatar.png" alt=""></div>
+        <div><img src="newavatars/grungeavatar.png" alt=""></div>
+        <div><img src="newavatars/KuebikoAvatar.png" alt=""></div>
+        <div><img src="newavatars/KuebikoLogo.png" alt=""></div>
+        <div><img src="newavatars/KuebikoLogoNewNew.png" alt=""></div>
+        <div><img src="newavatars/Logo.png" alt=""></div>
+        <div><img src="newavatars/lolo.png" alt=""></div>
+        <div><img src="newavatars/moonavatar.png" alt=""></div>
+        <div><img src="newavatars/mountainavatar.png" alt=""></div>
+        <div><img src="newavatars/orientalavatar.png" alt=""></div>
+        <div><img src="newavatars/OtherNewKuebikoLogo.png" alt=""></div>
+        <div><img src="newavatars/polyavatar.png" alt=""></div>
+        <div><img src="newavatars/RetroAvatar.png" alt=""></div>
+        <div><img src="newavatars/simplisticavatar.png" alt=""></div>
+        <div><img src="newavatars/smokeavatar.png" alt=""></div>
+        <div><img src="newavatars/YoutubeLogo.png" alt=""></div>
+      </div>
+    </div>
+    <div class="YTavatar">
+      <p>Social Media Avatars</p>
+    </div>
+    <div class="carouselcontainer">
+      <div class="your-class3">
+        <div><img src="resized/1080banner.png" alt=""></div>
+        <div><img src="resized/abstractbanner.png" alt=""></div>
+        <div><img src="resized/Banner copy.png" alt=""></div>
+        <div><img src="resized/chembanner.png" alt=""></div>
+        <div><img src="resized/citybanner.png" alt=""></div>
+        <div><img src="resized/cleanbanner.png" alt=""></div>
+        <div><img src="resized/divisionbanner.png" alt=""></div>
+        <div><img src="resized/FloralBanner.png" alt=""></div>
+        <div><img src="resized/geobanner.png" alt=""></div>
+        <div><img src="resized/glitchbanner.png" alt=""></div>
+        <div><img src="resized/GreekBanner.png" alt=""></div>
+        <div><img src="resized/grungebanner.png" alt=""></div>
+        <div><img src="resized/KuebikoBanner.png" alt=""></div>
+        <div><img src="resized/KuebikoBannerNew.png" alt=""></div>
+        <div><img src="resized/KuebikoNewNewNewBanner.png" alt=""></div>
+        <div><img src="resized/lol.png" alt=""></div>
+        <div><img src="resized/mountainbanner.png" alt=""></div>
+        <div><img src="resized/orientalbanner.png" alt=""></div>
+        <div><img src="resized/PaintBanner.png" alt=""></div>
+        <div><img src="resized/paintbanner2.png" alt=""></div>
+        <div><img src="resized/refreshedbanner.png" alt=""></div>
+        <div><img src="resized/simplisticbanner.png" alt=""></div>
+        <div><img src="resized/sleekbanner.png" alt=""></div>
+        <div><img src="resized/smokebanner.png" alt=""></div>
+        <div><img src="resized/vaporwaveWIP.png" alt=""></div>
+        <div><img src="resized/YoutubeBanner.png" alt=""></div>
+        <div><img src="resized/bannercopy.png" alt=""></div>
+
+      </div>
+    </div>
+    <div class="banners">
+    <p>Social Media Banners</p>
+    </div>
+    <div class="contactstar">
+    <p>Scroll down to contact me.</p>
+    <div class="scroll4 animated fadeIn">
+      <a href="#gotocontact">
+  <img src="scrolldown.png" alt="" id="down" class="hvr-float" /></a>
+    </div>
+  </div>
+
+  <div class="finalpage">
+    <h1 id="gotocontact"></h1>
+    <div class="contactheader wow fadeInUp">
+      <h1 class="gotocontact">Contact Me</h1>
+    </div>
+    <div class="bestplaces wow fadeIn">Below are the most reliable ways to get in touch with me. <br><p id="whycontact">(You can send game requests, design requests, anything.)</p>
+  </div>
+  <div class="bestplaces2">
+
+<div class="email">
+  <p id="something">Main Email</p>
+    <p>
+
+      <a href="mailto:newbthroughs@gmail.com" target="_top">newbthroughs@gmail.com</a>
+    </p>
+    </div>
+    <div class="email">
+      <p id="something">Secondary Email</p>
+        <p>
+
+          <a href="mailto:kuebikovideos@gmail.com" target="_top">kuebikovideos@gmail.com</a>
+        </p>
+        </div>
+        <div class="email">
+          <p id="something">Steam Account</p>
+            <p>
+
+              <a href="http://steamcommunity.com/id/GTX980Benchmarks/" target="_top">FB||1080</a>
+            </p>
+            </div>
+  </div>
+
+  </div>
+
+  <footer>
+    <h3 id="footer1080">GTX 1080 Benchmarks</h3>
+    <p id="copyright">Copyright &copy; 2017 GTX 1080 Benchmarks All Rights Reserved.</p>
+    <div class="social hvr-grow">
+    <a href="https://twitter.com/Newb_Throughs"><img src="http://www.iconsdb.com/icons/preview/white/twitter-xxl.png" id="twitter" alt=""></a>
+    <a href="https://www.instagram.com/j.uud.e/"><img src="http://www.iconsplace.com/icons/preview/white/instagram-256.png" alt="" id="insta"></a>
+    <a href="https://www.youtube.com/gtx1080benchmarks"><img src="https://developers.google.com/youtube/images/YouTube_light_color_icon.png" alt="" id="YT"></a>
+    </div>
+  </footer>
+
+  <script src="wow.min.js"></script>
   <script>
-    $(function() {
-      $('#slides').slidesjs({
-        width: 940,
-        height: 528,
-        navigation: false
-      });
+    new WOW().init();
+  </script>
 
-      /*
-        To have multiple slideshows on the same page
-        they just need to have separate IDs
-      */
-      $('#slides2').slidesjs({
-        width: 940,
-        height: 528,
-        navigation: false,
-        start: 3,
-        play: {
-          auto: true
-        }
-      });
 
-      $('#slides3').slidesjs({
-        width: 940,
-        height: 528,
-        navigation: false
+
+  <script type="text/javascript" src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+  <script type="text/javascript" src="http://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+  <script type="text/javascript" src="slick/slick.min.js"></script>
+
+  <script type="text/javascript">
+    $(document).ready(function() {
+      $('.your-class').slick({
+        arrows: true,
+
+        draggable: false,
+        fade: true
       });
     });
   </script>
-  <!-- End SlidesJS Required -->
+
+  <script type="text/javascript">
+    $(document).ready(function() {
+      $('.your-class2').slick({
+        arrows: true,
+
+        draggable: false,
+        fade: true
+      });
+    });
+  </script>
+
+  </script>
+
+  <script type="text/javascript">
+    $(document).ready(function() {
+      $('.your-class3').slick({
+        arrows: true,
+
+        draggable: false,
+        fade: true
+      });
+    });
+  </script>
+
 </body>
+
 </html>
