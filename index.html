@@ -1,711 +1,148 @@
 <!DOCTYPE html>
-<html>
-
-<head>
-
-
-
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width" />
-  <link href="hover.css" rel="stylesheet" media="all">
-  <link href="https://fonts.googleapis.com/css?family=Lato:100" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css?family=Josefin+Slab:100" rel="stylesheet">
-
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
-  <link href="https://fonts.googleapis.com/css?family=Oswald" rel="stylesheet">
-
-  <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
-  <link rel="stylesheet" type="text/css" href="slick/slick.css" />
-  <link rel="shortcut icon" href="favicon.ico" />
-  <link rel="stylesheet" type="text/css" href="slick/slick-theme.css" />
-  <title>GTX 1080 Benchmarks</title>
-  <script src="smooth-scroll.js"></script>
-  <script>
-    var scroll = new SmoothScroll('a[href*="#"]');
-  </script>
-
-
-  <style>
-
-
-
-    * {
-      padding: 0;
-      margin: 0;
-      -webkit-box-sizing: border-box;
-      box-sizing: border-box;
-    }
-
-
-
-    .back {
-      background-image: url(https://media.giphy.com/media/26hisjGhYBD3dNbfa/giphy.gif);
-      background-size: cover;
-      background-attachment: fixed;
-      background-position: center;
-      background-repeat: no-repeat;
-      width: 100vw;
-      height: 100vh;
-      z-index: 1;
-    }
-
-
-
-    .text {
-      display: flex;
-      justify-content: center;
-      padding-top: 36vh;
-      font-size: 9vh;
-      z-index: 9999;
-      color: #dadada;
-      text-shadow: 6px 6px grey;
-    }
-
-    .pageone {
-      font-family: 'Lato', Arial, sans-serif;
-      ;
-
-      letter-spacing: .75vh;
-    }
-
-    .scroll {
-      display: flex;
-      justify-content: center;
-      vertical-align: middle;
-      padding-top: 27vh;
-    }
-
-    .pagetwo {
-      height: 100vh;
-      font-family: 'Open Sans', Arial, sans-serif;
-      background-color: #181818;
-    }
-
-    .about {
-      display: flex;
-      justify-content: center;
-
-      font-size: 3.750em;
-    }
-
-    #about {
-      margin-top: 7vh;
-      color: white;
-      font-family: 'lato', arial, sans-serif;
-      text-shadow: 2.4px 2.4px grey;
-    }
-
-    html {
-      background-color: #181818;
-    }
-
-    .abouttext {
-      color: white;
-      text-align: left;
-      margin-left: 5vh;
-      margin-right: 5vh;
-      margin-top: 5vh;
-      font-size: 3vh;
-    }
-
-    .seperated {
-      margin-top: 5vh;
-    }
-
-    .scroll2 {
-      display: flex;
-      justify-content: center;
-      margin-top: 8vh;
-    }
-
-    .threeheader {
-      color: white;
-      text-align: center;
-      font-size: 3.125em;
-    }
-
-    .pagethree {
-      font-family: 'Open Sans', Arial, sans-serif;
-      height: 150vh;
-    }
-
-    #portabout {
-      font-size: 3vh;
-      text-align: center;
-      color: white;
-    }
-
-    .work {
-      display: flex;
-      justify-content: center;
-      font-size: 1.250em;
-    }
-
-
-    .css,
-    .premiere,
-    .ps {
-      margin: 5vw;
-      height: 9vh;
-      width: auto;
-    }
-
-    figcaption {
-      display: flex;
-      justify-content: flex-end;
-    }
-
-    .embed {
-      position: relative;
-      padding-bottom: 56.25%;
-      padding-top: 1.875em;
-      height: 0;
-      overflow: hidden;
-    }
-
-    .embed iframe,
-    .embed object,
-    .embed embed {
-      position: absolute;
-      top: 0;
-      left: 0;
-      bottom: 0;
-      width: 100%;
-      height: 100%;
-    }
-
-    iframe {
-      box-shadow: 4px 4px 1px 1px grey;
-    }
-
-    .thanks {
-      color: white;
-      font-family: 'Open Sans', Arial, sans-serif;
-      padding-top: 5vh;
-      text-align: center;
-      font-size: 2vw;
-    }
-
-    #subscribe {
-      font-size: 1.5vw;
-    }
-
-    a {
-      color: white;
-      text-decoration: none;
-      text-shadow: 2.4px 2.4px grey;
-    }
-
-    a:hover {
-      color: white;
-      text-shadow: 2.4px 2.4px blue;
-    }
-
-    .scroll3 {
-      margin-top: 2vh;
-    }
-
-    #portfolioabout {
-      margin-top: 7vh;
-      color: white;
-      font-family: 'lato', arial, sans-serif;
-      text-shadow: 2.4px 2.4px grey;
-    }
-
-    .portheader {
-      display: flex;
-      justify-content: center;
-
-      font-size: 2.500em;
-    }
-
-    .portmore {
-      color: white;
-      text-align: center;
-
-      font-size: 2.2vh;
-    }
-
-
-    .littlebg {
-      width: 100vw;
-      height: 19vh;
-      background-image: url(https://media.giphy.com/media/3o7TKLKBXz6RVuEDDO/giphy.gif);
-      background-attachment: fixed;
-      background-position: center;
-    }
-
-    .littlebg2 {
-      width: 100vw;
-      height: 19vh;
-
-      background-image: url(https://media.giphy.com/media/26hiskhS4vVAAc7YY/giphy.gif);
-      background-attachment: fixed;
-      background-position: center;
-      display: flex;
-      vertical-align: middle;
-    }
-
-    .littlebg2container {
-      display: flex;
-      justify-content: center;
-
-      margin-bottom: 20vh;
-    }
-
-    .your-class {
-      width: 540px;
-      height: 304px;
-      display: flex;
-      justify-content: center;
-      margin-top: 5vh;
-    }
-
-    .carouselcontainer {
-      width: 100vw;
-
-
-      display: flex;
-      justify-content: center;
-    }
-
-    .gifs {
-      color: white;
-      text-align: center;
-      font-size: 1.5vw;
-      margin-top: 2vh;
-    }
-
-    .your-class2 {
-      width: 250px;
-      height: 250px;
-      display: flex;
-      justify-content: center;
-      margin-top: 5vh;
-    }
-
-
-    .your-class3 {
-      width: 1060px;
-      height: 174.5px;
-      display: flex;
-      justify-content: center;
-      margin-top: 5vh;
-    }
-
-    .YTavatar {
-      color: white;
-      text-align: center;
-      font-size: 1.5vw;
-      margin-top: 2vh;
-    }
-
-    .banners {
-      color: white;
-      text-align: center;
-      font-size: 1.5vw;
-      margin-top: 2vh;
-    }
-
-    .scroll4 {
-      margin-top: 4vh;
-      text-align: center;
-    }
-
-    .contactstar {
-      text-align: center;
-      color: white;
-      margin-top: 3vh;
-      font-size: 1vw;
-    }
-
-    .finalpage {
-      height: 110vh;
-      margin-top: 20vh;
-      overflow: hidden;
-    }
-
-    .gotocontact {
-      color: white;
-      text-align: center;
-      font-size: 3.750em;
-      font-family: 'lato', arial, sans-serif;
-      text-shadow: 2.4px 2.4px grey;
-    }
-
-    .bestplaces {
-      text-align: center;
-      color: white;
-      margin-top: 1vh;
-      font-size: 1.250em;
-    }
-
-    #whycontact {
-      font-size: .6vw;
-    }
-
-    .email {
-      font-size: 1.75vw;
-      margin-top: 7vh;
-      text-align: center;
-    }
-
-    #something {
-      text-align: center;
-      color: white;
-      font-size: 1.5vw;
-    }
-
-
-    footer {
-      background-color: #474747;
-      width: 100vw;
-      height: 20vh;
-      overflow: hidden;
-      margin-bottom: 5vh;
-      box-shadow: 4px 4px 1px 1px grey;
-
-    }
-
-    #footer1080 {
-      color: white;
-      margin-left: 2vw;
-      margin-top: 2vh;
-    }
-
-    #copyright {
-      color: white;
-      margin-left: 2vw;
-      margin-top: .5vh;
-      font-size: .75vw;
-
-    }
-
-    #twitter, #insta {
-      width: 3.125em;
-      height: 3.125em;
-      display: flex;
-      justify-content: center;
-      margin: 3vw;
-      margin-top: 2vh;
-    }
-
-    .social {
-      display: flex;
-      justify-content: center;
-
-
-    }
-
-    #YT {
-      width: 3.750em;
-      height: 3.125em;
-      justify-content: center;
-      margin: 3vw;
-      margin-top: 2vh;
-    }
-
-    .seperated {
-      text-align: center;
-    }
-
-    @media only screen and (max-width: 320px) {
-
-       p {
-          font-size: .5em;
-       }
-      .back {
-       background-image: url(https://i.vimeocdn.com/portrait/58832_300x300);
-       background-size: cover;
-       background-attachment: fixed;
-       background-position: center;
-       background-repeat: no-repeat;
-       width: 100vw;
-       height: 100vh;
-       z-index: 1;
-     }
-
-    }
-
-  </style>
-
-
-
-
-</head>
-
-<body>
-  <div class="pageone">
-    <div class="back">
-      <div class="text">
-        <h1 class="animated fadeInDown front" data-wow-duration="2s" data-wow-delay="5s">1080</h1>
-      </div>
-
-      <div class="scroll animated fadeIn">
-        <a data-scroll href="#aboutpage">
-        <img src="scrolldown.png" alt="" id="down" class="hvr-float" /></a>
-      </div>
-    </div>
-    <div id="aboutpage"></div>
-  </div>
-  <div class="pagetwo">
-
-    <div class="aboutme">
-      <h1 class="wow fadeInUp about" id="about">About Me</h1>
-    </div>
-    <div class="abouttext wow fadeIn">
-      <p>I run a YouTube channel in which I benchmark the performance of computer hardware. I've been uploading content to YouTube for upwards of one year, and have amassed over 80 thousand views in that time period. While I'm not managing my channel I design
-        graphics for others and myself. I design product advertisements, avatars and banners for YouTube, websites, company logos, and more. I am acquainted with a wide variety of softwares such as: Adobe Photoshop, Adobe After Effects, Adobe Premiere
-        Pro, Adobe Lightroom and, Unreal Engine 4. I am also assimilating myself with HTML and CSS.<br>
-        <div class="workcontainer">
-          <div class="work hvr-grow"><img src="PS.png" alt="" class="ps"><img src="premiere.png" alt="" class="premiere"><img src="css.png" alt="" class="css"> </div>
+  <html>
+    <head>
+      <link href="https://fonts.googleapis.com/css?family=Slabo+27px" rel="stylesheet">
+      <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+      <title>test</title>
+      <style>
+        * {
+          padding: 0;
+          margin: 0;
+          box-sizing: border-box;
+        }
+
+        .pageone {
+          background: linear-gradient(141deg, #0fb8ad 0%, #1fc8db 51%, #2cb5e8 75%);
+          width: 100vw;
+          heigth: 100vh;
+        }
+
+        h1 {
+          color: white;
+          font-family: 'Montserrat', sans-serif;
+          text-align: center;
+          line-height: 100vh;
+          font-size: 4vw;
+          padding: 0;
+          margin: 0;
+          background-attachment: fixed;
+        }
+
+        li {
+          display: inline;
+        }
+
+        .nav {
+          width: 70vw;
+          height: 7vh;
+          position: fixed;
+          background-color: white;
+          display: flex;
+          justify-content: center;
+          margin-top: 3vh;
+          line-height: 7vh;
+          font-family: 'Montserrat', sans-serif;
+          box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.25);
+          z-index: 9999;
+        }
+
+        .navcontainer {
+          width: 100vw;
+          height: 7vh;
+
+          display: flex;
+          justify-content: center;
+          margin: 0;
+          padding: 0;
+        }
+
+        #one, #two, #three, #four {
+          margin: 2vw;
+        }
+
+        .pagetwo {
+          height: 100vh;
+          width: 100vw;
+        }
+
+        h2 {
+          color: black;
+          text-align: center;
+          font-family: 'Montserrat', sans-serif;
+          font-size: 4vw;
+          margin-top: 17vh;
+        }
+
+        .about {
+      font-family: garamond;
+          color: black;
+    text-align: left;
+    margin-left: 5vw;
+    margin-right: 5vw;
+    margin-top: 2vh;
+    font-size: 3vh;
+        }
+
+        .embed {
+            position: relative;
+            padding-bottom: 56.25%;
+            padding-top: 1.875em;
+            height: 0;
+            overflow: hidden;
+            margin-top: 10vh;
+        }
+
+          .pagethree {
+            width: 100vw;
+            height: 100vh;
+
+          }
+
+          .embed iframe,
+          .embed object,
+          .embed embed {
+            position: absolute;
+            top: 0;
+            left: 0;
+            bottom: 0;
+            width: 100%;
+            height: 100%;
+          }
+
+          iframe {
+            box-shadow: 4px 4px 1px 1px grey;
+          }
+
+      </style>
+    </head>
+    <body>
+
+      <div class="pageone">
+        <div class="navcontainer">
+        <div class="nav">
+          <ul>
+            <li id="one">Home</li>
+            <li id="two">About</li>
+            <li id="three">Portfolio</li>
+            <li id="four">Contact</li>
+          </ul>
         </div>
-        <div class="seperated wow fadeInUp">To see my latest YouTube video scroll down.</div>
-
-    </div>
-    <div class="scroll2 wow fadeIn">
-      <a href="#portfolio">
-        <img src="scrolldown.png" alt="" id="down2" class="hvr-float" /></a>
-
-    </div>
-    <h1 id="portfoliod"></h1>
-  </div>
-
-  <div class="pagethree" id="portfolio">
-    <div class='embed'>
-      <figure><iframe src='https://www.youtube.com/embed/videoseries?list=UUNETYZQrE6PEAjB0Pax6c3Q' frameborder='0' allowfullscreen></iframe>
-        <figcaption>Test</figcaption>
+        </div>
+        <h1>1080 benchmarks</h1>
+      </div>
+      <div class="pagetwo">
+        <h2>about me</h2>
+        <div class="about">
+        <p>I run a YouTube channel on which I benchmark the performance of computer hardware. I've been uploading content to YouTube for upwards of one year, and have amassed over 80 thousand views in that time period. While I'm not managing my channel I design graphics for others and myself. I design product advertisements, avatars and banners for YouTube, websites, company logos, and more. I am acquainted with a wide variety of softwares such as: Adobe Photoshop, Adobe After Effects, Adobe Premiere Pro, Adobe Lightroom and, Unreal Engine 4. I am also assimilating myself with HTML and CSS.</p><br> <p style="font-family: Montserrat, arial, sans-serif;">channel trailer below</p>
+        <div class='embed'>
+      <figure><iframe src="https://www.youtube.com/embed/N6L1YHTYKG0" frameborder='0' allowfullscreen></iframe>
+        <figcaption></figcaption>
       </figure>
-    </div>
-    <div class="thanks">
-      <h2>Thanks for watching!</h2>
-      <p id="subscribe">To subscribe click <a href="https://goo.gl/25oVXn">here.</a><br>Scroll down to see some of my work.</p>
-      <div class="scroll3 animated fadeIn">
-        <a href="#realportfolio">
-    <img src="scrolldown.png" alt="" id="down" class="hvr-float" /></a>
+      </div>
       </div>
     </div>
-  </div>
-  <div class="littlebg">
-
-  </div>
-  <div class="pagethree" id="realportfolio">
-    <div class="portheader wow fadeInUp">
-      <h1 id="portfolioabout">Portfolio</h1>
-    </div>
-    <div class="portmore wow fadeIn">
-      <p>Below are various works of mine all created within the last year.</p>
+    <div class="pagethree">
 
     </div>
-
-
-    <div class="carouselcontainer">
-      <div class="your-class">
-        <div><img src="gifs/bluewhiteintro.gif" alt=""></div>
-        <div><img src="gifs/bwintro.gif" alt=""></div>
-        <div><img src="gifs/cityintro.gif" alt=""></div>
-        <div><img src="gifs/forestintro.gif" alt=""></div>
-        <div><img src="gifs/liquidintro.gif" alt=""></div>
-        <div><img src="gifs/nightintro.gif" alt=""></div>
-        <div><img src="gifs/purpleyellowintro.gif" alt=""></div>
-        <div><img src="gifs/retrointro.gif" alt=""></div>
-        <div><img src="gifs/strokeintro.gif" alt=""></div>
-        <div><img src="gifs/strokeintro2.gif" alt=""></div>
-        <div><img src="wallpapers/KuebikoWallpaper.png" alt=""></div>
-        <div><img src="wallpapers/Mountains1.png" alt=""></div>
-        <div><img src="wallpapers/Mountains2.png" alt=""></div>
-        <div><img src="wallpapers/MyownFirewatchWallpaper.png" alt=""></div>
-        <div><img src="wallpapers/vaporwaveWallpaper.png" alt=""></div>
-        <div><img src="wallpapers/Wallpaper1.png" alt=""></div>
-        <div><img src="wallpapers/Wallpaper2nd.png" alt=""></div>
-        <div><img src="wallpapers/Wallpaper3.png" alt=""></div>
-        <div><img src="wallpapers/Wallpaper4.png" alt=""></div>
-        <div><img src="wallpapers/yosemite.png" alt=""></div>
-
-      </div>
-    </div>
-    <div class="gifs">
-      <p>Intro Videos / Wallpapers</p>
-    </div>
-    <div class="carouselcontainer">
-      <div class="your-class2">
-        <div><img src="newavatars/tenavatar.png" alt=""></div>
-        <div><img src="newavatars/abstractavatar.png" alt=""></div>
-        <div><img src="newavatars/chemavatar.png" alt=""></div>
-        <div><img src="newavatars/chemavatar.png" alt=""></div>
-        <div><img src="newavatars/cityavatar.png" alt=""></div>
-        <div><img src="newavatars/cleanavatar.png" alt=""></div>
-        <div><img src="newavatars/divisionavatar.png" alt=""></div>
-        <div><img src="newavatars/floralavatar.png" alt=""></div>
-        <div><img src="newavatars/gamingavatar.png" alt=""></div>
-        <div><img src="newavatars/Glitch.png" alt=""></div>
-        <div><img src="newavatars/glitchavatar.png" alt=""></div>
-        <div><img src="newavatars/grungeavatar.png" alt=""></div>
-        <div><img src="newavatars/KuebikoAvatar.png" alt=""></div>
-        <div><img src="newavatars/KuebikoLogo.png" alt=""></div>
-        <div><img src="newavatars/KuebikoLogoNewNew.png" alt=""></div>
-        <div><img src="newavatars/Logo.png" alt=""></div>
-        <div><img src="newavatars/lolo.png" alt=""></div>
-        <div><img src="newavatars/moonavatar.png" alt=""></div>
-        <div><img src="newavatars/mountainavatar.png" alt=""></div>
-        <div><img src="newavatars/orientalavatar.png" alt=""></div>
-        <div><img src="newavatars/OtherNewKuebikoLogo.png" alt=""></div>
-        <div><img src="newavatars/polyavatar.png" alt=""></div>
-        <div><img src="newavatars/RetroAvatar.png" alt=""></div>
-        <div><img src="newavatars/simplisticavatar.png" alt=""></div>
-        <div><img src="newavatars/smokeavatar.png" alt=""></div>
-        <div><img src="newavatars/YoutubeLogo.png" alt=""></div>
-      </div>
-    </div>
-    <div class="YTavatar">
-      <p>Social Media Avatars</p>
-    </div>
-    <div class="carouselcontainer">
-      <div class="your-class3">
-        <div><img src="resized/tenbanner.png" alt=""></div>
-        <div><img src="resized/abstractbanner.png" alt=""></div>
-        <div><img src="resized/Banner copy.png" alt=""></div>
-        <div><img src="resized/chembanner.png" alt=""></div>
-        <div><img src="resized/citybanner.png" alt=""></div>
-        <div><img src="resized/cleanbanner.png" alt=""></div>
-        <div><img src="resized/divisionbanner.png" alt=""></div>
-        <div><img src="resized/FloralBanner.png" alt=""></div>
-        <div><img src="resized/geobanner.png" alt=""></div>
-        <div><img src="resized/glitchbanner.png" alt=""></div>
-        <div><img src="resized/GreekBanner.png" alt=""></div>
-        <div><img src="resized/grungebanner.png" alt=""></div>
-        <div><img src="resized/KuebikoBanner.png" alt=""></div>
-        <div><img src="resized/KuebikoBannerNew.png" alt=""></div>
-        <div><img src="resized/KuebikoNewNewNewBanner.png" alt=""></div>
-        <div><img src="resized/lol.png" alt=""></div>
-        <div><img src="resized/mountainbanner.png" alt=""></div>
-        <div><img src="resized/orientalbanner.png" alt=""></div>
-        <div><img src="resized/PaintBanner.png" alt=""></div>
-        <div><img src="resized/paintbanner2.png" alt=""></div>
-        <div><img src="resized/refreshedbanner.png" alt=""></div>
-        <div><img src="resized/simplisticbanner.png" alt=""></div>
-        <div><img src="resized/sleekbanner.png" alt=""></div>
-        <div><img src="resized/smokebanner.png" alt=""></div>
-        <div><img src="resized/vaporwaveWIP.png" alt=""></div>
-        <div><img src="resized/YoutubeBanner.png" alt=""></div>
-        <div><img src="resized/bannercopy.png" alt=""></div>
-
-      </div>
-    </div>
-    <div class="banners">
-    <p>Social Media Banners</p>
-    </div>
-    <div class="contactstar">
-    <p>Scroll down to contact me.</p>
-    <div class="scroll4 animated fadeIn">
-      <a href="#gotocontact">
-  <img src="scrolldown.png" alt="" id="down" class="hvr-float" /></a>
-    </div>
-  </div>
-
-  <div class="finalpage">
-    <div class="littlebg2container">
-    <div class="littlebg2">
-
-    </div>
-    </div>
-    <h1 id="gotocontact"></h1>
-    <div class="contactheader wow fadeInUp">
-      <h1 class="gotocontact">Contact Me</h1>
-    </div>
-    <div class="bestplaces wow fadeIn">Below are the most reliable ways to get in touch with me. <br><p id="whycontact">(You can send game requests, design requests, anything.)</p>
-  </div>
-  <div class="bestplaces2">
-
-<div class="email">
-  <p id="something">Main Email</p>
-    <p>
-
-      <a href="mailto:newbthroughs@gmail.com" target="_top">newbthroughs@gmail.com</a>
-    </p>
-    </div>
-    <div class="email">
-      <p id="something">Secondary Email</p>
-        <p>
-
-          <a href="mailto:kuebikovideos@gmail.com" target="_top">kuebikovideos@gmail.com</a>
-        </p>
-        </div>
-        <div class="email">
-          <p id="something">Steam Account</p>
-            <p>
-
-              <a href="http://steamcommunity.com/id/GTX980Benchmarks/" target="_top">FB||1080</a>
-            </p>
-            </div>
-  </div>
-
-  </div>
-
- <footer>
-    <h3 id="footer1080">GTX 1080 Benchmarks</h3>
-    <p id="copyright">Copyright &copy; 2017 GTX 1080 Benchmarks All Rights Reserved.</p>
-    <div class="social hvr-grow">
-    <a href="https://twitter.com/Newb_Throughs"><img src="http://www.iconsdb.com/icons/preview/white/twitter-xxl.png" id="twitter" alt=""></a>
-    <a href="https://www.instagram.com/j.uud.e/"><img src="http://www.iconsplace.com/icons/preview/white/instagram-256.png" alt="" id="insta"></a>
-    <a href="https://www.youtube.com/gtx1080benchmarks"><img src="https://developers.google.com/youtube/images/YouTube_light_color_icon.png" alt="" id="YT"></a>
-    </div>
-  </footer>
-
-  <script src="wow.min.js"></script>
-  <script>
-    new WOW().init();
-  </script>
-
-
-
-  <!--<script type="text/javascript" src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
-  <script type="text/javascript" src="http://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>-->
-  <script
-  src="https://code.jquery.com/jquery-1.8.0.js"
-  integrity="sha256-00Fh8tkPAe+EmVaHFpD+HovxWk7b97qwqVi7nLvjdgs="
-  crossorigin="anonymous"></script>
-  <script
-    src="https://code.jquery.com/jquery-1.8.0.min.js"
-    integrity="sha256-jFdOCgY5bfpwZLi0YODkqNXQdIxKpm6y5O/fy0baSzE="
-    crossorigin="anonymous"></script>
-  <script type="text/javascript" src="slick/slick.min.js"></script>
-
-  <script type="text/javascript">
-    $(document).ready(function() {
-      $('.your-class').slick({
-        arrows: true,
-
-        draggable: false,
-        fade: true
-      });
-    });
-  </script>
-
-  <script type="text/javascript">
-    $(document).ready(function() {
-      $('.your-class2').slick({
-        arrows: true,
-
-        draggable: false,
-        fade: true
-      });
-    });
-  </script>
-
-  </script>
-
-  <script type="text/javascript">
-    $(document).ready(function() {
-      $('.your-class3').slick({
-        arrows: true,
-
-        draggable: false,
-        fade: true
-      });
-    });
-  </script>
-
-</body>
-
-</html>
+    </body>
+  </html>
