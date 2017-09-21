@@ -1,207 +1,243 @@
 <!DOCTYPE html>
-  <html>
-    <head>
-      <link href="https://fonts.googleapis.com/css?family=Slabo+27px" rel="stylesheet">
-      <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
-      <title>GTX 1080 Benchmarks</title>
-      <style>
-        * {
-          padding: 0;
-          margin: 0;
-          box-sizing: border-box;
-        }
+<html>
 
-        .pageone {
-          background: linear-gradient(141deg, #0fb8ad 0%, #1fc8db 51%, #2cb5e8 75%);
-          width: 100vw;
-          heigth: 100vh;
-          background-attachment: fixed;
-        }
+<head>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
+  <script src="wow.min.js"></script>
+  <script>
+    new WOW().init();
+  </script>
+  <link href="https://fonts.googleapis.com/css?family=Slabo+27px" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+  <title>GTX 1080 Benchmarks</title>
+  <style>
+    * {
+      padding: 0;
+      margin: 0;
+      box-sizing: border-box;
+    }
 
-        h1 {
-          color: white;
-          font-family: 'Montserrat', sans-serif;
-          text-align: center;
-          line-height: 100vh;
-          font-size: 4vw;
-          padding: 0;
-          margin: 0;
-          background-attachment: fixed;
-        }
+    .pageone {
+      background: linear-gradient(141deg, #0fb8ad 0%, #1fc8db 51%, #2cb5e8 75%);
+      width: 100vw;
+      heigth: 100vh;
+      background-attachment: fixed;
+    }
 
-        li {
-          display: inline;
-        }
+    h1 {
+      color: white;
+      font-family: 'Montserrat', sans-serif;
+      text-align: center;
+      line-height: 100vh;
+      font-size: 4vw;
+      padding: 0;
+      margin: 0;
+      background-attachment: fixed;
+    }
 
-        .nav {
-          width: 70vw;
-          height: 7vh;
-          position: fixed;
-          background-color: white;
-          display: flex;
-          justify-content: center;
-          margin-top: 3vh;
-          line-height: 7vh;
-          font-family: 'Montserrat', sans-serif;
-          box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.25);
-          z-index: 9999;
-        }
+    li {
+      display: inline;
+    }
 
-        .navcontainer {
-          width: 100vw;
-          height: 7vh;
+    .nav {
+      width: 70vw;
+      height: 7vh;
+      position: fixed;
+      background-color: white;
+      display: flex;
+      justify-content: center;
+      margin-top: 3vh;
+      line-height: 7vh;
+      font-family: 'Montserrat', sans-serif;
+      box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.25);
+      z-index: 9999;
+    }
 
-          display: flex;
-          justify-content: center;
-          margin: 0;
-          padding: 0;
-        }
+    .navcontainer {
+      width: 100vw;
+      height: 7vh;
 
-        #one, #two, #three, #four {
-          margin: 2vw;
-        }
+      display: flex;
+      justify-content: center;
+      margin: 0;
+      padding: 0;
+    }
 
-        .pagetwo {
-          height: 100vh;
-          width: 100vw;
-        }
+    #one,
+    #two,
+    #three,
+    #four {
+      margin: 2vw;
+    }
 
-        h2 {
-          color: black;
-          text-align: center;
-          font-family: 'Montserrat', sans-serif;
-          font-size: 4vw;
-          margin-top: 17vh;
-        }
+    .pagetwo {
+      height: 100vh;
+      width: 100vw;
+    }
 
-        .about {
+    h2 {
+      color: black;
+      text-align: center;
+      font-family: 'Montserrat', sans-serif;
+      font-size: 4vw;
+      margin-top: 17vh;
+    }
+
+    .about {
       font-family: garamond;
-          color: black;
-    text-align: left;
-    margin-left: 5vw;
-    margin-right: 5vw;
-    margin-top: 2vh;
-    font-size: 3vh;
+      color: black;
+      text-align: left;
+      margin-left: 5vw;
+      margin-right: 5vw;
+      margin-top: 2vh;
+      font-size: 3vh;
+    }
 
-        }
-
-        .about2 {
+    .about2 {
       font-family: garamond;
-          color: black;
-    text-align: center;
-    margin-left: 5vw;
-    margin-right: 5vw;
-    margin-top: 2vh;
-    font-size: 3vh;
+      color: black;
+      text-align: center;
+      margin-left: 5vw;
+      margin-right: 5vw;
+      margin-top: 2vh;
+      font-size: 3vh;
+    }
 
-        }
+    .embed {
+      position: relative;
+      padding-bottom: 56.25%;
+      padding-top: 1.875em;
+      height: 0;
+      overflow: hidden;
+      margin-top: 10vh;
+    }
 
-        .embed {
-            position: relative;
-            padding-bottom: 56.25%;
-            padding-top: 1.875em;
-            height: 0;
-            overflow: hidden;
-            margin-top: 10vh;
-        }
+    .pagethree {
+      width: 100vw;
+      height: 100vh;
+    }
 
-          .pagethree {
-            width: 100vw;
-            height: 100vh;
+    .embed iframe,
+    .embed object,
+    .embed embed {
+      position: absolute;
+      top: 0;
+      left: 0;
+      bottom: 0;
+      width: 100%;
+      height: 100%;
+    }
 
-          }
+    iframe {
+      box-shadow: 4px 4px 1px 1px grey;
+    }
 
-          .embed iframe,
-          .embed object,
-          .embed embed {
-            position: absolute;
-            top: 0;
-            left: 0;
-            bottom: 0;
-            width: 100%;
-            height: 100%;
-          }
+    a {
+      text-decoration: none;
+      background: linear-gradient(141deg, #0fb8ad 0%, #1fc8db 51%, #2cb5e8 75%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
 
-          iframe {
-            box-shadow: 4px 4px 1px 1px grey;
-          }
+    a:hover {
+      background: linear-gradient(141deg, #35d6cc 0%, #15a3b3 51%, #2794bd 75%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
 
-          a {
-            text-decoration: none;
-            background: linear-gradient(141deg, #0fb8ad 0%, #1fc8db 51%, #2cb5e8 75%);
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
-          }
+    .contactinfo {
+      margin: 5vh;
+    }
 
-          a:hover {
-            background: linear-gradient(141deg, #35d6cc 0%, #15a3b3 51%, #2794bd 75%);
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
-          }
+    footer {
+      width: 100vw;
+      height: 10vh;
+      background-color: white;
+      box-shadow: 0 -5px 5px -5px rgba(0, 0, 0, 0.25);
+      display: flex;
+    }
 
-          .contactinfo {
-            margin: 5vh;
-          }
+    .leftside {
+      width: 50vw;
+      height: 10vh;
 
-          footer {
-            width: 100vw;
-            height: 20vh;
-            background-color: white;
+      display: flex;
+      justify-content: flex-start;
+    }
 
+    .rightside {
+      width: 50vw;
+      height: 10vh;
 
-          }
+      display: flex;
+      justify-content: flex-end;
+      line-height: 10vh;
+    }
+  </style>
 
-      </style>
-    </head>
-    <body>
+</head>
 
-      <div class="pageone">
-        <div class="navcontainer">
-        <div class="nav">
-          <ul>
-            <li id="one">Home</li>
-            <li id="two">About</li>
-            <li id="three">Portfolio</li>
-            <li id="four">Contact</li>
-          </ul>
-        </div>
-        </div>
-        <h1>1080 benchmarks</h1>
+<body>
+
+  <div class="pageone">
+    <div class="navcontainer">
+      <div class="nav">
+        <ul>
+          <li id="one"><a href="#home" style="">Home</a></li>
+          <li id="two"><a href="#about">About</a></li>
+          <li id="three"><a href="https://1080benchmarks.carbonmade.com/">Portfolio</a></li>
+          <li id="four"><a href="#contact">Contact</a></li>
+        </ul>
       </div>
-      <div class="pagetwo">
-        <h2>about me</h2>
-        <div class="about">
-        <p>I run a YouTube channel on which I benchmark the performance of computer hardware. I've been uploading content to YouTube for upwards of one year, and have amassed over 80 thousand views in that time period. While I'm not managing my channel I design graphics for others and myself. I design product advertisements, avatars and banners for YouTube, websites, company logos, and more. I am acquainted with a wide variety of softwares such as: Adobe Photoshop, Adobe After Effects, Adobe Premiere Pro, Adobe Lightroom and, Unreal Engine 4. I am also assimilating myself with HTML and CSS.</p><br> <p style="font-family: Montserrat, arial, sans-serif;">channel trailer below</p>
-        <div class='embed'>
-      <figure><iframe src="https://www.youtube.com/embed/N6L1YHTYKG0" frameborder='0' allowfullscreen></iframe>
-        <figcaption>Thanks for watching</figcaption>
-      </figure>
+    </div>
+    <h1 class="wow fadeInDown" id="home">1080 benchmarks</h1>
+  </div>
+  <h1 id="about"></h1>
+  <div class="pagetwo">
+    <h2 class="wow fadeIn">about me</h2>
+    <div class="about wow fadeIn">
+      <p>I run a YouTube channel on which I benchmark the performance of computer hardware. I've been uploading content to YouTube for upwards of one year, and have amassed over 80 thousand views in that time period. While I'm not managing my channel I design
+        graphics for others and myself. I design product advertisements, avatars and banners for YouTube, websites, company logos, and more. I am acquainted with a wide variety of softwares such as: Adobe Photoshop, Adobe After Effects, Adobe Premiere
+        Pro, Adobe Lightroom and, Unreal Engine 4. I am also assimilating myself with HTML and CSS.</p><br>
+      <p style="font-family: Montserrat, arial, sans-serif;">channel trailer below</p>
+      <div class='embed'>
+        <figure><iframe src="https://www.youtube.com/embed/N6L1YHTYKG0" frameborder='0' allowfullscreen></iframe>
+          <figcaption>Thanks for watching</figcaption>
+        </figure>
 
       </div>
 
-        <h3 style="font-family: Montserrat, arial, sans-serif; margin-top: 3vh; font-size: 3vw;q ">thanks for watching<br><p style="font-size: 1.5vw;"><a href="">Subscribe</a> for more content like this.</p></h3> <br>
+      <h3 style="font-family: Montserrat, arial, sans-serif; margin-top: 3vh; font-size: 3vw;q ">thanks for watching<br><p style="font-size: 1.5vw;"><a href="">Subscribe</a> for more content like this.</p></h3> <br>
 
     </div>
-    <div class="three">
+    <div class="three wow fadeIn" id="contact">
       <h2>contact</h2>
       <div class="about2">
-      <p>Below are the best ways to contact me</p><br>
-      <ul class="contactinfo">
-        <li style="font-family: Montserrat, arial, sans-serif;">Main Email <br> <a href="">newbthroughs@gmail.com</a></li>
-      </ul>
-      <ul class="contactinfo">
-        <li style="font-family: Montserrat, arial, sans-serif;">Secondary Email <br> <a href="">kuebikovideos@gmail.com</a></li>
-      </ul>
-      <ul class="contactinfo">
-        <li style="font-family: Montserrat, arial, sans-serif;">Youtube<br> <a href="https://www.youtube.com/channel/UCNETYZQrE6PEAjB0Pax6c3Q/about">1080 Benchmarks</a></li>
-      </ul>
-      <ul class="contactinfo">
-        <li style="font-family: Montserrat, arial, sans-serif;">Steam Account<br> <a href="http://steamcommunity.com/id/GTX980Benchmarks/">FB||1080</a></li>
-      </ul>
+        <p>Below are the best ways to contact me</p><br>
+        <ul class="contactinfo">
+          <li style="font-family: Montserrat, arial, sans-serif;">Main Email <br> <a href="mailto:newbthroughs@gmail.com">newbthroughs@gmail.com</a></li>
+        </ul>
+        <ul class="contactinfo">
+          <li style="font-family: Montserrat, arial, sans-serif;">Secondary Email <br> <a href="mailto:kuebikovideos@gmail.com">kuebikovideos@gmail.com</a></li>
+        </ul>
+        <ul class="contactinfo">
+          <li style="font-family: Montserrat, arial, sans-serif;">Youtube<br> <a href="https://www.youtube.com/channel/UCNETYZQrE6PEAjB0Pax6c3Q/about">1080 Benchmarks</a></li>
+        </ul>
+        <ul class="contactinfo">
+          <li style="font-family: Montserrat, arial, sans-serif;">Steam Account<br> <a href="http://steamcommunity.com/id/GTX980Benchmarks/">FB||1080</a></li>
+        </ul>
       </div>
       <footer>
-        <small>&copy; 2017 All Rights Reserved. GTX 1080 Benchmarks</small>
+        <div class="leftside">
+          <small style="font-family: arial, sans-serif; line-height: 10vh; margin-left: 10px;">&copy; 2017 All Rights Reserved. GTX 1080 Benchmarks</small>
+        </div>
+        <div class="rightside">
+          <a href="https://www.instagram.com/1080benchmarks/"><img src="instagram.png" alt="" style="height: 70px; width: auto; margin-top: 1.5vh; margin-left: 1vw; margin-right: 1vw;"></a>
+          <a href="https://twitter.com/Newb_Throughs"><img src="twitter.png" alt="" style="height: 70px; width: auto; margin-top: 1.5vh; margin-left: 1vw; margin-right: 1vw;"></a>
+          <a href="https://1080benchmarks.carbonmade.com/"><img src="portfolio.png" alt="" style="height: 70px; width: auto; margin-top: 1.5vh; margin-left: 1vw; margin-right: 1vw;"></a>
+        </div>
       </footer>
     </div>
-    </body>
-  </html>
+</body>
+
+</html>
