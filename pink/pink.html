@@ -16,6 +16,7 @@
         height: 100vh;
         display: flex;
         justify-content: center;
+        /*border: 4px red solid;*/
       }
 
       .header {
@@ -23,26 +24,130 @@
         display: flex;
         background-image: url('header.jpg');
         background-size: cover;
+        /*border: 4px blue solid;*/
         margin-top: 25vh;
         height: 50vh;
         width: 50vw;
         font-family: 'Crimson Text', serif;
         font-size: 1.5vw;
+        /*color: #fdd1d2;*/
+
       }
 
       .text {
         display: flex;
         justify-content: center;
+        /*margin-top: -.75vh;*/
+      }
+
+
+
+      ul {
+        list-style: none;
+      }
+
+      .top {
+        width: 100vw;
+        height: 5vh;
+        background-color: white;
+        text-align: center;
+        line-height: 5vh;
+        font-family: 'Crimson Text', serif;
+        position: absolute;
+        /*border: 4px yellow solid;*/
+      }
+
+      a {
+        font-size: 1.5vw;
+        color: black;
+        text-decoration: none;
+      }
+
+      a:hover {
+        color: #ffcccd;
+      }
+
+      .bottom {
+        width: 100vw;
+        height: 5vh;
+        background-color: white;
+        text-align: center;
+        line-height: 5vh;
+        font-family: 'Crimson Text', serif;
+        position: fixed;
+        margin-top: 95vh;
+        /*border: 4px green solid;*/
+      }
+
+      .sideone {
+        width: 3vw;
+        height: 100vh;
+        background-color: white;
+        text-align: center;
+        line-height: 100vh;
+        font-family: 'Crimson Text', serif;
+        position: fixed;
+
+      /*  border: 4px orange solid;*/
+
+      }
+
+      .sidetwo {
+        width: 3vw;
+        height: 100vh;
+        background-color: white;
+        text-align: center;
+        line-height: 100vh;
+        font-family: 'Crimson Text', serif;
+        position: fixed;
+        margin-left: 97vw;
+      /*  border: 4px orange solid;*/
+
+      }
+
+      #verticaltext {
+        transform: rotate(-90deg);
+
+      }
+
+      #verticaltext2 {
+        transform: rotate(90deg);
+
       }
     </style>
   </head>
     <body>
+<div class="sideone">
+<ul>
+  <li id="verticaltext"><a href="">Portfolio</a></li>
+</ul>
+</div>
+<div class="sidetwo">
+<ul>
+  <li id="verticaltext2"><a href="">Social</a></li>
+</ul>
+</div>
       <header>
+        <div class="top">
+          <ul>
+            <li><a href="">About</a></li>
+          </ul>
+        </div>
+
         <div class="header">
           <div class="text">
           <h1>1080 Benchmarks </h1>
+
           </div>
+
+        </div>
+
+        <div class="bottom">
+          <ul>
+            <li><a href="">Contact</a></li>
+          </ul>
         </div>
       </header>
+
     </body>
 </html>
