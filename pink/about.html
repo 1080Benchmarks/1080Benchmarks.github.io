@@ -19,13 +19,38 @@
 
       a {
         text-decoration: none;
+        position: relative;
         color: #2e2e2e;
         font-size: 1.25vw;
+      }
+
+
+      a:before {
+        content: "";
+        position: absolute;
+        width: 100%;
+        height: 2px;
+        bottom: 0;
+        left: 0;
+        background-color: #000;
+        visibility: hidden;
+        -webkit-transform: scaleX(0);
+        transform: scaleX(0);
+        -webkit-transition: all 0.3s ease-in-out 0s;
+        transition: all 0.3s ease-in-out 0s;
+      }
+
+      a:hover:before {
+        visibility: visible;
+        -webkit-transform: scaleX(1);
+        transform: scaleX(1);
+
       }
 
       .nav {
         padding: 1vw;
         font-family: 'Crimson Text', serif;
+        position: fixed;
       }
 
       li {
@@ -61,19 +86,24 @@
         justify-content: center;
       }
 
+      .about {
+        padding: 16vh;
+      }
+
 
     </style>
   </head>
   <body>
+    <div class="nav">
+      <ul>
+        <li><a href="pink.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="portfolio.html">Portfolio</a></li>
+        <li><a href="">Contact</a></li>
+      </ul>
+    </div>
     <div class="pageone">
-      <div class="nav">
-        <ul>
-          <li><a href="pink.html">Home</a></li>
-          <li><a href="">About</a></li>
-          <li><a href="">Portfolio</a></li>
-          <li><a href="">Contact</a></li>
-        </ul>
-      </div>
+
       <div class="about">
         <h1>About Me</h1>
         <p>I run a YouTube channel on which I benchmark the performance of computer hardware. I've been uploading content to YouTube for upwards of one year, and have amassed over 80 thousand views in that time period. While I'm not managing my channel I design graphics for others and myself. I design product advertisements, avatars and banners for YouTube, websites, company logos, and more. I am acquainted with a wide variety of softwares such as: Adobe Photoshop, Adobe After Effects, Adobe Premiere Pro, Adobe Lightroom and, Unreal Engine 4. I am also learning CSS.</p>

@@ -1,0 +1,369 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Crimson+Text:600" rel="stylesheet">
+    <title>Portfolio</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      .portfolio {
+        width: 100vw;
+        height: 100vh;
+        background-color: #fdd1d2;
+        display: flex;
+        justify-content: center;
+      }
+
+      a {
+        text-decoration: none;
+        position: relative;
+        color: #2e2e2e;
+        font-size: 1.25vw;
+      }
+
+
+      a:before {
+        content: "";
+        position: absolute;
+        width: 100%;
+        height: 3px;
+        bottom: 0;
+        left: 0;
+        background-color: #000;
+        visibility: hidden;
+        -webkit-transform: scaleX(0);
+        transform: scaleX(0);
+        -webkit-transition: all 0.3s ease-in-out 0s;
+        transition: all 0.3s ease-in-out 0s;
+      }
+
+      a:hover:before {
+        visibility: visible;
+        -webkit-transform: scaleX(1);
+        transform: scaleX(1);
+
+      }
+
+      .nav {
+        padding: 1vw;
+        font-family: 'Crimson Text', serif;
+        position: fixed;
+      }
+
+      li {
+        list-style-type: none;
+      }
+
+      .types {
+        display: flex;
+        align-items: center;
+
+        vertical-align: middle;
+
+      }
+
+      #type {
+        display: inline;
+      }
+
+
+      #type2 {
+        font-size: 4vw;
+      }
+
+      .gifs {
+        width: 100vw;
+        height: 100vh;
+        background-color: #fdd1d2;
+        display: flex;
+        justify-content: center;
+
+      }
+
+      .banner {
+        width: 100vw;
+        height: 100vh;
+        background-color: #fdd1d2;
+        display: flex;
+        justify-content: center;
+
+      }
+
+
+      <style>
+   /* Prevent the slideshow from flashing on load */
+   #slides {
+     display: none
+   }
+
+   /* Center the slideshow */
+   .container {
+     margin: 0 auto
+
+
+   }
+
+   .gifcontainer {
+
+     display: flex;
+     align-items: center;
+   }
+
+   .bannercontainer {
+     display: flex;
+     align-items: center;
+   }
+
+   /* Show active item in the pagination */
+   .slidesjs-pagination .active {
+     color:red;
+   }
+
+   .slidesjs-previous {
+
+   }
+
+   /* Media quires for a responsive layout */
+
+   /* For tablets & smart phones */
+   @media (max-width: 767px) {
+     body {
+       padding-left: 10px;
+       padding-right: 10px;
+     }
+     .container {
+       width: auto
+     }
+   }
+
+   /* For smartphones */
+   @media (max-width: 480px) {
+     .container {
+       width: auto
+     }
+   }
+
+   /* For smaller displays like laptops */
+   @media (min-width: 768px) and (max-width: 979px) {
+     .container {
+       width: 724px
+     }
+   }
+
+   /* For larger displays */
+   @media (min-width: 1200px) {
+     .container {
+       width: 1170px
+     }
+   }
+
+   .banners {
+     width: 100vw;
+     height: 100vh;
+     background-color: #fdd1d2;
+     display: flex;
+     justify-content: center;
+   }
+
+   .avatars {
+     width: 100vw;
+     height: 100vh;
+     background-color: #fdd1d2;
+     display: flex;
+     justify-content: center;
+   }
+
+   .avatarcontainer {
+     display: flex;
+     align-items: center;
+   }
+
+   .sites {
+     width: 100vw;
+     height: 100vh;
+     background-color: #fdd1d2;
+     display: flex;
+     justify-content: center;
+   }
+
+   .sitecontainer {
+     display: flex;
+     align-items: center;
+   }
+
+    </style>
+  </head>
+  <body>
+    <div class="nav">
+      <ul>
+        <li><a href="pink.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="portfolio.html">Portfolio</a></li>
+        <li><a href="">Contact</a></li>
+      </ul>
+    </div>
+    <div class="portfolio">
+
+      <div class="types">
+        <ul>
+          <li id="type"><a href="#intros" id="type2"> Intros,  </a></li>
+          <li id="type"><a href="#banners" id="type2"> Banners,  </a></li>
+          <li id="type"><a href="#avatars" id="type2"> Wallpapers,  </a></li>
+          <li id="type"><a href="#sites" id="type2"> Sites  </a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="gifs" id="intros">
+      <div class="gifcontainer">
+      <div class="container">
+   <div id="slides">
+     <img src="gifs/bluewhiteintro.gif" alt="Intro">
+     <img src="gifs/bwintro.gif"  alt="Intro">
+     <img src="gifs/cityintro.gif"  alt="Intro">
+     <img src="gifs/forestintro.gif"  alt="Intro">
+     <img src="gifs/liquidintro.gif"  alt="Intro">
+     <img src="gifs/nightintro.gif"  alt="Intro">
+     <img src="gifs/purpleyellowintro.gif"  alt="Intro">
+     <img src="gifs/retrointro.gif"  alt="Intro">
+     <img src="gifs/strokeintro.gif"  alt="Intro">
+     <img src="gifs/strokeintro2.gif"  alt="Intro">
+       <a href="#" class="slidesjs-next slidesjs-navigation"><i class="icon-chevron-right"><img src="backwards.png" style="height: 20px; width: auto;" alt=""></i></a>
+     <a href="#" class="slidesjs-previous slidesjs-navigation"><i class="icon-chevron-left"><img src="ahead.png" style="height: 20px; width: auto;" alt=""></i></a>
+
+   </div>
+ </div>
+ </div>
+    </div>
+    <div class="banners" id="banners">
+      <div class="bannercontainer">
+      <div class="container">
+   <div id="slides2">
+     <img src="banners/abstractbanner.png" alt="Intro">
+     <img src="banners/Banner1copy.png"  alt="Intro">
+     <img src="banners/bannercopy.png"  alt="Intro">
+     <img src="banners/chembanner.png"  alt="Intro">
+     <img src="banners/citybanner.png"  alt="Intro">
+     <img src="banners/cleanbanner.png"  alt="Intro">
+     <img src="banners/FloralBanner.png"  alt="Intro">
+     <img src="banners/geobanner.png"  alt="Intro">
+     <img src="banners/glitchbanner.png"  alt="Intro">
+     <img src="banners/KuebikoNewNewNewBanner.png"  alt="Intro">
+     <img src="banners/lol.png"  alt="Intro">
+     <img src="banners/mountainbanner.png"  alt="Intro">
+     <img src="banners/PaintBanner.png"  alt="Intro">
+     <img src="banners/paintbanner2.png"  alt="Intro">
+     <img src="banners/refreshedbanner.png"  alt="Intro">
+     <img src="banners/simplisticbanner.png"  alt="Intro">
+     <img src="banners/sleekbanner.png"  alt="Intro">
+     <img src="banners/vaporwaveWIP.png"  alt="Intro">
+     <img src="banners/refreshedbanner.png"  alt="Intro">
+       <a href="#" class="slidesjs-previous slidesjs-navigation"><i class="icon-chevron-right"><img src="backwards.png" style="height: 20px; width: auto;" alt=""></i></a>
+     <a href="#" class="slidesjs-next slidesjs-navigation"><i class="icon-chevron-left"><img src="ahead.png" style="height: 20px; width: auto;" alt=""></i></a>
+
+   </div>
+ </div>
+ </div>
+    </div>
+    <div class="avatars" id="avatars">
+      <div class="avatarcontainer">
+      <div class="container">
+   <div id="slides3">
+     <img src="avatars/KuebikoWallpaper.png" alt="Intro">
+     <img src="avatars/Mountains1.png"  alt="Intro"  .>
+     <img src="avatars/Mountains2.png"  alt="Intro"  .>
+     <img src="avatars/Picture.png"  alt="Intro"  .>
+     <img src="avatars/vaporwaveWallpaper.png"  alt="Intro"  .>
+     <img src="avatars/Wallpaper1.png"  alt="Intro"  .>
+     <img src="avatars/Wallpaper2nd.png"  alt="Intro"  .>
+     <img src="avatars/Wallpaper3.png"  alt="Intro"  .>
+     <img src="avatars/Wallpaper4.png"  alt="Intro"  .>
+     <img src="avatars/yosemite.png"  alt="Intro"  .>
+       <a href="#" class="slidesjs-next slidesjs-navigation"><i class="icon-chevron-right"><img src="backwards.png" style="height: 20px; width: auto;" alt=""></i></a>
+     <a href="#" class="slidesjs-previous slidesjs-navigation"><i class="icon-chevron-left"><img src="ahead.png" style="height: 20px; width: auto;" alt=""></i></a>
+
+   </div>
+ </div>
+ </div>
+    </div>
+    <div class="sites" id="sites">
+      <div class="sitecontainer">
+      <div class="container">
+   <div id="slides4">
+     <img src="soon.png" alt="Intro">
+       <img src="soon.png" alt="Intro">
+       <a href="#" class="slidesjs-next slidesjs-navigation"><i class="icon-chevron-right"><img src="backwards.png" style="height: 20px; width: auto;" alt=""></i></a>
+     <a href="#" class="slidesjs-previous slidesjs-navigation"><i class="icon-chevron-left"><img src="ahead.png" style="height: 20px; width: auto;" alt=""></i></a>
+
+   </div>
+ </div>
+ </div>
+    </div>
+    <script src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
+    <script src="jquery.slides.min.js"></script>
+    <script>
+   $(function() {
+     $('#slides').slidesjs({
+       width: 270,
+       height: 152,
+       navigation:  {
+         active: false,
+         effect: "fade"
+       },
+       pagination: {
+         active: false,
+         effect: "fade"
+       },
+       effect: {
+         fade: {
+           speed: 400
+         }
+       }
+     });
+   });
+   $('#slides2').slidesjs({
+       width: 1060,
+       height: 175,
+       navigation: {
+         active: false,
+         effect: "fade"
+       },
+       pagination: false,
+       start: 3,
+       play: {
+         auto: true
+       }
+     });
+     $('#slides3').slidesjs({
+         width: 540,
+         height: 304,
+         navigation: {
+           active: false,
+           effect: "fade"
+         },
+         pagination: false,
+         start: 3,
+         play: {
+           auto: true
+         }
+       });
+       $('#slides4').slidesjs({
+           width: 540,
+           height: 304,
+           navigation: {
+             active: false,
+             effect: "fade"
+           },
+           pagination: false,
+           start: 2,
+           play: {
+             auto: false
+           }
+         });
+ </script>
+  </body>
+</html>
