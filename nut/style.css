@@ -1,0 +1,155 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.nutrition {
+  width: 25vw;
+  height: 75vh;
+  background-color: white;
+  border: 5px black solid;
+  margin: 12vh;
+}
+
+.heading {
+  font-family: 'Open Sans', sans-serif;
+  text-align: center;
+  font-size: 23px;
+  text-decoration: underline;
+}
+
+.info {
+  text-align: left;
+  font-family: 'Open Sans', sans-serif;
+  padding-left: 15px;
+}
+
+a {
+  color: black;
+}
+
+.divider1 {
+  width: 23vw;
+  height: 1vh;
+  background-color: black;
+}
+
+.divider2 {
+  width: 23vw;
+  height: .25vh;
+  background-color: black;
+}
+
+.divider3 {
+  width: 23vw;
+  height: .25vh;
+  background-color: black;
+}
+
+.divider4 {
+  width: 23vw;
+  height: .25vh;
+  background-color: black;
+}
+
+li {
+  list-style-position: inside;
+}
+
+small {
+  font-style: italic;
+  font-size: 10px;
+}
+
+.container {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+}
+
+.aboutme {
+  text-decoration: underline;
+}
+
+.left {
+
+}
+
+.right {
+  float: right;
+  padding-right: 12px;
+  text-decoration: underline;
+}
+
+/*Iphone 6+*/
+@media only screen
+and (min-device-width : 414px)
+and (max-device-width : 736px)
+and (orientation : portrait) {
+  .nutrition {
+    width: 100vw;
+    height: 64vh;
+    margin: 20vh;
+  }
+
+  .heading {
+    font-family: 'Open Sans', sans-serif;
+    text-align: center;
+    font-size: 28px;
+    text-decoration: underline;
+  }
+
+  .extrainfo {
+    font-size: 25px;
+  }
+
+  .divider1 {
+    width: 52vw;
+    height: .5vh;
+    background-color: black;
+  }
+
+  .aboutme {
+    text-decoration: underline;
+    font-size: 22px;
+  }
+
+  .moreyt {
+    font-size: 24px;
+  }
+  .divider2 {
+    width: 52vw;
+    height: .25vh;
+    background-color: black;
+  }
+
+  .divider3 {
+    width: 52vw;
+    height: .25vh;
+    background-color: black;
+  }
+
+  .divider4 {
+    width: 53vw;
+    height: .25vh;
+    background-color: black;
+
+  }
+
+  .viewmore {
+    font-size: 20px;
+  }
+
+  .contactme {
+    font-size: 20px;
+  }
+
+  small {
+    font-style: italic;
+    font-size: 13px;
+  }
+
+
+}
