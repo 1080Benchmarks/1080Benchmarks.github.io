@@ -1,0 +1,498 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link href="https://fonts.googleapis.com/css?family=Lato:700" rel="stylesheet">
+    <title>Nav & Footer</title>
+    <style>
+    * {
+      padding: 0;
+      margin: 0;
+      box-sizing: border-box;
+      font-family: 'Lato', sans-serif;
+    }
+
+    .navbar {
+      width: 100%;
+      height: 10vh;
+      background-color: #f8f7f3;
+      box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.2);
+      display: flex;
+      position: fixed;
+
+    }
+
+    li {
+      display: inline;
+    }
+
+    img {
+      height: 90px;
+      width: auto;
+    }
+
+    .right {
+      width: 50vw;
+      display: flex;
+      justify-content: flex-end;
+
+      line-height: 10vh;
+
+    }
+
+    .left {
+      display: flex;
+      justify-content: flex-start;
+      width: 50vw;
+    }
+
+    a {
+      text-decoration: none;
+      font-size: 1.25vw;
+      color: black;
+      transition: font 0.3s ease;
+
+    }
+
+    a:hover {
+      font-size: 1.5vw;
+    }
+
+    .ul {
+      line-height: 10vh;
+      margin-left: 1vw;
+
+      display: flex;
+      justify-content: flex-end;
+    }
+
+    #one, #two, #three {
+      margin: .5vw;
+    }
+
+    #four, #five {
+      margin-left: .5vw;
+      margin-right: .5vw;
+    }
+
+    .ul2 {
+      margin-right: 1vw;
+    }
+
+    .page {
+      width: 100vw;
+      height: 100vh;
+
+    }
+
+    .footer {
+      width: 100%;
+      height: 25vh;
+      background-color: #f8f7f3;
+      position: absolute;
+      box-shadow: -1px -3px 3px rgba(0, 0, 0, 0.15);
+    }
+
+    .footerimg {
+      text-align: center;
+
+    }
+
+    .copyright {
+
+      margin-left: 40px;
+      margin-right: 40px;
+    }
+
+    #f1, #f2, #f3, #f4 {
+      margin-left: 10px;
+    }
+/*iPhone 6+*/
+    @media only screen
+and (min-device-width : 414px)
+and (max-device-width : 736px)
+and (orientation : portrait)
+{
+  * {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Lato', sans-serif;
+  }
+
+  .navbar {
+    width: 100%;
+    height: 10vh;
+    background-color: #f8f7f3;
+    box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.2);
+    display: flex;
+    position: fixed;
+
+  }
+
+  li {
+    display: inline;
+  }
+
+  img {
+    height: 130px;
+    width: auto;
+
+  }
+
+  .right {
+    width: 50vw;
+    display: flex;
+    justify-content: flex-end;
+
+    line-height: 10vh;
+
+  }
+
+  .left {
+    display: flex;
+    justify-content: flex-start;
+    width: 50vw;
+  }
+
+  a {
+    text-decoration: none;
+    font-size: 3vw;
+    color: black;
+    transition: font 0.3s ease;
+
+  }
+
+  a:hover {
+    font-size: 1.5vw;
+  }
+
+  .ul {
+    line-height: 10vh;
+    margin-left: 1vw;
+
+    display: flex;
+    justify-content: flex-end;
+  }
+
+  #one, #two, #three {
+    margin: .5vw;
+  }
+
+  #four, #five {
+    margin-left: .5vw;
+    margin-right: .5vw;
+  }
+
+  .ul2 {
+    margin-right: 1vw;
+  }
+
+  .page {
+    width: 100vw;
+    height: 100vh;
+    padding-top: 5vh;
+
+  }
+
+  .footer {
+    width: 100%;
+    height: 17vh;
+    background-color: #f8f7f3;
+    position: absolute;
+    box-shadow: -1px -3px 3px rgba(0, 0, 0, 0.15);
+  }
+
+  .footerimg {
+    text-align: center;
+    font-size: 25px;
+  }
+
+  .copyright {
+
+    margin-left: 40px;
+    margin-right: 40px;
+  }
+
+  #f1, #f2, #f3, #f4 {
+    margin-left: 10px;
+  }
+
+  small {
+    font-size: 20px;
+  }
+}
+/*iPhone 6*/
+@media only screen
+and (min-device-width : 375px)
+and (max-device-width : 667px)
+and (orientation : portrait) {
+  * {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Lato', sans-serif;
+  }
+
+  .navbar {
+    width: 100%;
+    height: 10vh;
+    background-color: #f8f7f3;
+    box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.2);
+    display: flex;
+    position: fixed;
+
+  }
+
+  li {
+    display: inline;
+  }
+
+  img {
+    height: 130px;
+    width: auto;
+
+  }
+
+  .right {
+    width: 50vw;
+    display: flex;
+    justify-content: flex-end;
+
+    line-height: 10vh;
+
+  }
+
+  .left {
+    display: flex;
+    justify-content: flex-start;
+    width: 50vw;
+  }
+
+  a {
+    text-decoration: none;
+    font-size: 3vw;
+    color: black;
+    transition: font 0.3s ease;
+
+  }
+
+  a:hover {
+    font-size: 1.5vw;
+  }
+
+  .ul {
+    line-height: 10vh;
+    margin-left: 1vw;
+
+    display: flex;
+    justify-content: flex-end;
+  }
+
+  #one, #two, #three {
+    margin: .5vw;
+  }
+
+  #four, #five {
+    margin-left: .5vw;
+    margin-right: .5vw;
+  }
+
+  .ul2 {
+    margin-right: 1vw;
+  }
+
+  .page {
+    width: 100vw;
+    height: 100vh;
+    padding-top: 5vh;
+    font-size: 25px;
+  }
+
+  .footer {
+    width: 100%;
+    height: 17vh;
+    background-color: #f8f7f3;
+    position: absolute;
+    box-shadow: -1px -3px 3px rgba(0, 0, 0, 0.15);
+  }
+
+  .footerimg {
+    text-align: center;
+    font-size: 25px;
+  }
+
+  .copyright {
+
+    margin-left: 40px;
+    margin-right: 40px;
+  }
+
+  #f1, #f2, #f3, #f4 {
+    margin-left: 10px;
+  }
+
+  small {
+    font-size: 20px;
+  }
+}
+/*iPad*/
+@media only screen
+and (min-device-width : 768px)
+and (max-device-width : 1024px)
+and (orientation : landscape) {
+  * {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Lato', sans-serif;
+  }
+
+  .navbar {
+    width: 100%;
+    height: 12vh;
+    background-color: #f8f7f3;
+    box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.2);
+    display: flex;
+    position: fixed;
+
+  }
+
+  li {
+    display: inline;
+  }
+
+  img {
+    height: 80px;
+    width: auto;
+
+  }
+
+  .right {
+    width: 50vw;
+    display: flex;
+    justify-content: flex-end;
+
+    line-height: 10vh;
+
+  }
+
+  .left {
+    display: flex;
+    justify-content: flex-start;
+    width: 50vw;
+  }
+
+  a {
+    text-decoration: none;
+    font-size: 2vw;
+    color: black;
+    transition: font 0.3s ease;
+
+  }
+
+  a:hover {
+    font-size: 1.5vw;
+  }
+
+  .ul {
+    line-height: 10vh;
+    margin-left: 1vw;
+
+    display: flex;
+    justify-content: flex-end;
+  }
+
+  #one, #two, #three {
+    margin: .5vw;
+  }
+
+  #four, #five {
+    margin-left: .5vw;
+    margin-right: .5vw;
+  }
+
+  .ul2 {
+    margin-right: 1vw;
+  }
+
+  .page {
+    width: 100vw;
+    height: 100vh;
+    padding-top: .2vh;
+    font-size: 20px;
+  }
+
+  .footer {
+    width: 100%;
+    height: 31vh;
+    background-color: #f8f7f3;
+    position: absolute;
+    box-shadow: -1px -3px 3px rgba(0, 0, 0, 0.15);
+  }
+
+  .footerimg {
+    text-align: center;
+    font-size: 25px;
+  }
+
+  .copyright {
+
+    margin-left: 40px;
+    margin-right: 40px;
+  }
+
+  #f1, #f2, #f3, #f4 {
+    margin-left: 10px;
+  }
+
+  small {
+    font-size: 15px;
+  }
+}
+
+    </style>
+  </head>
+  <body>
+    <div class="navbar">
+      <div class="left">
+        <a href=""><img src="smalllogo.png" alt=""></a>
+        <div class="ul">
+        <ul>
+          <li><a href="" id="one">About </a></li>
+          <li><a href="" id="two">Portfolio </a></li>
+          <li><a href="" id="three">Contact </a></li>
+        </ul>
+        </div>
+      </div>
+      <div class="right">
+        <div class="ul2">
+        <ul>
+          <li><a href="" id="four">Google Form</a></li>
+          <li><a href=""><img src="search.png" alt="" style="height: 32px; width: auto;" id="five"></a></li>
+
+        </ul>
+        </div>
+      </div>
+    </div>
+    <div class="page">
+
+      <h1 style="padding-top: 110px;">Nav & Footer</h1>
+      <p>Made by Jude Wallach. Free to use.</p>
+      <p>Mobile first - and responsive.</p>
+    </div>
+    <div class="footer">
+      <div class="footerimg">
+      <img src="smalllogo.png" alt="" style="height: 135px; width: auto; margin-top: 20px;">
+      <p>GTX 1080 Benchmarks</p>
+      </div>
+      <br>
+    <div class="copyright">
+      <small>&copy; 2017 1080. All Rights Reserved</small>
+      <small style="float: right; " id="f1">Back to Top</small>
+      <small style="float: right;" id="f2">Contact</small>
+      <small style="float: right;" id="f3">Portfolio</small>
+      <small style="float: right;" id="f4">About</small>
+    </div>
+
+  </body>
+</html>
