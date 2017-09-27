@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link href="https://fonts.googleapis.com/css?family=Lato:700" rel="stylesheet">
+    <title>Playing Around - 1</title>
+    <style>
+    * {
+      padding: 0;
+      margin: 0;
+      box-sizing: border-box;
+      font-family: 'Lato', sans-serif;
+    }
+
+    .navbar {
+      width: 100vw;
+      height: 10vh;
+      background-color: #f8f7f3;
+      box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.2);
+      display: flex;
+
+    }
+
+    li {
+      display: inline;
+    }
+
+    img {
+      height: 90px;
+      width: auto;
+    }
+
+    .right {
+      width: 50vw;
+      display: flex;
+      justify-content: flex-end;
+
+      line-height: 10vh;
+
+    }
+
+    .left {
+      display: flex;
+      justify-content: flex-start;
+      width: 50vw;
+    }
+
+    a {
+      text-decoration: none;
+      font-size: 1.25vw;
+      color: black;
+
+
+    }
+
+    .ul {
+      line-height: 10vh;
+      margin-left: 1vw;
+
+      display: flex;
+      justify-content: flex-end;
+    }
+
+    #one, #two, #three {
+      margin: .5vw;
+    }
+
+    #four, #five {
+      margin-left: .5vw;
+      margin-right: .5vw;
+    }
+
+    .ul2 {
+      margin-right: 1vw;
+    }
+
+    </style>
+  </head>
+  <body>
+    <div class="navbar">
+      <div class="left">
+        <a href=""><img src="smalllogo.png" alt=""></a>
+        <div class="ul">
+        <ul>
+          <li><a href="" id="one">About </a></li>
+          <li><a href="" id="two">Portfolio </a></li>
+          <li><a href="" id="three">Contact </a></li>
+        </ul>
+        </div>
+      </div>
+      <div class="right">
+        <div class="ul2">
+        <ul>
+          <li><a href="" id="four">Google Form</a></li>
+          <li><a href=""><img src="search.png" alt="" style="height: 32px; width: auto;" id="five"></a></li>
+
+        </ul>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
