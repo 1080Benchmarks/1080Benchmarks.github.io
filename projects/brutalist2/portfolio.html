@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>1080 Benchmarks: Portfolio</title>
+  </head>
+  <style>
+  * {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+  }
+
+  /*General Styling Start*/
+
+  @font-face {
+    font-family: 'Menlo Regular';
+    font-style: normal;
+    font-weight: normal;
+    src: local('Menlo Regular'), url('Menlo-Regular.woff') format('woff');
+  }
+
+  img {
+    margin: 3vw;
+
+  }
+
+  /*General Styling End*/
+
+  .heading {
+    text-align: center;
+
+    height: 300px;
+  }
+
+
+
+  figcaption {
+    text-align: center;
+  }
+
+  figure {
+    display: inline-block;
+
+  }
+
+  #intro > img:hover {
+    border: 2px #201fff solid;
+  }
+
+  #social > img:hover {
+    border: 2px #201fff solid;
+  }
+
+  #sites > img {
+    /*transition: border .25s ease-in-out;*/
+    border: none;
+  }
+
+  #sites > img:hover {
+    border: 2px #201fff solid;
+
+
+  }
+
+
+  #misc > img:hover {
+    border: 2px #201fff solid;
+  }
+
+  .portfolio {
+  text-align: center;
+  }
+
+  .text {
+    text-align: center;
+    font-family: 'Menlo Regular';
+  }
+
+  .channel {
+    font-family: 'Menlo Regular';
+    text-align: center;
+
+  }
+
+  a {
+    color: blue;
+    text-decoration: none;
+  }
+
+  a:hover {
+    background-color: yellow;
+    color: black;
+  }
+
+  ::selection {
+   color: black;
+   background: yellow;
+ }
+
+ .heading > a {
+   background: none;
+ }
+
+ #intro, #social, #sites, #misc {
+   background: none;
+ }
+
+
+  </style>
+  <body>
+    <!--1080 Logo Start-->
+    <div class="heading">
+      <a href="index.html"><img src="heading.png" alt=""></a>
+    </div>
+    <!--1080 Logo End-->
+    <!--Portfolio-->
+    <div class="text">
+      <p>Below are all the fields of design I work in.<br> Click one of the categories below to view examples from that category.</p>
+    </div>
+    <div class="portfolio">
+      <figure>
+        <a href="intros.html" id="intro" ><img src="intros.png" alt=""></a>
+        <figcaption></figcaption>
+      </figure>
+      <figure>
+        <a href="social.html" id="social"><img src="social.png" alt=""></a>
+        <figcaption></figcaption>
+      </figure>
+      <figure>
+        <a href="sites.html" id="sites"><img src="sites.png" alt=""></a>
+        <figcaption></figcaption>
+      </figure>
+      <figure>
+        <a href="misc.html" id="misc"><img src="misc.png" alt=""></a>
+        <figcaption></figcaption>
+      </figure>
+    </div>
+    <div class="channel">
+      <h2>Just in case you want to learn more about my <a href="channel.html">channel</a></h2>
+    </div>
+  </body>
+</html>
