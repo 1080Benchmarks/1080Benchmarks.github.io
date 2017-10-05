@@ -2,6 +2,7 @@
 <html>
   <head>
     <link href="https://fonts.googleapis.com/css?family=Nunito+Sans:400i" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
     <meta charset="utf-8">
     <title>Supreme - 1080 Benchmarks</title>
     <style>
@@ -34,6 +35,7 @@
         background-color: #e5201a;
         font-size: 2rem;
         position: fixed;
+        z-index: 9999;
       }
 
       li {
@@ -53,6 +55,57 @@
         font-size: 5rem;
       }
 
+      .about {
+        width: 100vw;
+        height: 100vh;
+
+      }
+
+      .about > h2 {
+        text-align: center;
+        font-family: 'Nunito Sans', sans-serif;
+        font-size: 5rem;
+      }
+
+      p {
+        font-family: 'Open Sans', sans-serif;
+      }
+
+      .about > p {
+        font-size: 2rem;
+        padding: 3rem;
+      }
+
+
+
+      .three {
+        width: 100vw;
+        height: 100vh;
+      }
+
+      .embed > p {
+        padding: 3rem;
+        font-size: 2rem;
+        margin-top: -5rem;
+        font-family: 'Nunito Sans', sans-serif;
+      }
+
+
+      #subscribe {
+        color: white;
+        background-color: #e5201a;
+        padding: 3px;
+        font-size: 2rem;
+        transition: font 1s ease-in-out;
+      }
+
+      #subscribe:hover {
+        color: white;
+        background-color: #e5201a;
+        padding: 3px;
+        font-size: 2.5rem;
+      }
+
 
     </style>
   </head>
@@ -60,7 +113,7 @@
     <div class="navigation">
       <ul>
         <li><a href="">1080</a></li>
-        <li><a href="">About</a></li>
+        <li><a href="#about">About</a></li>
         <li><a href="">Portfolio</a></li>
         <li><a href="">Contact</a></li>
       </ul>
@@ -69,6 +122,24 @@
       <div class="heading">
 
       </div>
+
+    </div>
+
+    <div class="about">
+      <h2>About Me</h2>
+      <p>I run a YouTube channel on which I benchmark the performance of computer hardware. I've been uploading content to YouTube for upwards of one year, and have amassed over 90 thousand views in that time period. While I'm not managing my channel I design graphics for others and myself. I design product advertisements, avatars and banners for YouTube, websites, company logos, and more. I am acquainted with a wide variety of softwares such as: Adobe Photoshop, Adobe After Effects, Adobe Premiere Pro, Adobe Lightroom and, Unreal Engine 4. I am also learning CSS. <br><br>   Channel trailer below</p>
+      <div class="embed">
+      <iframe src="https://www.youtube.com/embed/N6L1YHTYKG0" width="960px" height="540px" style="padding: 3rem;"  frameborder='0' allowfullscreen></iframe>
+      <p>Thanks for watching <br> <a href="" id="subscribe">Subscribe</a></p>
+      </div>
+
+
+
+      <div class="three">
+
+
+
+          </div>
     </div>
   </body>
 </html>
