@@ -1,145 +1,79 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <link href="https://fonts.googleapis.com/css?family=Nunito+Sans:400i" rel="stylesheet">
+
+<head>
+  <link href="https://fonts.googleapis.com/css?family=Nunito+Sans:400i" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
-    <meta charset="utf-8">
-    <title>Supreme - 1080 Benchmarks</title>
-    <style>
-      * {
-        padding: 0;
-        margin: 0;
-        box-sizing: border-box;
-      }
+  <link rel="stylesheet" href="style.css">
+  <meta charset="utf-8">
+  <title>Supreme - 1080 Benchmarks</title>
+  <style>
 
-      .headingcontainer {
-        width: 100vw;
-        height: 100vh;
-        display: flex;
-        justify-content: center;
-      }
+  </style>
+</head>
 
-      .heading {
-        background-image: url('1080logo.png');
-        width: 631px;
-        height: 220px;
-        position: relative;
-        top: 50%;
-        transform: translateY(-50%);
-      }
-
-      .navigation {
-        font-family: 'Nunito Sans', sans-serif;
-        width: 100vw;
-        height: 7vh;
-        background-color: #e5201a;
-        font-size: 2rem;
-        position: fixed;
-        z-index: 9999;
-      }
-
-      li {
-        display: inline;
-        line-height: 7vh;
-        margin-left: 1rem;
-      }
-
-      a {
-        color: white;
-        text-decoration: none;
-      /*  transition: font 1.2s ease;*/
-        font-size: 2rem;
-      }
-
-      a:hover {
-        /*font-size: 5rem;*/
-      }
-
-      .about {
-        width: 100vw;
-        height: 100vh;
-
-      }
-
-      .about > h2 {
-        text-align: center;
-        font-family: 'Nunito Sans', sans-serif;
-        font-size: 5rem;
-      }
-
-      p {
-        font-family: 'Open Sans', sans-serif;
-      }
-
-      .about > p {
-        font-size: 2rem;
-        padding: 3rem;
-      }
-
-
-
-      .three {
-        width: 100vw;
-        height: 100vh;
-      }
-
-      .embed > p {
-        padding: 3rem;
-        font-size: 2rem;
-        margin-top: -5rem;
-        font-family: 'Nunito Sans', sans-serif;
-      }
-
-
-      #subscribe {
-        color: white;
-        background-color: #e5201a;
-        padding: 3px;
-        font-size: 2rem;
-        transition: font 1s ease-in-out;
-      }
-
-      #subscribe:hover {
-        color: white;
-        background-color: #e5201a;
-        padding: 3px;
-        font-size: 2.5rem;
-      }
-
-
-    </style>
-  </head>
-  <body>
-    <div class="navigation">
-      <ul>
-        <li><a href="">1080</a></li>
-        <li><a href="#about">About</a></li>
-        <li><a href="">Portfolio</a></li>
-        <li><a href="">Contact</a></li>
-      </ul>
-    </div>
-    <div class="headingcontainer">
-      <div class="heading">
-
-      </div>
+<body>
+  <!--Navigation-->
+  <div class="navigation">
+    <ul>
+      <li><a href="index.html">1080</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="">Portfolio</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </div>
+  <div class="headingcontainer">
+    <div class="heading">
 
     </div>
 
-    <div class="about">
-      <h2>About Me</h2>
-      <p>I run a YouTube channel on which I benchmark the performance of computer hardware. I've been uploading content to YouTube for upwards of one year, and have amassed over 90 thousand views in that time period. While I'm not managing my channel I design graphics for others and myself. I design product advertisements, avatars and banners for YouTube, websites, company logos, and more. I am acquainted with a wide variety of softwares such as: Adobe Photoshop, Adobe After Effects, Adobe Premiere Pro, Adobe Lightroom and, Unreal Engine 4. I am also learning CSS. <br><br>   Channel trailer below</p>
-      <div class="embed">
-      <iframe src="https://www.youtube.com/embed/N6L1YHTYKG0" width="960px" height="540px" style="padding: 3rem;"  frameborder='0' allowfullscreen></iframe>
-      <p>Thanks for watching <br> <a href="" id="subscribe">Subscribe</a></p>
-      </div>
-
-
-
-      <div class="three">
-
-
-
-          </div>
+  </div>
+<!--About-->
+  <div class="about" id="about">
+    <h2>About Me</h2>
+    <p id="video">I run a YouTube channel on which I benchmark the performance of computer hardware. I've been uploading content to YouTube for upwards of one year, and have amassed over 90 thousand views in that time period. While I'm not managing my channel I design
+      graphics for others and myself. I design product advertisements, avatars and banners for YouTube, websites, company logos, and more. I am acquainted with a wide variety of softwares such as: Adobe Photoshop, Adobe After Effects, Adobe Premiere Pro,
+      Adobe Lightroom and, Unreal Engine 4. I am also learning CSS. <br><br> Channel trailer below</p>
+    <div class="embed">
+      <iframe src="https://www.youtube.com/embed/N6L1YHTYKG0" width="960px" height="540px" style="padding: 3rem;" frameborder='0' allowfullscreen></iframe>
+      <p>Thanks for watching <br> <button><a href="https://goo.gl/25oVXn" id="subscribe">Subscribe</a></button></p>
     </div>
-  </body>
+
+  </div>
+  <!--Contact-->
+  <div class="pagethree" id="contact">
+    <h2>Contact Me</h2>
+    <p id="below">Below are the best ways to contact me</p><br>
+    <ul id="contactme">
+      <li>Main Email
+        <p><button><a href="mailto:newbthroughs@gmail.com" id="contactlink">newbthroughs@gmail.com</a></button></p>
+      </li>
+      <li>Secondary Email
+        <p><button><a href="mailto:kuebikovideos@gmail.com" id="contactlink">kuebikovideos@gmail.com</a></button></p>
+      </li>
+      <li>YouTube
+        <p><button><a href="https://www.youtube.com/channel/UCNETYZQrE6PEAjB0Pax6c3Q/about" id="contactlink">1080 Benchmarks</a></button></p>
+      </li>
+      <li>Steam Account
+        <p><button><a href="http://steamcommunity.com/id/GTX980Benchmarks/" id="contactlink">FB||1080</a></button></p>
+      </li>
+    </ul>
+  </div>
+  <!--Footer You can get it from 1080benchmarks.github.io/webassets/navfooter.html-->
+  <div class="footer">
+    <div class="footerimg">
+      <img src="1080logo.png" alt="" style="height: 40px; width: auto; margin-top: 20px;">
+      <p style="color: white;">GTX 1080 Benchmarks</p>
+    </div>
+    <br>
+    <div class="copyright">
+      <small>&copy; 2017 1080. Designed by Jude Wallach</small>
+      <small style="float: right; " id="f1"><a href="" id="footerlink">Back to Top</a></small>
+      <small style="float: right;" id="f2"><a href="" id="footerlink">Contact</a></small>
+      <small style="float: right;" id="f3"><a href="" id="footerlink">Portfolio</a></small>
+      <small style="float: right;" id="f4"><a href="" id="footerlink">About</a></small>
+    </div>
+  </div>
+</body>
+
 </html>

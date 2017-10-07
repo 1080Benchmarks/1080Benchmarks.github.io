@@ -1,0 +1,148 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.headingcontainer {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+}
+
+.heading {
+  background-image: url('1080logo.png');
+  width: 631px;
+  height: 220px;
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.navigation {
+  font-family: 'Nunito Sans', sans-serif;
+  width: 100vw;
+  height: 7vh;
+  background-color: #e5201a;
+  font-size: 2rem;
+  position: fixed;
+  z-index: 9999;
+}
+
+li {
+  display: inline;
+  line-height: 7vh;
+  margin-left: 1rem;
+}
+
+a {
+  color: white;
+  text-decoration: none;
+  /*  transition: font 1.2s ease;*/
+  font-size: 2rem;
+}
+
+a:hover {
+  /*font-size: 5rem;*/
+}
+
+.about {
+  width: 100vw;
+  height: 100vh;
+}
+
+h2 {
+  text-align: center;
+  font-family: 'Nunito Sans', sans-serif;
+  font-size: 5rem;
+}
+
+p {
+  font-family: 'Open Sans', sans-serif;
+}
+
+#video {
+  font-size: 1.5rem;
+  margin: 2.2vw;
+}
+
+.embed>p {
+  padding: 3rem;
+  font-size: 2rem;
+  margin-top: -5rem;
+  font-family: 'Nunito Sans', sans-serif;
+}
+
+#subscribe {
+  font-size: 1.5rem;
+  transition: font 1s ease-in-out;
+}
+
+button {
+  font-family: 'Nunito Sans', sans-serif;
+  background-color: #e5201a;
+  padding: 10px;
+  border: none;
+  transition: all .5s ease-in-out;
+}
+
+button:hover {
+  padding: 20px;
+}
+
+.contact {
+  width: 100vw;
+  height: 100vh;
+}
+
+#below {
+  text-align: center;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 1.2rem;
+}
+
+#contactlink {
+  color: white;
+  font-family: 'Nunito Sans', sans-serif;
+  transition: font 1s ease-in-out;
+}
+
+#contactme {
+  text-align: center;
+}
+
+li {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 1.5rem;
+}
+
+small {
+  color: white;
+  font-family: arial, sans-serif;
+  font-size: 1rem;
+}
+
+.footer {
+  width: 100%;
+  height: 15vh;
+  background-color: #e5201a;
+  position: absolute;
+}
+
+.footerimg {
+  text-align: center;
+}
+
+.copyright {
+  margin-left: 40px;
+  margin-right: 40px;
+}
+
+#f1, #f2, #f3, #f4 {
+  margin-left: 10px;
+}
+
+#footerlink {
+  font-size: 1rem;
+}
