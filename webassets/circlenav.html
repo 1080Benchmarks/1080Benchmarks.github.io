@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link href="https://fonts.googleapis.com/css?family=Eczar:700" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Work+Sans" rel="stylesheet">
+    <meta charset="utf-8">
+    <title>Circle Nav</title>
+    <style>
+      * {
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+      }
+
+      .navigation {
+        width: 3.5vw;
+        height: 7vh;
+        background-color: #fcc101;
+        margin: 1vw;
+        border-radius: 4rem;
+        font-family: 'Work Sans', sans-serif;
+        transition: all 1s ease-in;
+        background-image: url('menu.svg');
+        background-size: 30px;
+        background-repeat: no-repeat;
+        background-position: center center;
+        position: fixed;
+      }
+
+
+
+      .navigation .ul  a {
+        visibility: hidden;
+        opacity: 0;
+        transition: all 1s ease-in-out;
+
+      }
+
+      .navigation .ul   {
+        visibility: hidden;
+
+
+      }
+
+
+      .navigation:hover {
+        width: 25vw;
+        border-radius: 3rem;
+        background-image: none;
+        background-size: 30px;
+        background-repeat: no-repeat;
+        background-position: center center;
+      }
+
+      .navigation:hover ul a {
+        opacity: 1;
+        visibility: visible;
+      }
+
+
+      li {
+        display: inline;
+      }
+
+      a {
+        color: white;
+        text-decoration: none;
+        font-size: 1.25rem;
+      }
+
+      .ul {
+        text-align: left;
+        line-height: 7vh;
+        padding-left: 2vw;
+        word-spacing: 1vw;
+      }
+
+      .hero {
+        width: 100vw;
+        height: 100vh;
+        background-image: url('backing.jpg');
+        background-position: center center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-attachment: fixed;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="navigation">
+      <div class="ul">
+      <ul>
+        <li><a href="">Home</a></li>
+        <li><a href="">About</a></li>
+        <li><a href="">Portfolio</a></li>
+        <li><a href="">Contact</a></li>
+      </ul>
+      </div>
+    </div>
+
+    <div class="hero">
+
+    </div>
+  </body>
+</html>
