@@ -20,6 +20,8 @@
         border-radius: 4rem;
         font-family: 'Work Sans', sans-serif;
         transition: all 1s ease-in;
+
+        transition-duration: .5s;
         background-image: url('menu.svg');
         background-size: 30px;
         background-repeat: no-repeat;
@@ -32,13 +34,15 @@
       .navigation .ul  a {
         visibility: hidden;
         opacity: 0;
-        transition: all 1s ease-in-out;
-
+        transition: all .5s ease-in-out;
+        transition-delay: 0s;
+        transition-duration: .3s;
       }
 
       .navigation .ul   {
         visibility: hidden;
-
+        position: absolute;
+        width: 400px;
 
       }
 
@@ -83,6 +87,23 @@
         background-repeat: no-repeat;
         background-size: cover;
         background-attachment: fixed;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+
+      h1 {
+
+        display: flex;
+        justify-content: center;
+        font-family: 'Eczar', times, serif;
+        font-size: 10rem;
+        margin-bottom: 0;
+        padding-bottom: 0;
+
+        flex: 1;
+        width: 100vw;
+
       }
     </style>
   </head>
@@ -99,6 +120,8 @@
     </div>
 
     <div class="hero">
+      <h1>1080 </h1>
+      
 
     </div>
   </body>
