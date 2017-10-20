@@ -112,11 +112,18 @@
 
       }
 
+      .about {
+        padding-left:  5.5rem;
+        margin-bottom: 0px;
+
+        padding-bottom: 0;
+      }
+
       h2 {
         font-family: 'Eczar', times, serif;
         text-align: center;
         font-size: 4.5rem;
-        padding: 5rem;
+        margin-top: 10vh;
         margin-bottom: 0px;
 
         padding-bottom: 0;
@@ -126,7 +133,7 @@
         font-family: 'Eczar', times, serif;
 
         font-size: 2rem;
-        padding-left:  4.5rem;
+
         margin-bottom: 0px;
 
         padding-bottom: 0;
@@ -135,18 +142,92 @@
       p {
           font-family: 'Work Sans', sans-serif;
           font-size: 1.5rem;
-          padding-left: 4.5rem;
+
           margin-top: 0px;
       }
 
       .yt {
-        border: 1px red solid;
+
       }
 
       .gd {
         margin-top: 5vh;
       }
 
+      h4 {
+        font-family: 'Eczar', times, serif;
+
+        font-size: 1.5rem;
+
+        margin-bottom: 0px;
+
+        padding-bottom: 0;
+      }
+
+      .skills {
+          margin-top: 5vh;
+
+          height: 20vh;
+      }
+
+      .bar1 {
+        height: 2vh;
+        width: 20vw;
+        background-color: #ececec;
+        float: left;
+        margin-left: 1.5rem;
+        margin-bottom: 0px;
+        border-radius: 2rem;
+        padding-bottom: 0;
+      }
+
+      .bar1 > .innerbar1 {
+          background-color: #fcc101;
+          width: 100%;
+          height: 2vh;
+          border-radius: 2rem;
+
+      }
+
+      .bar2 {
+        height: 2vh;
+        width: 20vw;
+        background-color: #ececec;
+        float: left;
+        margin-left: 1.5rem;
+        margin-bottom: 0px;
+        border-radius: 2rem;
+        padding-bottom: 0;
+      }
+
+      .bar2 > .innerbar2 {
+          background-color: #fcc101;
+          width: 90%;
+          height: 2vh;
+
+          border-bottom-left-radius: 2rem;
+          border-top-left-radius: 2rem;
+      }
+
+      #bartext {
+        font-family: 'Work Sans', sans-serif;
+        font-size: 1.2rem;
+        line-height: 2vh;
+        margin-top: 0px;
+        padding-left: 1rem;
+      }
+
+      pre {
+        font-family: 'Work Sans', sans-serif;
+        font-size: 1.5rem;
+
+        margin-top: 0px;
+      }
+
+      .prog {
+
+        height: 10vh;
+      }
 
     </style>
   </head>
@@ -168,8 +249,9 @@
 
     </div>
     <div class="pagetwo">
+      <h2>About Me</h2>
       <div class="about">
-        <h2>About Me</h2>
+
         <div class="yt">
         <h3>YouTube Channel</h3>
         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Hic cupiditate eos, minima earum nesciunt labore cum odit. Officia debitis est, et quas reprehenderit nesciunt dolore. Tempora omnis natus, ab vitae.</p>
@@ -178,6 +260,26 @@
         <div class="gd">
         <h3>Design</h3>
         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Hic cupiditate eos, minima earum nesciunt labore cum odit. Officia debitis est, et quas reprehenderit nesciunt dolore. Tempora omnis natus, ab vitae.</p>
+<br>
+        <div class="skills">
+          <h3>Skills</h4>
+            <h4>Programming</h4>
+            <div class="prog">
+            <p style="float: left; font-size: 1.2rem;">HTML</p>
+            <div class="bar1">
+              <div class="innerbar1">
+                <p id="bartext">100%</p>
+              </div>
+            </div>
+            <br><br>
+            <p style="float: left; font-size: 1.2rem;">CSS</p>
+            <div class="bar2">
+              <div class="innerbar2">
+                <p id="bartext">90%</p>
+              </div>
+            </div>
+            </div>
+        </div>
         </div>
       </div>
     </div>
