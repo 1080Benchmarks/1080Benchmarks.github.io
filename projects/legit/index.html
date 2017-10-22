@@ -93,7 +93,7 @@
     }
 
     h2 {
-      font-family: 'Open Sans', sans-serif;
+      font-family: 'Montserrat', sans-serif;
       font-size: 2.5rem;
       margin-top: 3rem;
     }
@@ -139,6 +139,8 @@
 
     .youtubechannel {
       text-align: center;
+      background-image: url('pattern.png');
+      padding-bottom: 2rem;
     }
 
     #logo {
@@ -184,28 +186,154 @@
 
     .webdesign {
       width: 100vw;
-      height: 100vh;
+      height: 110vh;
       background-color: #f7f7f7;
-      margin-top: 7vh;
+      padding-top: 7vh;
+
 
     }
 
     #featured {
-      
       margin: 1rem;
       justify-content: center;
-
+      transition: all 1s ease;
+      width: 743px;
+      height: 300px;
 
     }
 
+    .featured1 {
+      position: relative;
+    }
+
+
+
+    #featured:hover {
+      filter: grayscale(100%;);
+
+    }
+
+    .grayscale {
+      transition: all 1s ease;
+    }
+
+    .grayscale:hover {
+      filter: grayscale(100%);
+
+    }
+
+
+
     .container {
       width: 100vw;
-      height: 71vh;
+      height: 1vh;
 
       display: flex;
       justify-content: center;
       text-align: center;
     }
+
+    .contact {
+      width: 100vw;
+      height: 100vh;
+      background-image: url('pattern.png');
+      margin-top: 7vh;
+
+
+    }
+
+    .contact > h2 {
+      text-align: center;
+      font-size: 3.5rem;
+    }
+
+    body {
+      background-color: #f7f7f7;
+    }
+
+    form {
+      text-align: center;
+    }
+
+    #label1 {
+      font-family: 'Open Sans', sans-serif;
+      font-size: 2.25rem;
+    }
+
+    #label2 {
+      font-family: 'Open Sans', sans-serif;
+      font-size: 2.25rem;
+
+
+    }
+
+    #input1 {
+      margin-top: 0rem;
+    }
+
+    #input2 {
+      margin-top: 2rem;
+    }
+
+    .input {
+      width: 500px;
+      height: 50px;
+      border: #4bcc4f solid 3px;
+      border-radius: 5rem;
+      font-size: 2rem;
+      text-align: center;
+    }
+
+    .field2 {
+      margin-top: 3rem;
+    }
+
+    textarea {
+      border: #4bcc4f solid 3px;
+      border-radius: .5rem;
+      font-size: 1.5rem;
+    }
+
+    .field3 {
+      margin-top: 3rem;
+    }
+
+    #submit {
+      border: #4bcc4f solid 3px;
+      border-radius: .5rem;
+      background: white;
+      padding: .5rem;
+      font-size: 2rem;
+      background-color: transparent;
+      transition: all 1s ease-in-out;
+      margin-top: 3rem;
+    }
+
+    #submit:hover {
+      background-color: #4bcc4f;
+      color: white;
+    }
+
+    .footer {
+      width: 100vw;
+      height: 10vh;
+      border-top: #4bcc4f 2px solid;
+
+    }
+
+    #footerlink {
+      color: #4bcc4f;
+      text-decoration: none;
+      font-family: 'Open Sans', sans-serif;
+      margin: 1rem;
+    }
+
+    small {
+      font-family: 'Open Sans', sans-serif;
+      margin: 1rem;
+      line-height: 10vh;
+    }
+
 
 
   </style>
@@ -225,14 +353,14 @@
     <div class="short">
       <div class="left">
         <div class="text">
-          <h2>YouTube Channel</h2></div>
+          <h2 style="font-family: 'Open Sans', sans-serif;">YouTube Channel</h2></div>
         <div class="image"><a href="#youtubestuff"><img src="channelpage.png" alt="" id="channelpage"></a></div>
       </div>
 
       <div class="right">
         <div class="text">
-          <h2>Web Design</h2></div>
-        <div class="image"><a href=""><img src="code.png" alt="" id="channelpage"></a></div>
+          <h2 style="font-family: 'Open Sans', sans-serif;">Web Design</h2></div>
+        <div class="image"><a href="#webwork"><img src="code.png" alt="" id="channelpage"></a></div>
       </div>
 
     </div>
@@ -243,22 +371,55 @@
         <h2 style="text-align: center; margin-bottom: 2rem; ">Channel Trailer</h2><br>
 
         <div class="video">
-          <iframe width="1120" height="630" src="https://www.youtube.com/embed/N6L1YHTYKG0" frameborder="0" allowfullscreen></iframe>
+          <iframe width="560" height="315" src="https://www.youtube.com/embed/N6L1YHTYKG0" frameborder="0" allowfullscreen></iframe>
 
         </div>
       </div>
 
-      <div class="webdesign">
+      <div class="webdesign" id="webwork">
         <h2 style="text-align: center; font-size: 3.5rem; padding-top: 3rem;">Web Design</h2>
         <p id="channeldesc">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eaque labore esse ab delectus ad obcaecati ut asperiores nesciunt doloremque repudiandae impedit dolorem earum architecto sunt modi, sed, hic aliquam in.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellendus rerum aliquid delectus ex ad, voluptate odit, ducimus eveniet sint officiis, nemo saepe voluptatum nisi quibusdam praesentium officia nostrum consequuntur maxime.</p>
         <div class="container">
           <div class="featured">
-            <img src="test.png" alt="" id="featured">
-            <img src="test.png" alt="" id="featured">
-            <img src="test.png" alt="" id="featured">
-            <img src="test.png" alt="" id="featured">
+
+              <img src="work.jpg" alt="" id="featured" class="grayscale">
+
+            <img src="work.jpg" alt="" id="featured" class="grayscale">
+            <img src="work.jpg" alt="" id="featured" class="grayscale">
+            <img src="work.jpg" alt="" id="featured" class="grayscale">
           </div>
           </div>
+      </div>
+      <div class="contact">
+        <h2>Contact Me</h2>
+        <p id="channeldesc">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Optio modi consectetur perferendis in facilis animi possimus similique! Nisi beatae, officiis quod, perspiciatis nam architecto vitae impedit accusantium, eum accusamus at.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Id neque, accusantium ad animi hic expedita ducimus assumenda quidem delectus iusto magni rem blanditiis ut est minima repudiandae eos harum eveniet.</p>
+        <form action="/nowhere" method="post">
+          <div class="field1">
+          <label for="name" id="label1">First & Last Name</label>
+          <br>
+          <input type="text" name="name" id="input1" class="input" required>
+          </div>
+
+          <div class="field2">
+          <label for="name" id="label1">Email Address</label>
+          <br>
+          <input type="email" name="name" id="input1" class="input" required>
+          </div>
+
+          <div class="field3">
+            <label for="name" id="label1">Message</label>
+            <br>
+            <textarea name="name" rows="5" cols="50" required></textarea>
+          </div>
+
+          <input type="submit" id="submit">
+
+        </form>
+      </div>
+      <div class="footer">
+        <a href="" id="footerlink">Back to Top</a>
+        <small>Copyright (c) 2017 Jude Wallach All Rights Reserved.</small>
+
       </div>
   </div>
 </body>
