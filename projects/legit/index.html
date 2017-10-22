@@ -1,60 +1,266 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <link href="https://fonts.googleapis.com/css?family=Montserrat:500i" rel="stylesheet">
-    <meta charset="utf-8">
-    <title>Jude Wallach</title>
-    <style>
-      * {
-        margin: 0;
-        padding: 0;
-        box-sizing: border-box;
-      }
 
-      .headertext {
-        font-family: 'Montserrat', sans-serif;
-        color: white;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        flex: 1;
-        font-size: 4rem;
-      }
+<head>
+  <link href="https://fonts.googleapis.com/css?family=Montserrat:500i" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600" rel="stylesheet">
+  <meta charset="utf-8">
+  <title>Jude Wallach</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
 
-      .header {
-        background-image: url('1080background.png');
-        background-position: center center;
-        background-repeat: no-repeat;
-        background-size: cover;
-        background-attachment: fixed;
-        width: 100vw;
-        height: 100vh;
-        display: flex;
-        justify-content: center;
-      }
+    .headertext {
+      font-family: 'Montserrat', sans-serif;
+      color: white;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex: 1;
+      font-size: 4rem;
+      flex-flow: column;
+    }
 
-      h1 {
-        margin-bottom: 0;
-        padding-bottom: 0;
-        display: inline;
-      }
+    .header {
+      background-image: url('1080background.png');
+      background-position: center center;
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-attachment: fixed;
+      width: 100vw;
+      height: 100vh;
+      display: flex;
+      justify-content: center;
+    }
 
-      p {
-        margin-top: 0;
-        padding-top: 0;
+    h1 {
+      margin-bottom: 0;
+      padding-bottom: 0;
+      display: inline;
+    }
 
-        font-size: 2rem;
+    p {
+      margin-top: 0;
+      padding-top: 0;
+      font-size: 2rem;
+    }
+
+    button {
+      padding: .7rem;
+      border: #4bcc4f 3px solid;
+      border-radius: .4rem;
+      background: transparent;
+      font-family: 'Open Sans', sans-serif;
+      font-size: 1rem;
+      font-weight: 400;
+      margin-top: 1rem;
+      box-shadow: 1px 2px 3px rgba(0, 0, 0, 0.25);
+      transition: all .6s ease-in-out;
+    }
+
+    button:hover {
+      background: #4bcc4f;
+    }
 
 
-      }
-    </style>
-  </head>
-  <body>
-    <div class="header">
-      <div class="headertext">
-        <h1>Jude Wallach</h1>
-        <p>Test</p>
-      </div>
+
+    button>a {
+      color: white;
+      text-decoration: none;
+    }
+
+    .content {
+      width: 100vw;
+      height: 200vh;
+    }
+
+    .short {
+      background-color: #f7f7f7;
+      width: 100vw;
+      height: 55vh;
+      display: flex;
+    }
+
+    .left {
+      display: flex;
+      justify-content: center;
+      height: 55vh;
+      width: 50vw;
+      flex-flow: column;
+    }
+
+    h2 {
+      font-family: 'Open Sans', sans-serif;
+      font-size: 2.5rem;
+      margin-top: 3rem;
+    }
+
+
+    .right {
+      display: flex;
+      justify-content: center;
+      height: 55vh;
+      width: 50vw;
+      flex-flow: column;
+    }
+
+    .text {
+      display: flex;
+      justify-content: center;
+    }
+
+    #channelpage {
+      height: 300px;
+      width: auto;
+      transition: 1s all ease-in-out;
+      border: #4bcc4f solid 4px;
+      border-radius: .5rem;
+    }
+
+    #channelpage:hover {
+      height: 320px;
+      width: auto;
+    }
+
+    .image {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex: 1;
+    }
+
+    .youtubechannel > h2 {
+      text-align: center;
+      font-size: 3.5rem;
+    }
+
+    .youtubechannel {
+      text-align: center;
+    }
+
+    #logo {
+      height: 200px;
+      width: auto;
+      border-radius: 100%;
+      margin-top: 5rem;
+
+    }
+
+    #logo:hover + #ten {
+      font-size: 3.6rem;
+      transition: all .5s ease-in-out;
+
+    }
+
+    #ten {
+      transition: all .5s ease-in-out;
+    }
+
+
+
+    .youtubechanel {
+      border: 1px blue solid;
+      width: 100vw;
+      height: 10000vh;
+      background-color: black;
+
+    }
+
+    #channeldesc {
+      text-align: left;
+      padding: 2rem;
+      font-size: 1.5rem;
+      font-family: 'Open Sans', sans-serif;
+    }
+
+    .video {
+      text-align: center;
+
+
+    }
+
+    .webdesign {
+      width: 100vw;
+      height: 100vh;
+      background-color: #f7f7f7;
+      margin-top: 7vh;
+
+    }
+
+    #featured {
+      
+      margin: 1rem;
+      justify-content: center;
+
+
+    }
+
+    .container {
+      width: 100vw;
+      height: 71vh;
+
+      display: flex;
+      justify-content: center;
+      text-align: center;
+    }
+
+
+  </style>
+</head>
+
+<body>
+  <div class="header">
+    <div class="headertext">
+      <h1>Jude Wallach</h1>
+      <p>Youtuber & Web Designer</p>
+      <a href=""><button><a href="#learnmore">Learn About Me</a></button>
+      </a>
     </div>
-  </body>
+  </div>
+
+  <div class="content" id="learnmore">
+    <div class="short">
+      <div class="left">
+        <div class="text">
+          <h2>YouTube Channel</h2></div>
+        <div class="image"><a href="#youtubestuff"><img src="channelpage.png" alt="" id="channelpage"></a></div>
+      </div>
+
+      <div class="right">
+        <div class="text">
+          <h2>Web Design</h2></div>
+        <div class="image"><a href=""><img src="code.png" alt="" id="channelpage"></a></div>
+      </div>
+
+    </div>
+      <div class="youtubechannel" id="youtubestuff">
+        <img src="logo.png" alt="" id="logo">
+        <h2 id="ten">1080 Benchmarks</h2>
+        <p id="channeldesc">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eaque labore esse ab delectus ad obcaecati ut asperiores nesciunt doloremque repudiandae impedit dolorem earum architecto sunt modi, sed, hic aliquam in.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellendus rerum aliquid delectus ex ad, voluptate odit, ducimus eveniet sint officiis, nemo saepe voluptatum nisi quibusdam praesentium officia nostrum consequuntur maxime.</p>
+        <h2 style="text-align: center; margin-bottom: 2rem; ">Channel Trailer</h2><br>
+
+        <div class="video">
+          <iframe width="1120" height="630" src="https://www.youtube.com/embed/N6L1YHTYKG0" frameborder="0" allowfullscreen></iframe>
+
+        </div>
+      </div>
+
+      <div class="webdesign">
+        <h2 style="text-align: center; font-size: 3.5rem; padding-top: 3rem;">Web Design</h2>
+        <p id="channeldesc">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eaque labore esse ab delectus ad obcaecati ut asperiores nesciunt doloremque repudiandae impedit dolorem earum architecto sunt modi, sed, hic aliquam in.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellendus rerum aliquid delectus ex ad, voluptate odit, ducimus eveniet sint officiis, nemo saepe voluptatum nisi quibusdam praesentium officia nostrum consequuntur maxime.</p>
+        <div class="container">
+          <div class="featured">
+            <img src="test.png" alt="" id="featured">
+            <img src="test.png" alt="" id="featured">
+            <img src="test.png" alt="" id="featured">
+            <img src="test.png" alt="" id="featured">
+          </div>
+          </div>
+      </div>
+  </div>
+</body>
+
 </html>
