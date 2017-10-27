@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Jude Wallach</title>
+    <style>
+      * {
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+      }
+
+      .default {
+        cursor: url('3dwarro.cur'), auto;
+      }
+
+      @font-face {
+        font-family: "VCR";
+        src: url("VCR_OSD_MONO_1.001.ttf");
+      }
+
+      .content {
+        width: 100vw;
+        height: 100vh;
+        background: #270bb9;
+      }
+
+      a {
+        color: yellow;
+        font-family: "VCR";
+        text-decoration: none;
+      }
+
+      p {
+        color: white;
+        font-family: "VCR";
+        text-decoration: none;
+      }
+
+      p:hover {
+        background: #f7e303;
+        color: black;
+      }
+
+      .nav {
+        font-size: 2rem;
+        padding: 2rem;
+        position: fixed;
+        z-index: 9999;
+      }
+
+      li {
+        list-style-type: none;
+      }
+
+      .youtube-container {
+        display: flex;
+        justify-content: center;
+        height: 100vh;
+        width: 100vw;
+        position: fixed;
+      }
+
+      .youtube {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex: 1;
+      }
+
+      figcaption {
+        color: white;
+        font-size: 1.25rem;
+        width: 560px;
+      }
+
+      .design-container {
+        display: flex;
+        justify-content: center;
+        height: 100vh;
+        width: 100vw;
+        position: fixed;
+      }
+
+      .design {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex: 1;
+      }
+
+      .work-container {
+        display: flex;
+        justify-content: center;
+        height: 100vh;
+        width: 100vw;
+        position: fixed;
+      }
+
+      .work {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex: 1;
+      }
+
+      #bio {
+        font-family: times;
+        font-size: 2rem;
+        padding: 10rem;
+      }
+
+      #bio:hover {
+        background: none;
+        color: white;
+      }
+
+      figure {
+        display: inline;
+      }
+
+      .item {
+        height: 100px;
+        width: auto;
+      }
+
+      .longitem {
+        width: 541px;
+        height: auto;
+      }
+
+      .biggeritem {
+        height: 250px;
+        width: auto;
+      }
+
+      *::selection {
+        background: yellow;
+        color: black;
+      }
+
+      .gallery {
+        width: 75vw;
+        flex-wrap: wrap;
+      }
+
+      /* Portrait Small iPhones */
+@media only screen
+  and (min-device-width: 375px)
+  and (max-device-width: 667px)
+  and (-webkit-min-device-pixel-ratio: 2)
+  and (orientation: portrait) {
+    .nav {
+      font-size: 3rem;
+    }
+
+    figcaption {
+      font-size: 2.2rem;
+      width: 560px;
+    }
+
+    #bio {
+      font-size: 3rem;
+    }
+
+
+}
+
+/* Portrait Big iPhones */
+@media only screen
+  and (min-device-width: 414px)
+  and (max-device-width: 736px)
+  and (-webkit-min-device-pixel-ratio: 3)
+  and (orientation: portrait) {
+    .nav {
+      font-size: 3.5rem;
+    }
+
+    figcaption {
+      font-size: 2.5rem;
+    }
+
+    #bio {
+      font-size: 3.5rem;
+    }
+}
+
+/* Landscape Big iPhones */
+@media only screen
+  and (min-device-width: 414px)
+  and (max-device-width: 736px)
+  and (-webkit-min-device-pixel-ratio: 3)
+  and (orientation: landscape) {
+    .nav {
+      font-size: 1.5rem;
+    }
+
+    .gallery {
+      width: 90vw;
+      height: 50vh;
+    }
+
+}
+
+
+
+
+
+    </style>
+  </head>
+  <body>
+    <div class="content default">
+      <div class="nav">
+        <ul>
+          <li><p>Jude Wallach</p></li>
+          <li><p onclick="showYoutube()">Youtube Channel</p></li>
+          <li><p onclick="showDesign()">Web Design</p></li>
+          <li><p onclick="showWork()">Work</p></li>
+        </ul>
+      </div>
+      <div class="youtube-container" id="youtubejs" style="visibility: hidden;">
+        <div class="youtube">
+          <figure>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/N6L1YHTYKG0" frameborder="0" allowfullscreen></iframe>
+            <figcaption>On February 15, 2016 I created GTX 1080 Benchmarks. On 1080 Benchmarks I upload content pushing the GTX 1080 in today's latest PC games and applications.
+I put effort into creating high quality videos with unique editing and uploading as often as possible.</figcaption>
+          </figure>
+        </div>
+      </div>
+      <div class="design-container" id="designjs"  style="visibility: hidden;">
+        <div class="design">
+          <p id="bio">Aside from my YouTube channel I do graphic design work. I focus on social media art, animations, and web design. When designing I put emphasis on colors, shapes and individuality. I'm self taught in Photoshop, After Effects, Premiere and CSS. If you're interested in working with me contact me <a href="">here</a>.</p>
+        </div>
+      </div>
+      <div class="work-container" id="workjs" style="visibility: hidden;">
+        <div class="work">
+          <div class="gallery">
+            <figure>
+              <a href="gifs/bluewhiteintro.gif"><img src="gifs/bluewhiteintro.gif" alt="" class="item"></a>
+            </figure>
+            <figure>
+              <img src="gifs/bwintro.gif" alt="" class="item">
+            </figure>
+            <figure>
+              <img src="gifs/cityintro.gif" alt="" class="item">
+            </figure>
+            <figure>
+              <img src="gifs/forestintro.gif" alt="" class="item">
+            </figure>
+            <figure>
+              <img src="gifs/retrointro.gif" alt="" class="item">
+            </figure>
+            <figure>
+              <img src="gifs/strokeintro2.gif" alt="" class="item">
+            </figure>
+
+            <figure>
+              <img src="misc/KuebikoWallpaper.png" alt="" class="item">
+            </figure>
+            <figure>
+              <img src="misc/yosemite.png" alt="" class="item">
+            </figure>
+            <figure>
+              <img src="misc/Wallpaper4.png" alt="" class="item">
+            </figure>
+            <figure>
+              <img src="misc/Wallpaper2nd.png" alt="" class="item">
+            </figure>
+            <figure>
+              <img src="misc/vaporwavewallpaper.png" alt="" class="item">
+            </figure>
+            <figure>
+              <img src="misc/Wallpaper1.png" alt="" class="item">
+            </figure>
+
+            <figure>
+              <img src="social/chembanner.png" alt="" class="longitem">
+            </figure>
+            <figure>
+              <img src="social/citybanner.png" alt="" class="longitem">
+            </figure>
+
+            <figure>
+              <img src="social/glitchbanner.png" alt="" class="longitem">
+            </figure>
+            <figure>
+              <img src="social/smokebanner.png" alt="" class="longitem">
+            </figure>
+
+          </div>
+        </div>
+      </div>
+
+
+    </div>
+    <script>
+    function showYoutube() {
+  var x = document.getElementById("youtubejs");
+  if (x.style.visibility === "hidden") {
+      x.style.visibility = "initial";
+  } else {
+      x.style.visibility = "hidden";
+  }
+}
+    </script>
+
+    <script>
+    function showDesign() {
+  var x = document.getElementById("designjs");
+  if (x.style.visibility === "hidden") {
+      x.style.visibility = "initial";
+  } else {
+      x.style.visibility = "hidden";
+  }
+}
+    </script>
+
+    <script>
+    function showWork() {
+  var x = document.getElementById("workjs");
+  if (x.style.visibility === "hidden") {
+      x.style.visibility = "initial";
+  } else {
+      x.style.visibility = "hidden";
+  }
+}
+    </script>
+  </body>
+</html>
