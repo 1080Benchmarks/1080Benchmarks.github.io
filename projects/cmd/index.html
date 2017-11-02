@@ -1,0 +1,130 @@
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Cousine" rel="stylesheet">
+    <title>cmd</title>
+    <style>
+      * {
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+        font-family: 'Roboto', sans-serif;
+      }
+
+      *::-webkit-scrollbar {
+        background: #fbfbfb;
+      }
+
+      *::-webkit-scrollbar-thumb  {
+        border-radius: 10em;
+      }
+
+      .cmd {
+        height: 50vh;
+        width: 50vw;
+        background: black;
+        display: flex;
+        margin-top: 25vh;
+        border-radius: .5rem;
+        box-shadow: 2px 3px 4px rgba(0,0,0,0.5);
+
+      }
+
+      .top {
+        width: 50vw;
+        height: 4vh;
+        background: #d4d4d4;
+        border-top-left-radius: .25rem;
+        border-top-right-radius: .25rem;
+        display: flex;
+        position: fixed;
+
+      }
+
+      .cmdcontainer {
+        display: flex;
+        justify-content: center;
+      }
+
+      .buttonrow {
+        display: flex;
+        flex-flow: row;
+        justify-content: flex-start;
+      }
+
+      p {
+        text-align: center;
+        display: flex;
+        justify-content: center;
+      }
+
+      .red {
+        width: 1rem;
+        height: 1rem;
+        border-radius: 50% ;
+        background-color: #ff6766;
+        margin-left: 1vw;
+        margin-top: 1vh;
+
+      }
+
+            .yellow {
+        width: 1rem;
+        height: 1rem;
+        border-radius: 50% ;
+        background-color: #f8bb48;
+        margin-left: 1vw;
+        margin-top: 1vh;
+
+      }
+            .green {
+        width: 1rem;
+        height: 1rem;
+        border-radius: 50% ;
+        background-color: #4ab360;
+        margin-left: 1vw;
+        margin-top: 1vh;
+
+      }
+
+      .text {
+        width: 38vw;
+        height: 4vh;
+        text-align: center;
+        line-height: 4vh;
+      }
+
+      #test {
+        padding-top: 5vh;
+        padding-left: 1vw;
+        color: White;
+        font-family: 'Cousine', monospace;
+      }
+
+
+    </style>
+  </head>
+  <body>
+    <div class="cmdcontainer">
+      <div class="cmd">
+
+        <div class="top">
+          <div class="buttonrow">
+            <div class="red"></div>
+            <div class="yellow"></div>
+            <div class="green"></div>
+          </div>
+            <div class="text">
+              <p>Jude Wallach</p>
+            </div>
+        </div>
+        <p id="test">WelcomePortfolio:~ judewallach$</p>
+
+
+      </div>
+
+    </div>
+  </body>
+</html>
