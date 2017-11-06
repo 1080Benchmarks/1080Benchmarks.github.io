@@ -1,0 +1,357 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.header {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+}
+
+.image {
+  width: 100vw;
+  height: 100vh;
+  background-image: url(https://i.redd.it/vpb7wrheztgy.jpg);
+  background-size: 94vw 90vh;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+#logo {
+  font-family: 'Merriweather', serif;
+  font-size: 2rem;
+}
+
+.navigation {
+  height: 5vh;
+  width: 90vw;
+  margin: 5vw;
+  display: flex;
+}
+
+a {
+  color: white;
+  text-decoration: none;
+}
+
+li {
+  display: inline;
+}
+
+.left {
+  height: 5vh;
+  width: 33.33vw;
+  padding-left: 17rem;
+}
+
+.middle {
+  height: 5vh;
+  width: 33.33vw;
+}
+
+.right {
+  height: 5vh;
+  width: 33.33vw;
+  display: flex;
+  justify-content: flex-end;
+  padding-right: 17rem;
+}
+
+.navitems {
+  line-height: 5vh;
+  text-align: center;
+  font-family: 'Open Sans', sans-serif;
+  word-spacing: 2rem;
+}
+
+#navitem1 {
+  transition: all .25s ease-in-out;
+}
+
+#navitem1:hover {
+  opacity: .5;
+}
+
+#navitem2 {
+  transition: all .25s ease-in-out;
+}
+
+#navitem2:hover {
+  opacity: .5;
+}
+
+#navitem3 {
+  transition: all .25s ease-in-out;
+}
+
+#navitem3:hover {
+  opacity: .5;
+}
+
+#button1 {
+  background-color: transparent;
+  border: 2px white solid;
+  font-family: 'Open Sans', sans-serif;
+  color: white;
+  padding: .6rem;
+  font-size: 1rem;
+  transition: all .5s ease-in-out;
+}
+
+#button1:hover {
+  background-color: white;
+  color: black;
+}
+
+h1 {
+  font-family: 'Merriweather', serif;
+}
+
+.headtext {
+  display: flex;
+  justify-content: center;
+  line-height: 50vh;
+  color: white;
+  font-size: 3rem;
+}
+
+.page1 {
+  width: 100vw;
+  height: 100vh;
+}
+
+
+
+.imagecontainer {
+  display: flex;
+  justify-content: center;
+  width: 100vw;
+  height: 50vh;
+  margin-top: 15vh;
+  display: flex;
+  justify-content: center;
+
+}
+
+.images {
+  height: 50vh;
+  width: 75vw;
+  align-items: center;
+  display: flex;
+  justify-content: center;
+}
+
+#img1, #img2, #img3 {
+  width: 394px;
+  height: 400px;
+}
+
+#img2, #img3 {
+  margin-left: 2rem;
+}
+
+.infocontainer {
+  width: 100vw;
+  height: 50vh;
+
+  display: flex;
+  justify-content: center;
+}
+
+.info {
+  display: flex;
+  justify-content: center;
+  width: 65vw;
+
+}
+
+.lefts {
+  width: 32.5vw;
+  height: 50vh;
+
+}
+
+.rights {
+  width: 32.5vw;
+  height: 50vh;
+
+}
+
+h2 {
+  font-family: 'Open Sans', sans-serif;
+  color: #979797;
+  font-size: 2rem;
+  padding-top: 2rem;
+}
+
+p {
+  font-family: 'Merriweather', serif;
+  padding: 2rem;
+  color: #7a7a7a;
+}
+
+#infobutton {
+  margin-left: 2rem;
+  padding: 1rem;
+  padding-left: 2rem;
+  padding-right: 2rem;
+  font-family: 'Open Sans', sans-serif;
+  background: transparent;
+  border: 2px #c6c5b3 solid;
+  color: #c6c5b3;
+  font-size: 1rem;
+  transition: all .5s ease-in-out;
+}
+
+#infobutton:hover {
+  background: #c6c5b3;
+  color: black;
+}
+
+
+.pagetwo {
+  width: 100vw;
+  height: 100vh;
+}
+
+.header2container {
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex: 1;
+}
+
+.header2 {
+  display: flex;
+  justify-content: center;
+  width: 90vw;
+  height: 70vh;
+  background-image: url('images/header.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  flex-flow: column;
+}
+
+#header2text {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex: 1;
+  color: white;
+  font-size: 4rem;
+  flex-flow: column;
+}
+
+#infobutton2 {
+  padding: 1rem;
+  padding-left: 2rem;
+  padding-right: 2rem;
+  font-family: 'Open Sans', sans-serif;
+  background: transparent;
+  border: 2px white solid;
+  color: white;
+  font-size: 1rem;
+  transition: all .5s ease-in-out;
+}
+
+#infobutton2:hover {
+  background: white;
+  color: black;
+}
+
+.pagethree {
+  width: 100vw;
+  height: 75vh;
+
+  display: flex;
+}
+
+
+
+#map {
+  width: 650px;
+  height: 400px;
+  filter: grayscale(100%);
+}
+
+
+.map {
+  display: flex;
+  align-items: center;
+
+  width: 48vw;
+  justify-content: center;
+  flex-flow: column;
+}
+
+.mosaic {
+  width: 50vw;
+  height: 75vh;
+
+
+}
+
+.mosaicimg {
+  width: 250px;
+  height: 250px;
+  margin: 0;
+  padding: 0;
+
+}
+
+.gallery {
+  text-align: center;
+  display: flex;
+  flex-flow: wrap;
+  margin: 0;
+  padding: 0;
+  justify-content: center;
+  align-items: center;
+  flex: 1;
+  height: 75vh;
+}
+
+#two, #three, #five, #six {
+  margin-left: 1rem;
+}
+
+#four, #five, #six {
+  margin-top: -10rem;
+}
+
+.footer {
+  width: 100vw;
+  height: 45vh;
+  background: #f6f6f6;
+  display: flex;
+  justify-content: center;
+  flex-flow: column;
+}
+
+h3 {
+  text-align: center;
+  font-family: 'Merriweather', serif;
+  color: #5e5e5e;
+  font-size: 2rem;
+  padding-top: 4rem;
+}
+
+#subscribe {
+  text-align: center;
+}
+
+#bottomnav {
+  text-align: center;
+}
+
+.bottom {
+  color: black;
+  margin: 1.5rem;
+}
