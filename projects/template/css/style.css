@@ -232,7 +232,7 @@ p {
   justify-content: center;
   width: 90vw;
   height: 70vh;
-  background-image: url('images/header.jpg');
+  background-image: url(https://i.redd.it/vpb7wrheztgy.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   background-attachment: fixed;
@@ -354,4 +354,74 @@ h3 {
 .bottom {
   color: black;
   margin: 1.5rem;
+}
+
+
+/* ----------- Non-Retina Screens ----------- */
+@media screen
+  and (min-device-width: 1200px)
+  and (max-device-width: 1600px)
+  and (-webkit-min-device-pixel-ratio: 1) {
+  #logo {
+    font-size: 1.5rem;
+  }
+
+  #button1 {
+    font-size: .6rem;
+  }
+
+  #img1, #img2, #img3 {
+    width: 300px;
+    height: 300px;
+  }
+
+  #img2, #img3 {
+    margin-left: 1.5rem;
+  }
+
+  h2 {
+    font-size: 2rem;
+
+  }
+
+  #map {
+    width: 450px;
+    height: 250px;
+    filter: grayscale(100%);
+  }
+
+  .twitter-timeline {
+    width: 100px;
+  }
+}
+
+/* ----------- Retina Screens ----------- */
+@media screen
+  and (min-device-width: 1200px)
+  and (max-device-width: 1600px)
+  and (-webkit-min-device-pixel-ratio: 2)
+  and (min-resolution: 192dpi) {
+  h2 {
+    padding: 3rem;
+  }
+  p {
+    padding: 3rem;
+  }
+
+  #infobutton {
+    margin-left: 3rem;
+  }
+
+  #map {
+    width: 550px;
+    height: 350px;
+  }
+
+  #logo {
+    font-size: 2rem;
+  }
+
+  #button1 {
+    font-size: 1rem;
+  }
 }
