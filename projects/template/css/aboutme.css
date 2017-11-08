@@ -1,0 +1,239 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.header {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+}
+
+.image {
+  width: 100vw;
+  height: 100vh;
+  background-image: url(../images/1080.png);
+  background-size: 94vw 90vh;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+#logo {
+  font-family: 'Merriweather', serif;
+  font-size: 2rem;
+}
+
+.navigation {
+  height: 5vh;
+  width: 90vw;
+  margin: 5vw;
+  display: flex;
+}
+
+a {
+  color: white;
+  text-decoration: none;
+}
+
+li {
+  display: inline;
+}
+
+.left {
+  height: 5vh;
+  width: 33.33vw;
+  padding-left: 17rem;
+}
+
+.middle {
+  height: 5vh;
+  width: 33.33vw;
+}
+
+.right {
+  height: 5vh;
+  width: 33.33vw;
+  display: flex;
+  justify-content: flex-end;
+  padding-right: 17rem;
+}
+
+.navitems {
+  line-height: 5vh;
+  text-align: center;
+  font-family: 'Open Sans', sans-serif;
+  word-spacing: 2rem;
+}
+
+#navitem1 {
+  transition: all .25s ease-in-out;
+}
+
+#navitem1:hover {
+  opacity: .5;
+}
+
+#navitem2 {
+  transition: all .25s ease-in-out;
+}
+
+#navitem2:hover {
+  opacity: .5;
+}
+
+#navitem3 {
+  transition: all .25s ease-in-out;
+}
+
+#navitem3:hover {
+  opacity: .5;
+}
+
+#button1 {
+  background-color: transparent;
+  border: 2px white solid;
+  font-family: 'Open Sans', sans-serif;
+  color: white;
+  padding: .6rem;
+  font-size: 1rem;
+  transition: all .5s ease-in-out;
+}
+
+#button1:hover {
+  background-color: white;
+  color: black;
+}
+
+h1 {
+  font-family: 'Merriweather', serif;
+}
+
+.headtext {
+  display: flex;
+  justify-content: center;
+  line-height: 50vh;
+  color: white;
+  text-shadow: 3px 3px 3px rgba(0,0,0,0.25);
+  font-size: 3rem;
+}
+
+.page1 {
+  width: 100vw;
+  height: 100vh;
+}
+
+.container {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+}
+
+.leftside {
+  height: 100vh;
+  width: 25vw;
+}
+
+.rightside {
+  height: 100vh;
+  width: 50vw;
+}
+
+h2 {
+  font-family: 'Open Sans', sans-serif;
+  color: #979797;
+  font-size: 3rem;
+  padding: 5rem;
+}
+
+p {
+  font-family: 'Merriweather', serif;
+  padding: 5rem;
+  color: #7a7a7a;
+}
+
+.footer {
+  width: 100vw;
+  height: 45vh;
+  background: #f6f6f6;
+  display: flex;
+  justify-content: center;
+  flex-flow: column;
+}
+
+h3 {
+  text-align: center;
+  font-family: 'Merriweather', serif;
+  color: #5e5e5e;
+  font-size: 2rem;
+  padding-top: 4rem;
+}
+
+#subscribe {
+  text-align: center;
+}
+
+#bottomnav {
+  text-align: center;
+}
+
+.bottom {
+  color: black;
+  margin: 1.5rem;
+}
+
+/* ----------- Non-Retina Screens ----------- */
+@media screen
+  and (min-device-width: 1200px)
+  and (max-device-width: 1600px)
+  and (-webkit-min-device-pixel-ratio: 1) {
+    #logo {
+      font-size: 1.5rem;
+    }
+
+    #button1 {
+      font-size: .6rem;
+    }
+}
+
+/* ----------- Retina Screens ----------- */
+@media screen
+  and (min-device-width: 1200px)
+  and (max-device-width: 1600px)
+  and (-webkit-min-device-pixel-ratio: 2)
+  and (min-resolution: 192dpi) {
+}
+
+/* Portrait */
+@media only screen
+  and (min-device-width: 375px)
+  and (max-device-width: 667px)
+  and (-webkit-min-device-pixel-ratio: 2)
+  and (orientation: portrait) {
+    .navigation {
+      display: none;
+    }
+
+    .image {
+      width: 100vw;
+      height: 100vh;
+      background-size: 95vw 95vh;
+
+    }
+}
+
+/* Landscape Ipad */
+@media only screen
+  and (min-device-width: 768px)
+  and (max-device-width: 1024px)
+  and (orientation: landscape)
+  and (-webkit-min-device-pixel-ratio: 2) {
+  .navigation {
+    display: none;
+  }
+
+
+}

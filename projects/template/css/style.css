@@ -356,6 +356,14 @@ h3 {
   margin: 1.5rem;
 }
 
+#aboutmelink {
+  color: #5e5e5e;
+}
+
+#aboutmelink:hover {
+  color: black;
+}
+
 
 /* ----------- Non-Retina Screens ----------- */
 @media screen
