@@ -425,3 +425,107 @@ h3 {
     font-size: 1rem;
   }
 }
+
+/* Portrait iPhone 6 */
+@media only screen
+  and (min-device-width: 375px)
+  and (max-device-width: 667px)
+  and (-webkit-min-device-pixel-ratio: 2)
+  and (orientation: portrait) {
+    .image {
+      width: 100vw;
+      height: 100vh;
+      background-size: 95vw 95vh;
+
+    }
+
+    #img1, #img2, #img3 {
+      width: 275px;
+      height: 275px;
+    }
+
+    #img2, #img3 {
+      margin-left: 1.5rem;
+    }
+
+    h2 {
+      margin: -3rem;
+      font-size: 3rem;
+    }
+
+    p {
+      font-size: 1.5rem;
+      margin: -3rem;
+    }
+
+    #infobutton {
+      margin-top: 2rem;
+      margin-left: -1rem;
+      font-size: 2rem;
+    }
+
+    #infobutton2 {
+      font-size: 2rem;
+      margin-top: 1rem;
+    }
+
+    #map {
+      display: none;
+    }
+
+    .navigation {
+      display: none;
+    }
+
+    .map {
+      display: none;
+    }
+
+    .pagethree {
+      display: none;
+    }
+
+    .footer {
+      width: 100%;
+    }
+
+    #subscribe {
+      margin-top: 1rem;
+    }
+
+    #bottomnav {
+      margin-top: 1rem;
+      font-size: 2rem;
+    }
+
+    h3 {
+      margin-bottom: 0;
+      padding-bottom: 0;
+    }
+
+}
+
+/* Landscape Ipad */
+@media only screen
+  and (min-device-width: 768px)
+  and (max-device-width: 1024px)
+  and (orientation: landscape)
+  and (-webkit-min-device-pixel-ratio: 2) {
+  .navigation {
+    display: none;
+  }
+
+  #img1, #img2, #img3 {
+    width: 250px;
+    height: 250px;
+  }
+
+  #img2, #img3 {
+    margin-left: 1.5rem;
+  }
+
+  #map {
+    width: 350px;
+    height: 250px;
+  }
+}
