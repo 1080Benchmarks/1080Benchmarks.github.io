@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link href="https://fonts.googleapis.com/css?family=Varela+Round" rel="stylesheet">
+    <meta charset="utf-8">
+    <title>Check Out - Daily UI 2</title>
+    <style>
+      * {
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+      }
+
+      h1 {
+        font-family: 'Varela Round', sans-serif;
+        font-size: 3rem;
+        padding: 2rem;
+        margin-bottom: 0;
+        padding-bottom: 0;
+      }
+
+      .checkoutcontainer {
+        width: 100vw;
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+
+      .checkout {
+        height: 75vh;
+        width: 30vw;
+        box-shadow: 1px 2px 4px rgba(0,0,0,0.25);
+        border-radius: 2em;
+        position: relative;
+      }
+
+      .form {
+        margin-left: 1.5rem;
+        margin-top: 1.5rem;
+      }
+
+      .card {
+        height: 60px;
+        width: auto;
+        margin-top: 0;
+        display: inline;
+        vertical-align: middle;
+      }
+
+      .checkbox1, .checkbox2, .checkbox3 {
+        display: inline;
+      }
+
+      .checkbox2, .checkbox3 {
+        margin-left: 2rem;
+      }
+
+      input {
+        font-family: 'Varela Round', sans-serif;
+        background-color: #edeff2;
+        border: none;
+        border-radius: .25em;
+        font-size: 1.3rem;
+        padding: .5rem;
+        color: grey;
+      }
+
+      .name {
+        margin-top: 2rem;
+      }
+
+      .cardnumber {
+        margin-top: 2rem;
+      }
+
+      .expdate {
+        margin-top: 2rem;
+      }
+
+      #exp {
+        width: 8rem;
+        display: inline;
+      }
+
+      #exp2 {
+        width: 8rem;
+        display: inline;
+        margin-left: 1.5rem;
+      }
+
+      .pay {
+        width: 30vw;
+        height: 16vh;
+        background-color: #edeff2;
+        border-bottom-right-radius: 2em;
+        border-bottom-left-radius: 2em;
+        position: absolute;
+        bottom: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+
+      h2 {
+        color: grey;
+        font-family: 'Varela Round', sans-serif;
+        font-size: 2rem;
+      }
+
+      a {
+        color: grey;
+        text-decoration: none;
+      }
+
+      /* ----------- Non-Retina Screens ----------- */
+      @media screen
+        and (min-device-width: 1200px)
+        and (max-device-width: 1600px)
+        and (-webkit-min-device-pixel-ratio: 1) {
+        h1 {
+          color: red
+        }
+      }
+
+    </style>
+  </head>
+  <body>
+    <div class="checkoutcontainer">
+      <div class="checkout">
+        <div class="top"><h1>Check Out</h1></div>
+        <div class="form">
+          <form action="" method="post" class="form">
+            <div class="checkbox1">
+              <input type="radio" name="" value=""><img src="card.png" alt="" class="card">
+            </div>
+            <div class="checkbox2">
+              <input type="radio" name="" value=""><img src="card.png" alt="" class="card">
+            </div>
+            <div class="checkbox3">
+              <input type="radio" name="" value=""><img src="card.png" alt="" class="card">
+            </div>
+            <div class="name">
+              <input type="text" name="" value="" placeholder="name on card">
+            </div>
+            <div class="cardnumber">
+              <input type="text" name="" value="" placeholder="card number">
+            </div>
+            <div class="expdate">
+              <input type="text" name="" value="" placeholder="exp." id="exp"><input type="text" name="" value="" placeholder="cvc" id="exp2">
+            </div>
+
+          </form>
+        </div>
+        <div class="pay">
+          <h2><a href="">pay now</a></h2>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
