@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,500" rel="stylesheet">
+    <meta charset="utf-8">
+    <title>Sign Up</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      .page {
+        width: 100vw;
+        height: 100vh;
+      }
+
+      .head {
+        width: 100vw;
+        height:35vh;
+        background: #4568dc;
+        background: -webkit-linear-gradient(to right, #4568dc, #b06ab3);
+        background: linear-gradient(to right, #4568dc, #b06ab3);
+        display: flex;
+        justify-content: center;
+      }
+
+      h1 {
+        margin-top: 10vh;
+        font-family: 'Roboto', sans-serif;
+        font-weight: 500;
+        font-size: 3rem;
+        color: white;
+      }
+
+      .signup {
+        width: 25%;
+        height: 65vh;
+        background-color: white;
+        display: flex;
+        justify-content: center;
+        box-shadow: 2px 3px 3px rgba(0,0,0,0.25);
+      }
+
+      .signupcontainer {
+        display: flex;
+        justify-content: center;
+        margin-top: -10vh;
+
+      }
+
+      h2 {
+        font-family: 'Roboto', sans-serif;
+        font-weight: 400;
+        color: white;
+        margin-top: 2rem;
+      }
+
+      p {
+        color: #3f4044;
+        font-family: 'Roboto', sans-serif;
+        font-weight: 400;
+        text-align: center;
+        font-size: 2rem;
+      }
+
+      input {
+        border-radius: 4px;
+        border: 1px lightgrey solid;
+        font-size: 1rem;
+        padding-right: 2rem;
+        padding: .5rem;
+      }
+
+      .contactform {
+        display: flex;
+        justify-content: center;
+        margin-top: 3rem;
+        flex-flow: wrap;
+      }
+
+      .input2, .input3 {
+        margin-top: 1rem;
+      }
+
+      #submit {
+        border-radius: 2rem;
+        background-color: #20d66b;
+        color: white;
+        font-family: 'Roboto', sans-serif;
+        font-weight: 400;
+        border: none;
+        margin-top: 2rem;
+        padding-left: 1rem;
+        padding-right: 1rem;
+        transition: all .5s ease-in-out;
+      }
+
+      #submit:hover {
+        background-color: #1acc63;
+      }
+
+      #terms {
+        font-size: .75rem;
+        margin: 0;
+        padding: 0;
+        text-align: center;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="page">
+      <div class="head">
+        <h1>Sign-Up</h1>
+      </div>
+      <div class="signupcontainer">
+        <div class="signup">
+          <div class="contactform element">
+            <form action="/handlers/form_contact.php" method="post">
+              <div class="input1">
+              <p>Username</p>
+                <input type="text" required name="name" id="firstandlast" placeholder="">
+                </div>
+                <div class="input2">
+                <p>Email</p>
+                  <input type="email" required name="name" id="firstandlast" placeholder="example@mail.com">
+                  </div>
+                  <div class="input3">
+                  <p>Password</p>
+                    <input type="password" required name="name" id="firstandlast" placeholder="">
+                    </div>
+                    <input type="submit" id="submit" value="Sign Up" style="" >
+            </form>
+            <p id="terms">By signing up you are agreeing to our terms of service, and are willing to receive promotional mail</p>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

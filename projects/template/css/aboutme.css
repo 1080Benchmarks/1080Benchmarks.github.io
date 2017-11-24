@@ -1,4 +1,4 @@
-* {
+  * {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
@@ -14,7 +14,7 @@
 .image {
   width: 100vw;
   height: 100vh;
-  background-image: url(../images/1080.png);
+  background-image: url(https://images.unsplash.com/photo-1495833066942-79abe24b0c1f?auto=format&fit=crop&w=1339&q=60&ixid=dW5zcGxhc2guY29tOzs7Ozs%3D);
   background-size: 94vw 90vh;
   background-position: center center;
   background-repeat: no-repeat;
@@ -116,7 +116,6 @@ h1 {
   justify-content: center;
   line-height: 50vh;
   color: white;
-  text-shadow: 3px 3px 3px rgba(0,0,0,0.25);
   font-size: 3rem;
 }
 
@@ -158,6 +157,7 @@ p {
 .footer {
   width: 100vw;
   height: 45vh;
+  margin-top: 10vh;
   background: #f6f6f6;
   display: flex;
   justify-content: center;
