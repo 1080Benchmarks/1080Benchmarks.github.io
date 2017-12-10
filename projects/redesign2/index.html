@@ -12,6 +12,7 @@
         background-image: url(https://images.unsplash.com/photo-1510279770292-4b34de9f5c23?auto=format&fit=crop&w=1350&q=80&ixid=dW5zcGxhc2guY29tOzs7Ozs%3D);
         background-size: cover;
         background-repeat: no-repeat;
+        background-attachment: fixed;
       }
 
       .work {
@@ -19,19 +20,17 @@
       }
 
 
-    </style>
-    <script src="http://code.jquery.com/jquery-latest.min.js"></script>
-<script src="jquery.slides.min.js"></script>
+      .im2g {
+        width: 480px;
+        height: 270px;
+      }
 
-<script>
-  $(function(){
-    $("#slides").slidesjs({
-      width: 940,
-      height: 528
-      
-    });
-  });
-</script>
+
+
+
+
+    </style>
+
   </head>
   <body>
     <section class="hero is-image is-link is-fullheight">
@@ -107,15 +106,33 @@
     <div class="container">
     <h2 class="title">Featured Work</h2>
     <div id="slides">
-        <img src="http://placehold.it/940x528">
-        <img src="http://placehold.it/940x528">
-        <img src="http://placehold.it/940x528">
-        <img src="http://placehold.it/940x528">
-        <img src="http://placehold.it/940x528">
-      </div>
+      <img src="nut.jpg" alt="Photo by: Missy S Link: http://www.flickr.com/photos/listenmissy/5087404401/" class="img" >
+      <img src="redesign.jpg" alt="Photo by: Missy S Link: http://www.flickr.com/photos/listenmissy/5087404401/" class="img">
+      <img src="brutalist.jpg" alt="Photo by: Missy S Link: http://www.flickr.com/photos/listenmissy/5087404401/" class="img">
+      <a href="#" class="slidesjs-previous slidesjs-navigation"><i class="icon-chevron-left icon-large fa fa-chevron-left"></i></a>
+      <a href="#" class="slidesjs-next slidesjs-navigation"><i class="icon-chevron-right icon-large fa fa-chevron-right"></i></a>
+    </div>
   </div>
   </section>
+  <!-- SlidesJS Required: Link to jQuery -->
+  <script src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
+  <!-- End SlidesJS Required -->
 
+  <!-- SlidesJS Required: Link to jquery.slides.js -->
+  <script src="jquery.slides.min.js"></script>
+  <!-- End SlidesJS Required -->
+
+  <!-- SlidesJS Required: Initialize SlidesJS with a jQuery doc ready -->
+  <script>
+    $(function() {
+      $('#slides').slidesjs({
+        width: 480,
+        height: 270,
+        pagination: false
+
+      });
+    });
+  </script>
 
   </body>
 </html>
