@@ -3,133 +3,13 @@
   <head>
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:800i" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Libre+Baskerville" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
     <meta charset="utf-8">
     <title>Portfolio</title>
   </head>
-  <style>
-    * {
-      padding: 0;
-      margin: 0;
-      box-sizing: border-box;
-    }
-
-    .landing {
-      width: 100vw;
-      height: 100vh;
-      display: flex;
-    }
-
-    .left {
-      height: 100vh;
-      width: 33.33vw;
-      display: flex;
-      justify-content: flex-start;
-      background-image: url('test.png');
-      background-repeat: no-repeat;
-      background-size: cover;
-      background-position: center center;
-    }
-
-    .middle {
-      height: 100vh;
-      width: 33.33vw;
-      display: flex;
-      justify-content: flex-start;
-      background-image: url('camera2.png');
-      background-repeat: no-repeat;
-      background-size: cover;
-      background-position: center center;
-    }
-
-    #name {
-      font-family: 'Open Sans', sans-serif;
-      text-transform: uppercase;
-      font-size: 3.5rem;
-      transition: all .5s ease-in-out;
-    }
-
-    #name:hover {
-      font-size: 3.6rem;
-    }
-
-    .right {
-      display: flex;
-      justify-content: center;
-      width: 33.33vw;
-      align-items: center;
-    }
-
-    .overlay {
-      height: 100vh;
-      width: 33.33vw;
-      background: black;
-      opacity: 0;
-      transition: all .5s ease-in-out;
-    }
-
-    .overlay:hover {
-      opacity: 0.25;
-    }
-
-    .heading1 {
-      color: lightgreen;
-      padding: 1rem;
-      margin-bottom: 0;
-      padding-bottom: 0;
-      font-family: 'Open Sans', sans-serif;
-      text-transform: uppercase;
-      font-size: 3.5rem;
-    }
-
-    .overlay2 {
-      height: 100vh;
-      width: 33.33vw;
-      background: black;
-      opacity: 0;
-      transition: all .5s ease-in-out;
-    }
-
-    .overlay2:hover {
-      opacity: 0.25;
-    }
-
-    .heading2 {
-      color: #f27e76;
-      padding: 1rem;
-      font-family: 'Open Sans', sans-serif;
-      text-transform: uppercase;
-      font-size: 3.5rem;
-    }
-
-    p {
-      font-family: 'Libre Baskerville', serif;
-    }
-
-    #col1 {
-      color: lightgreen;
-      font-family: 'Libre Baskerville', serif;
-      padding-left: 1rem;
-    }
-
-    #col2 {
-      color: #f27e76;
-      font-family: 'Libre Baskerville', serif;
-      padding-left: 1rem;
-    }
-
-    .headinglink {
-      text-decoration: none;
-    }
-
-    a {
-      text-decoration: none;
-      color: black;
-    }
-
-  </style>
   <body>
     <div class="landing">
-      <div class="left"><a href="" class="headinglink"><div class="overlay"><h1 class="heading1">Websites</h1><p id="col1">A collection of my recently created websites</p></div></a></div>
+      <div class="left"><a href="pages/webdesign.html" class="headinglink"><div class="overlay"><h1 class="heading1">Websites</h1><p id="col1">A collection of my recently created websites</p></div></a></div>
       <div class="middle"><a href="" class="headinglink"><div class="overlay2"><h1 class="heading2">Animation and Design</h1><p id="col2">A collection of animations and art</p></div></a></div>
       <div class="right"><h1 id="name"><a href="">Jude Wallach</a></h1></div>
     </div>
