@@ -16,6 +16,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  border: 5px black solid;
 }
 
 .headercontainer {
@@ -84,4 +85,61 @@ p {
 
 figure {
   display: inline;
+}
+
+span {
+  background-color: yellow;
+}
+
+.footer {
+  width: 100vw;
+  height: 30vh;
+  display: flex;
+  margin-top: 20vh;
+  border: 5px black solid;
+}
+
+.sideone {
+  width: 50vw;
+  height: 30vh;
+  background-color: #542bb4;
+  /*border-top-left-radius: 3em;*/
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-right: 5px black solid;
+}
+
+.sidetwo {
+  width: 50vw;
+  height: 30vh;
+  background-color: #f1e549;
+  /*border-top-right-radius: 3em;*/
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.sideone > h3 {
+  color: white;
+  font-family: 'Open Sans', sans-serif;
+  text-transform: uppercase;
+}
+
+li {
+  display: inline;
+}
+
+#or {
+  color: white;
+  font-family: 'Open Sans', sans-serif;
+  text-transform: uppercase;
+  background-color: none;
+  display: inline;
+}
+
+a {
+  color: black;
+  text-decoration: none;
+  font-family: 'Libre Baskerville', serif;
 }
