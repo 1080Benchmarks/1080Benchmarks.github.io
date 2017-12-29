@@ -5,74 +5,93 @@
     <meta charset="utf-8">
     <title>Jude Wallach</title>
     <style>
-      * {
-        margin: 0;
-        padding: 0;
-        box-sizing: border-box;
-      }
+    <style>
+   * {
+     margin: 0;
+     padding: 0;
+     box-sizing: border-box;
+   }
 
-      .content {
-        max-width: 75vw;
-        margin: auto;
-        margin-top: 10vh;
-        height: 100vh;
-      }
+   .content {
+     max-width: 75vw;
+     margin: auto;
+     margin-top: 10vh;
+     height: 100vh;
+   }
 
-      h1 {
-        font-family: 'Open Sans', sans-serif;
-        font-size: 2.5rem;
-        text-transform: uppercase;
-        font-weight: 800;
-      }
+   h1 {
+     font-family: 'Open Sans', sans-serif;
+     font-size: 2.5rem;
+     text-transform: uppercase;
+     font-weight: 800;
+   }
 
-      .top {
-        display: flex;
-      }
+   .top {
+     display: flex;
+   }
 
-      .left {
-        display: flex;
-        justify-content: flex-start;
-        width: 50%;
-      }
+   .left {
+     display: flex;
+     justify-content: flex-start;
+     width: 50%;
+   }
 
-      .right {
-        display: flex;
-        justify-content: flex-end;
-        width: 50%;
-        align-items: flex-end;
+   .right {
+     display: flex;
+     justify-content: flex-end;
+     width: 50%;
+     align-items: flex-end;
 
-      }
+   }
 
-      li {
-        display: inline;
-      }
+   li {
+     display: inline;
+   }
 
-      li a {
-        font-family: 'Open Sans', sans-serif;
-        font-weight: 400;
-        padding-left: .5rem;
-        padding-right: .5rem;
-        font-size: 1.25rem;
-        text-transform: uppercase;
-      }
+   li a {
+     font-family: 'Open Sans', sans-serif;
+     font-weight: 400;
+     padding-left: .5rem;
+     padding-right: .5rem;
+     font-size: 1.25rem;
+     text-transform: uppercase;
+   }
 
-      a {
-        text-decoration: none;
-        color: #909090;
-      }
+   a {
+     text-decoration: none;
+     color: #909090;
+   }
 
-      figure {
-        display: inline-block;
-        margin-top: 1rem;
-        margin-right: 1rem;
-      }
+   figure {
+     flex: 0 0 31.3333%;
+margin: 3% 0 0;
+   }
 
-      .gallery {
-        display: flex;
-        flex-flow: wrap;
-        justify-content: flex-start;
-      }
+   figure img {
+     width: 100%;
+vertical-align:top;
+   }
 
+   .gallery {
+     display: flex;
+     flex-flow: wrap;
+     justify-content: flex-start;
+   }
+
+   @media (min-width: 600px) {
+
+
+.gallery {
+ display: flex;
+ justify-content: space-between;
+ flex-flow: row wrap;
+}
+.gallery figure {
+ flex: 0 0 31.3333%;
+}
+}
+
+ </style>
     </style>
   </head>
   <body>
