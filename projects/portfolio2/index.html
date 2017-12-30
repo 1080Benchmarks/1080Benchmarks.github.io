@@ -2,6 +2,7 @@
 <html>
   <head>
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,800" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
     <meta charset="utf-8">
     <title>Jude Wallach</title>
     <style>
@@ -16,7 +17,7 @@
      max-width: 75vw;
      margin: auto;
      margin-top: 10vh;
-     height: 100vh;
+
    }
 
    h1 {
@@ -55,11 +56,16 @@
      padding-right: .5rem;
      font-size: 1.25rem;
      text-transform: uppercase;
+     transition: all .5s ease-in-out;
    }
 
    a {
      text-decoration: none;
      color: #909090;
+   }
+
+   li a:hover {
+     color: #707070;
    }
 
    figure {
@@ -78,18 +84,63 @@ vertical-align:top;
      justify-content: flex-start;
    }
 
+   .footer {
+     display: flex;
+     margin-top: 10vh;
+     margin-bottom: 5vh;
+   }
+
+   .leftfooter {
+     display: flex;
+     justify-content: flex-start;
+     width: 50%;
+   }
+
+   .rightfooter {
+     display: flex;
+     justify-content: flex-end;
+     width: 50%;
+     align-items: flex-end;
+   }
+
+   h2 {
+     margin: 0;
+     padding: 0;
+     font-family: 'Open Sans', sans-serif;
+     font-size: 1.5rem;
+     text-transform: uppercase;
+     font-weight: 800;
+   }
+
+   span a {
+     font-family: 'Roboto', sans-serif;
+     transition: all .5s ease-in-out;
+   }
+
+   span a:hover {
+     color: #707070;
+   }
    @media (min-width: 600px) {
+    .gallery {
+     display: flex;
+     justify-content: space-between;
+     flex-flow: row wrap;
+    }
+    .gallery figure {
+    flex: 0 0 31.3333%;
+    }
+  }
 
+  @media only screen and (max-device-width: 599px) {
+    figure {
+      flex: 0 0 31.3333%;
+ margin: 10% 0 0;
+    }
 
-.gallery {
- display: flex;
- justify-content: space-between;
- flex-flow: row wrap;
-}
-.gallery figure {
- flex: 0 0 31.3333%;
-}
-}
+    .gallery figure {
+    flex: 0 0 45%;
+    }
+  }
 
  </style>
     </style>
@@ -102,17 +153,21 @@ vertical-align:top;
     <!--Gallery Start-->
     <div class="gallery">
       <figure>
-      <a href="https://placeholder.com"><img src="http://via.placeholder.com/464x464" class="galleryitem"></a>
+      <a href="https://placeholder.com"><img src="images/template.png" class="galleryitem"></a>
     </figure>
     <figure>
-    <a href="https://placeholder.com"><img src="http://via.placeholder.com/464x464" class="galleryitem"></a>
+    <a href="https://placeholder.com"><img src="images/foodlabel.png" class="galleryitem"></a>
   </figure>
   <figure>
-  <a href="https://placeholder.com"><img src="http://via.placeholder.com/464x464" class="galleryitem"></a>
+  <a href="https://placeholder.com"><img src="images/brutalistone.png" class="galleryitem"></a>
 </figure>
 <figure>
-<a href="https://placeholder.com"><img src="http://via.placeholder.com/464x464" class="galleryitem"></a>
+<a href="https://placeholder.com"><img src="images/techdeals.png" class="galleryitem"></a>
 </figure>
+  </div>
+  <div class="footer">
+    <div class="leftfooter"><h2>Jude Wallach &copy; 2017</h2></div>
+    <div class="rightfooter"><span><a href="">Back to top</a></span></div>
   </div>
     </div>
   </body>
