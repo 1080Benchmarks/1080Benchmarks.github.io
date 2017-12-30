@@ -4,7 +4,7 @@
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,800" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
     <meta charset="utf-8">
-    <title>Jude Wallach</title>
+    <title> Brutalist #1 - Jude Wallach</title>
     <style>
     <style>
    * {
@@ -68,21 +68,7 @@
      color: #707070;
    }
 
-   figure {
-     flex: 0 0 31.3333%;
-margin: 3% 0 0;
-   }
 
-   figure img {
-     width: 100%;
-vertical-align:top;
-   }
-
-   .gallery {
-     display: flex;
-     flex-flow: wrap;
-     justify-content: flex-start;
-   }
 
    .footer {
      display: flex;
@@ -107,9 +93,10 @@ vertical-align:top;
      margin: 0;
      padding: 0;
      font-family: 'Open Sans', sans-serif;
-     font-size: 1.5rem;
+     font-size: 2rem;
      text-transform: uppercase;
      font-weight: 800;
+
    }
 
    span a {
@@ -120,6 +107,71 @@ vertical-align:top;
    span a:hover {
      color: #707070;
    }
+
+   #homepage {
+     width: 10px;
+     height: auto;
+     border: 2px black solid;
+     flex: 1;
+     max-width: 75vw;
+   }
+
+
+
+   .homepage2 {
+     width: 900px;
+     height: auto;
+
+     flex: 1;
+    margin: 1rem;
+     float: left;
+   }
+   .right {
+     float: right;
+   }
+   .exp {
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     flex: 1;
+     max-width: 75vw;
+     margin-top: 5vh;
+   }
+
+   .stuff {
+     margin-top: 5vh;
+   }
+
+   p {
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.5rem;
+
+    margin-top: .5rem;
+   }
+
+   .galleryitem {
+     width: 700px;
+     height: auto;
+   }
+
+
+
+
+
+   #end {
+     margin: 1.5rem;
+   }
+
+   figure {
+     flex: 0 0 47.5%;
+margin: 3% 0 0;
+   }
+
+   figure img {
+     width: 100%;
+vertical-align:top;
+   }
+
    @media (min-width: 600px) {
     .gallery {
      display: flex;
@@ -127,48 +179,64 @@ vertical-align:top;
      flex-flow: row wrap;
     }
     .gallery figure {
-    flex: 0 0 31.3333%;
+    flex: 0 0 47.5%;
     }
   }
 
   @media only screen and (max-device-width: 599px) {
     figure {
-      flex: 0 0 31.3333%;
+      flex: 0 0 100%;
  margin: 10% 0 0;
     }
 
     .gallery figure {
-    flex: 0 0 45%;
+    flex: 0 0 100%;
     }
   }
 
+  #name {
+    color: black;
+    text-decoration: none;
+  }
+
+
+
  </style>
-    </style>
+
   </head>
   <body>
     <!--Content Start-->
     <div class="content">
       <!--Navigation & Header & Messy-->
-      <div class="top"><div class="left"><h1>Jude Wallach</h1></div><div class="right"><ul><li><a href="">About</a></li><li><a href="">Contact</a></li></ul></div></div>
-    <!--Gallery Start-->
-    <div class="gallery">
+      <div class="top"><div class="left"><h1><a href="../index.html" id="name">Jude Wallach</a></h1></div><div class="right"><ul><li><a href="">About</a></li><li><a href="">Contact</a></li></ul></div></div>
+
+      <div class="exp">
+        <img src="../images/brutalist.gif" alt="" id="homepage">
+      </div>
+      <div class="stuff">
+        <h2>Brutalist #1</h2>
+      <p>This was my first attempt at brutalist design, a form of design purposely made to look and function poorly. Going in, I always associated brutalism with websites you might find from the late 90's or early 2000's. Because of this association I deicded to use a VCR font and brash colors. I also didn't want to overcomplicate the site so I made it one page. You can click on any of the sections and with a little javascript the div appears. You can also stack each page just to make it look worse.</p>
+      </div>
+      <div class="gallery">
+        <figure>
+        <a href="https://placeholder.com"><img src="../images/video.png" class="galleryitem"></a>
+      </figure>
       <figure>
-      <a href="pages/template.html"><img src="images/template.png" class="galleryitem"></a>
+      <a href="https://placeholder.com"><img src="../images/about3.png" class="galleryitem"></a>
     </figure>
     <figure>
-    <a href="pages/food.html"><img src="images/foodlabel.png" class="galleryitem"></a>
+    <a href="https://placeholder.com"><img src="../images/portfolio.png" class="galleryitem"></a>
   </figure>
   <figure>
-  <a href="pages/brutalist1.html"><img src="images/brutalistone.png" class="galleryitem"></a>
-</figure>
-<figure>
-<a href="pages/techdeals.html"><img src="images/techdeals.png" class="galleryitem"></a>
-</figure>
-  </div>
+  <a href="https://placeholder.com"><img src="../images/stack.png" class="galleryitem"></a>
+  </figure>
+    </div>
+
   <div class="footer">
     <div class="leftfooter"><h2>Jude Wallach &copy; 2017</h2></div>
     <div class="rightfooter"><span><a href="">Back to top</a></span></div>
   </div>
-    </div>
+
+  </div>
   </body>
 </html>
