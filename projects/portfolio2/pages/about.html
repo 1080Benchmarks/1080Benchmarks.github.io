@@ -4,7 +4,7 @@
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,800" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
     <meta charset="utf-8">
-    <title>Jude Wallach</title>
+    <title>About Me - Jude Wallach</title>
     <style>
     <style>
    * {
@@ -68,31 +68,10 @@
      color: #707070;
    }
 
-   figure {
-     flex: 0 0 31.3333%;
-margin: 3% 0 0;
-   }
-
-   figure img {
-     width: 100%;
-vertical-align:top;
-transition: all .5s ease-in-out;
-   }
-
-   figure img:hover {
-     filter: brightness(0.9);
-   }
-
-   .gallery {
-     display: flex;
-     flex-flow: wrap;
-     justify-content: flex-start;
-   }
 
    .footer {
      display: flex;
-     margin-top: 10vh;
-     margin-bottom: 5vh;
+      padding-top: 10vh;
    }
 
    .leftfooter {
@@ -125,52 +104,52 @@ transition: all .5s ease-in-out;
    span a:hover {
      color: #707070;
    }
-   @media (min-width: 600px) {
-    .gallery {
-     display: flex;
-     justify-content: space-between;
-     flex-flow: row wrap;
-    }
-    .gallery figure {
-    flex: 0 0 31.3333%;
-    }
+
+   .about h2 {
+     font-size: 2rem;
+
+   }
+
+  img {
+    width: 600px;
+    height: auto;
+    float: left;
+    clear: both;
+    padding-right: 1rem;
   }
 
-  @media only screen and (max-device-width: 599px) {
-    figure {
-      flex: 0 0 31.3333%;
- margin: 10% 0 0;
-    }
+  .about {
+    margin-top: 5vh;
 
-    .gallery figure {
-    flex: 0 0 45%;
-    }
+    clear: both;
+
   }
+
+  .clear {
+    clear: both;
+  }
+
+  p {
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.5rem;
+  }
+
 
  </style>
-    </style>
+
   </head>
   <body>
     <!--Content Start-->
     <div class="content">
       <!--Navigation & Header & Messy-->
       <div class="top"><div class="left"><h1>Jude Wallach</h1></div><div class="right"><ul><li><a href="">About</a></li><li><a href="">Contact</a></li></ul></div></div>
-    <!--Gallery Start-->
-    <div class="gallery">
-      <figure>
-      <a href="pages/template.html"><img src="images/template.png" class="galleryitem"></a>
-    </figure>
-    <figure>
-    <a href="pages/food.html"><img src="images/foodlabel.png" class="galleryitem"></a>
-  </figure>
-  <figure>
-  <a href="pages/brutalist1.html"><img src="images/brutalistone.png" class="galleryitem"></a>
-</figure>
-<figure>
-<a href="pages/techdeals.html"><img src="images/techdeals.png" class="galleryitem"></a>
-</figure>
-  </div>
-  <div class="footer">
+      <div class="about">
+      <img src="../images/avatar.png" alt="">
+
+      <h2>About Me</h2>
+      <p>I'm a fourteen year old graphic and web designer who focuses on intuitive and beautiful designs. I moved from Boulder, Colorado to Santa Fe, New Mexico two years ago. After the move I became interested in graphic design and started uploading speed art videos to my YouTube channel. I began by creating social media banners and avatars and eventually started making them for people who would watch my videos. Simultaneous to my interest in design was my interest in computer hardware, my channel shifted from design to hardware benchmarks which I still make now. I now focus eqaully on web design and my YouTube channel.</p>
+      </div>
+  <div class="footer clear">
     <div class="leftfooter"><h2>Jude Wallach &copy; 2017</h2></div>
     <div class="rightfooter"><span><a href="">Back to top</a></span></div>
   </div>
