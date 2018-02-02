@@ -1,0 +1,86 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.content {
+  background-color: #99a1b3;
+  padding: 2rem;
+  height: 100vh;
+}
+
+span {
+  background-color: #1e1e1e;
+  font-family: 'Source Sans Pro', sans-serif;
+  font-weight: 700;
+  color: white;
+  font-size: 3rem;
+  padding-left: .5rem;
+  padding-right: .5rem;
+  padding-top: .25rem;
+  padding-bottom: .25rem;
+}
+
+figure {
+    flex: 0 0 8.3333%;
+margin: 2% 0 0;
+  }
+
+  .gallery {
+    margin-left: -1%;
+  }
+
+  figure img {
+    width: 100%;
+
+transition: all .5s ease-in-out;
+  }
+
+  .galleryitem {
+    vertical-align: middle;
+  }
+
+  figure img:hover {
+    filter: brightness(0.9);
+  }
+
+  figure:hover figcaption {
+    color: white;
+  }
+
+  .gallery {
+
+    f
+    justify-content: flex-start;
+  }
+
+  @media (min-width: 600px) {
+   .gallery {
+    display: flex;
+    justify-content: flex-start;
+    flex-flow: row wrap;
+    vertical-align: middle;
+   }
+   .gallery figure {
+   flex: 0 0 12%;
+   vertical-align: middle;
+   margin: 2% 1% 0;
+   }
+ }
+
+ @media only screen and (max-device-width: 599px) {
+   figure {
+     flex: 0 0 8.33333%;
+margin: 2% 0 0;
+   }
+
+   .gallery figure {
+   flex: 0 0 15%;
+   }
+ }
+
+ figcaption {
+   text-align: center;
+font-family: 'PT Serif', serif;
+ }
