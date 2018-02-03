@@ -32,6 +32,31 @@
     transform: translate(-50%, -50%);
 }
 
+.image:hover .slidesjs-navigation {
+  visibility: visible;
+}
+
+.image:hover .slidesjs-next {
+  display: inline;
+}
+
+.image:hover .slidesjs-previous {
+  display: inline;
+}
+
+.slidesjs-next {
+  display: none;
+}
+
+.slidesjs-previous {
+  display: none;
+}
+
+.slidesjs-navigation {
+  visibility: hidden;
+}
+
+
 .top-left {
     position: absolute;
     top: -22px;
@@ -56,6 +81,7 @@ h1 {
   position: absolute;
   bottom: 0;
   left: 0;
+  display: none;
 }
 
 .slidesjs-next {
@@ -64,6 +90,7 @@ h1 {
   position: absolute;
   bottom: 0;
   right: 0;
+  display: none;
 }
 
 
