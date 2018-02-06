@@ -130,3 +130,80 @@ p, h2 {
     right: -36px;
     z-index: 9999;
 }
+
+/* Portrait Large Phones */
+@media only screen
+  and (min-device-width: 414px)
+  and (max-device-width: 736px)
+  and (-webkit-min-device-pixel-ratio: 3)
+  and (orientation: portrait) {
+.image {
+  width: 700px;
+  height: 500px;
+}
+
+.slidesjs-container {
+  width: 700px;
+  height: 500px!important;
+}
+
+.slidesjs-control {
+  width: 700px;
+  height: 500px;
+}
+
+img {
+  height: 500px;
+}
+
+.overview {
+  bottom: 34%;
+  width: 15vw;
+}
+
+.fw h2 {
+font-size: 3rem;
+}
+
+.fw p {
+  font-size: 1rem;
+  text-align: left;
+}
+
+h1 {
+  font-size: 3.5rem;
+}
+}
+
+/* ----------- Non-Retina Laptops ----------- */
+@media screen
+  and (min-device-width: 1200px)
+  and (max-device-width: 1600px)
+  and (-webkit-min-device-pixel-ratio: 1) {
+    .image {
+      width: 925px;
+      height: 600px;
+    }
+
+    .slidesjs-container {
+      width: 925px;
+      height: 600px!important;
+    }
+
+    .slidesjs-control {
+      width: 925px;
+      height: 600px;
+    }
+
+    img {
+      height: 600px;
+    }
+
+    .overview {
+      bottom: 40%;
+    }
+
+    .fw h2 {
+      font-size: 4rem;
+    }
+}
