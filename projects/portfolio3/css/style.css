@@ -131,6 +131,12 @@ p, h2 {
     z-index: 9999;
 }
 
+h1 a {
+  text-decoration: none;
+  color: black;
+}
+
+
 /* Portrait Large Phones */
 @media only screen
   and (min-device-width: 414px)

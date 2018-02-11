@@ -1,0 +1,101 @@
+p {
+  color: red;
+}
+
+.content {
+  max-width: 75vw;
+  margin: auto;
+  margin-top: 20vh;
+}
+
+li {
+  list-style-type: none;
+  font-family: arial;
+  padding-top: 0;
+  margin-top: 0;
+}
+
+ul {
+  padding: 0;
+}
+
+.arttype {
+  text-decoration: underline;
+  color: black;
+}
+
+h2 {
+  font-family: arial;
+  font-size: 2rem;
+  margin-bottom: 0;
+  margin-top: 0;
+  padding-bottom: 0;
+}
+
+.info {
+  position: absolute;
+  top: 0;
+  left: 0;
+  padding-left: 1rem;
+  padding-top: 1rem;
+}
+
+.gallery {
+  display: flex;
+  flex-flow: wrap;
+}
+
+figure {
+  /*margin-left: 4.25rem;
+  margin-bottom: 4.25rem;*/
+  margin: 2rem;
+
+}
+
+
+
+.clip {
+  position: relative;
+   width: 175px;
+   height: 175px;
+   overflow: hidden;
+}
+
+ img {
+position: absolute;
+left: 50%;
+ top: 50%;
+ height: 100%;
+ width: auto;
+ -webkit-transform: translate(-50%,-50%);
+-ms-transform: translate(-50%,-50%);
+  transform: translate(-50%,-50%);
+}
+
+/* ----------- Non-Retina Laptops ----------- */
+@media screen
+  and (min-device-width: 1200px)
+  and (max-device-width: 1600px)
+  and (-webkit-min-device-pixel-ratio: 1) {
+
+}
+
+/* Portrait Large Phones */
+@media only screen
+  and (min-device-width: 414px)
+  and (max-device-width: 736px)
+  and (-webkit-min-device-pixel-ratio: 3)
+  and (orientation: portrait) {
+    h2 {
+      font-size: 4rem;
+    }
+
+    li {
+      font-size: 2rem;
+    }
+
+    .clip {
+      width: 181px;
+      height: 181px;
+    }
+}
