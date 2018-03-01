@@ -4,6 +4,19 @@
   <meta charset="utf-8">
   <link href="https://fonts.googleapis.com/css?family=Roboto:400,500" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Open+Sans:800i" rel="stylesheet">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script>
+  var words = new Array('Graphic Designer','Web Designer','Student');
+  var i = 0;
+setInterval( function(){
+    $( '#wordDiv' ).empty().append( words[ i ] );
+    if( i < words.length ) {
+        i++;
+    } else {
+        i = 0;
+    }
+}, 2000 );
+  </script>
   <title>1080 Benchmarks</title>
   <link rel="stylesheet" href="style.css">
 </head>
@@ -11,9 +24,9 @@
   <div id="myNav" class="overlay">
   <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
   <div class="overlay-content">
+    <a href="#">Portfolio</a>
     <a href="#">About</a>
-    <a href="#">Services</a>
-    <a href="#">Clients</a>
+    <a href="#">Youtube Channel</a>
     <a href="#">Contact</a>
   </div>
 </div>
@@ -26,15 +39,21 @@
     </div>
     <div class="right" onclick="openNav()">
       <ul>
-        <li><a href=""><div ><img src="menu-button.svg" alt="" class="hamburger"></div></a></li>
+        <li><div ><img src="menu-button.svg" alt="" class="hamburger"></div></li>
       </ul>
     </div>
   </div>
 <div class="page">
   <div class="hero">
-    <h2>Jude Wallach</h2>
-    <h1>youtuber, graphic and web designer</h1>
+    <h2>My name is Jude Wallach and I am a,</h2>
+    <h1 id="wordDiv">Youtuber</h1>
   </div>
+<div class="gallery">
+
+<div class="image"></div>
+<div class="imagetwo"></div>
+
+</div>
   </div>
   <script>
 function openNav() {
@@ -44,6 +63,8 @@ function openNav() {
 function closeNav() {
     document.getElementById("myNav").style.width = "0%";
 }
+
+
 </script>
 </body>
 </html>
