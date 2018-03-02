@@ -382,6 +382,11 @@ span {
     height: 600px;
   }
 
+  .image, .imagetwo {
+    width: 100%;
+    height: 100%;
+  }
+
   .container {
     margin-bottom: 10vh;
   }
