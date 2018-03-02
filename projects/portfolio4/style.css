@@ -52,6 +52,9 @@ li {
   padding-left: 6rem;
   padding-right: 6rem;
   padding-top: 2rem;
+  position: fixed;
+  z-index: 9999;
+
 }
 
 .left {
@@ -68,7 +71,7 @@ li {
 h2 {
   font-family: "Roboto", arial, sans-serif;
   font-weight: 500;
-  font-size: 3rem;
+  font-size: 5rem;
 }
 
 h1 {
@@ -81,6 +84,7 @@ h1 {
 
 .hero {
   padding: 6rem;
+  padding-top: 15vh;
 }
 
 .page {
@@ -92,11 +96,11 @@ h1 {
 h2 {
   font-family: "Open Sans", arial, sans-serif;
   color: black;
-  font-size: 3rem;
+  font-size: 3.5rem;
 }
 
 h1 {
-  font-size: 4rem;
+  font-size: 4.5rem;
 }
 
 .gallery {
@@ -113,6 +117,7 @@ h1 {
     background-color: #3effd0;
     overflow-x: hidden;
     transition: 0.5s;
+    z-index: 99999;
 }
 
 .overlay-content {
@@ -130,7 +135,7 @@ h1 {
     color: white;
     display: block;
     transition: 0.3s;
-    font-family: 'DK Cinnabar Brush';
+    font-family: 'dk_cinnabar_brushregular';
     font-weight: normal;
     font-style: normal;
     font-size: 5rem;
@@ -147,23 +152,87 @@ h1 {
     font-size: 60px;
 }
 
-.image {
-
+.container {
+  width: 1200px;
+  height: 800px;
+  overflow: hidden;
+  margin-bottom: 5rem;
+  z-index: 1;
+  position: relative;
 }
 
 .image {
+
+  background: url("https://images.unsplash.com/photo-1477346611705-65d1883cee1e?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=4e58a56fd7bd17453e3cf914aa365870&auto=format&fit=crop&w=1350&q=80");
+background-position:center;
+transition: all 1.5s ease;
+-moz-transition: all 1.5s ease;
+-ms-transition: all 1.5s ease;
+-webkit-transition: all 1.5s ease;
+-o-transition: all 1.5s ease;
+
   background-position: no-repeat;
   filter: grayscale(100);
   background-size: cover;
-  margin-bottom: 5rem;
+
   background-attachment: fixed;
   width: 1200px;
   height: 800px;
   float: left;
-  background-image: url('https://images.unsplash.com/photo-1477346611705-65d1883cee1e?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=4e58a56fd7bd17453e3cf914aa365870&auto=format&fit=crop&w=1350&q=80');
+
+}
+
+.image:hover {
+  transform: scale(1.125);
+  -moz-transform: scale(1.125);
+  -webkit-transform: scale(1.125);
+  -o-transform: scale(1.125);
+  -ms-transform: scale(125); /* IE 9 */
+  -ms-filter: "progid:DXImageTransform.Microsoft.Matrix(M11=125, M12=0, M21=0, M22=125, SizingMethod='auto expand')"; /* IE8 */
+   filter: progid:DXImageTransform.Microsoft.Matrix(M11=125, M12=0, M21=0, M22=125, SizingMethod='auto expand'); /* IE6 and 7 */
+}
+
+.containertwo {
+  width: 1200px;
+  height: 800px;
+  overflow: hidden;
+  margin-bottom: 5rem;
+  float: right;
+  position: relative;
 }
 
 .imagetwo {
+
+  background: url("https://images.unsplash.com/photo-1477209560495-270790f2251a?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=42dc70ee5e560c7e090b959c6c52fbc0&auto=format&fit=crop&w=1950&q=80");
+background-position:center;
+transition: all 1.5s ease;
+-moz-transition: all 1.5s ease;
+-ms-transition: all 1.5s ease;
+-webkit-transition: all 1.5s ease;
+-o-transition: all 1.5s ease;
+
+  background-position: no-repeat;
+  filter: grayscale(100);
+  background-size: cover;
+
+  background-attachment: fixed;
+  width: 1200px;
+  height: 800px;
+  float: left;
+
+}
+
+.imagetwo:hover {
+  transform: scale(1.125);
+  -moz-transform: scale(1.125);
+  -webkit-transform: scale(1.125);
+  -o-transform: scale(1.125);
+  -ms-transform: scale(125); /* IE 9 */
+  -ms-filter: "progid:DXImageTransform.Microsoft.Matrix(M11=125, M12=0, M21=0, M22=125, SizingMethod='auto expand')"; /* IE8 */
+   filter: progid:DXImageTransform.Microsoft.Matrix(M11=125, M12=0, M21=0, M22=125, SizingMethod='auto expand'); /* IE6 and 7 */
+}
+
+/*.imagetwo {
   background-position: no-repeat;
   filter: grayscale(100);
   background-size: cover;
@@ -174,10 +243,106 @@ h1 {
   float: right;
   background-image: url('https://images.unsplash.com/photo-1477209560495-270790f2251a?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=42dc70ee5e560c7e090b959c6c52fbc0&auto=format&fit=crop&w=1950&q=80');
 }
+*/
+
+.featureditem {
+  z-index: 9999;
+  color: white;
+  font-size: 2rem;
+  position: absolute;
+  top: 10%;
+  left: 5%;
+  font-family: "Open Sans", arial, sans-serif;
+  font-weight: 500;
+  padding-bottom: 0;
+  margin-bottom: 0;
+  font-size: 3rem;
+}
+
+.featureditem2 {
+  z-index: 9999;
+  color: white;
+  font-size: 2rem;
+  position: absolute;
+  top: 10%;
+  right: 5%;
+  font-family: "Open Sans", arial, sans-serif;
+  font-weight: 500;
+  padding-bottom: 0;
+  margin-bottom: 0;
+  font-size: 3rem;
+}
 
 
-#wordDiv {
-  transition: all 1s ease-in-out;
+
+
+
+.bottomtext {
+  font-family: "Roboto", arial, sans-serif;
+  font-size: 1rem;
+  color: #3effd0;
+}
+
+
+.clear {
+  clear: right;
+}
+.hero2 {
+  padding: 7rem;
+  margin-bottom: 5vh;
+}
+
+button {
+background-color: #3effd0;
+border: none;
+padding: .75rem;
+font-size: 2rem;
+color: white;
+background: transparent;
+background-image: url('swash.png');
+background-position: center center;
+background-size: cover;
+font-family: 'dk_cinnabar_brushregular';
+
+}
+
+.portfolio {
+  width: 100%;
+  background-image: url('portfoliobg.jpg');
+  text-align: center;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+
+}
+
+.ptext {
+  padding-top: 11rem;
+  padding-bottom: 11rem;
+}
+
+.footer {
+  width: 100%;
+  background: black;
+  height: 8vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  font-family: "Roboto", arial, sans-serif;
+  font-weight: 400;
+  font-size: .75rem;
+text-align: center;
+
+}
+
+.elementfooter {
+  padding: 1rem;
+}
+
+span {
+  padding-left: .2rem;
 }
 
 
