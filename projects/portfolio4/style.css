@@ -358,3 +358,69 @@ span {
     right: 35px;
   }
 }
+
+/* ----------- Non-Retina Laptops ----------- */
+@media screen
+  and (min-device-width: 1200px)
+  and (max-device-width: 1600px)
+  and (-webkit-min-device-pixel-ratio: 1) {
+.container, .containertwo {
+  width: 1000px;
+  height: 600px;
+}
+}
+
+/* Portrait Large Phones */
+@media only screen
+  and (min-device-width: 414px)
+  and (max-device-width: 736px)
+  and (-webkit-min-device-pixel-ratio: 3)
+  and (orientation: portrait) {
+  .container, .containertwo {
+    width: 700px;
+    height: 600px;
+  }
+
+  .container {
+    margin-bottom: 10vh;
+  }
+
+  .hero h2 {
+    font-size: 2.25rem;
+  }
+
+  .hero2 h2 {
+    font-size: 2.5rem;
+  }
+
+  .footer span {
+    font-size: 1.25rem;
+  }
+
+  button {
+    font-size: 2.5rem;
+  }
+
+  .featureditem p {
+    font-size: 1.5rem;
+  }
+
+  .featureditem2 p {
+    font-size: 1.5rem;
+  }
+
+  .featureditem, .featureditem2 {
+    font-size: 3.5rem;
+  }
+
+  .nav {
+    padding-top: 4rem;
+  }
+
+  .overlay-content {
+
+      top: 30%;
+
+      margin-top: 30px;
+  }
+}
