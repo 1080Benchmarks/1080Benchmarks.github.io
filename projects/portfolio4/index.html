@@ -21,6 +21,7 @@ setInterval( function(){
   </script>
   <title>1080 Benchmarks</title>
   <link href="https://fonts.googleapis.com/css?family=Open+Sans:800i" rel="stylesheet">
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -63,7 +64,7 @@ setInterval( function(){
 </div></div><div class="containertwo">
   <div class="featureditem2">
     <span>Brutalism #4</span>
-    <p class="bottomtext">Video Card Comparisons</p>
+    <p class="bottomtext">Portfolio Concept</p>
   </div>
 <div class="imagetwo"></div></div><div class="clear"></div>
 <div class="hero2">
@@ -71,10 +72,16 @@ setInterval( function(){
   <h1>Emotion</h1>
 </div>
 <div class="portfolio">
-  <div class="ptext">
-  <!--<h2>View my Complete</h2>-->
-  <button>Portfolio</button>
+
+    <div class="w3-content w3-section" style="max-width: 100vw;">
+<button>Portfolio</button>
+    <div class="mySlides slideone" style="width: 100%;"></div>
+    <div class="mySlides slidetwo" style="width: 100%;"></div>
+    <div class="mySlides slidethree " style="width: 100%;"></div>
+
   </div>
+
+
 </div>
 <div class="footer">
   <div class="elementfooter">
@@ -88,6 +95,22 @@ setInterval( function(){
 </div>
 </div>
   </div>
+  <script>
+var myIndex = 0;
+carousel();
+
+function carousel() {
+    var i;
+    var x = document.getElementsByClassName("mySlides");
+    for (i = 0; i < x.length; i++) {
+       x[i].style.display = "none";
+    }
+    myIndex++;
+    if (myIndex > x.length) {myIndex = 1}
+    x[myIndex-1].style.display = "block";
+    setTimeout(carousel, 2000); // Change image every 2 seconds
+}
+</script>
   <script>
 function openNav() {
     document.getElementById("myNav").style.width = "100%";
