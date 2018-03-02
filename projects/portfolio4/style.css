@@ -4,6 +4,9 @@
   box-sizing: border-box;
 }
 
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:800i');
+
+
 @font-face {
     font-family: 'dk_cinnabar_brushregular';
     src: url('dk_cinnabar_brush-webfont.woff2') format('woff2'),
