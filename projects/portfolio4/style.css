@@ -474,4 +474,12 @@ span {
 
       margin-top: 30px;
   }
+
+  .imagetwo {
+    background-position: center!important;
+  }
+
+  .mySlides {
+    height: 25vh;
+  }
 }
