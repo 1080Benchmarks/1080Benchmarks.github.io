@@ -332,15 +332,15 @@ background-size: cover;
 }
 
 .slideone {
-  background-image: url('yosemiteslide.png');
+    background-image: url('arcade.jpg');
 }
 
 .slidetwo {
-  background-image: url('mountainslide.png');
+  background-image: url('boulder.JPG');
 }
 
 .slidethree {
-    background-image: url('earthslide.png');
+    background-image: url('boco.JPG');
 }
 
 .ptext {
