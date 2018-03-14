@@ -1,0 +1,89 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.header {
+  width: 100vw;
+  height: 40vh;
+  background-image: url('j.png');
+  background-repeat: no-repeat;
+  /*background-attachment: fixed;*/
+}
+
+.content {
+  max-width: 50vw;
+  margin: auto;
+  margin-top: 0vh;
+  background-color: white;
+  border-left: 5px blue dashed;
+  border-right: 5px red dashed;
+  height: 100vh;
+  padding: 1rem;
+}
+
+button {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 500;
+  font-size: 2rem;
+  text-transform: capitalize;
+  border: none;
+  background: none;
+
+}
+
+h2 {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 500;
+  font-size: 2.5rem;
+  text-transform: capitalize;
+
+}
+
+.clothing {
+  margin-top: 3vh;
+
+}
+
+.about {
+  margin-top: 2vh;
+}
+
+#aboutsite {
+  display: none;
+}
+
+.mySlides1 {
+  width: 300px;
+  height: 300px;
+}
+
+.mySlides2 {
+  width: 300px;
+  height: 300px;
+}
+
+
+
+p {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 400;
+  width: 75%;
+  font-size: 1.2rem;
+
+}
+
+#pclothing {
+  width: -75%;
+}
+
+.w3-content {
+  max-width: 300px!important;
+  margin: auto;
+
+}
+
+.w3-button:hover {
+  background-color: yellow!important;
+}

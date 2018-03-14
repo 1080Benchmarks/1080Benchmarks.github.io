@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Jude Wallach</title>
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,500" rel="stylesheet">
+    <script defer src="https://use.fontawesome.com/releases/v5.0.8/js/all.js"></script>
+    <link rel="stylesheet" href="style.css">
+    <script src="http://code.jquery.com/jquery-latest.min.js"></script>
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+  </head>
+  <body>
+    <div class="header">
+    </div>
+    <div class="content">
+      <div class="about">
+        <button onclick="displayFunction()">About this Site <i class="fas fa-caret-down"></i></button>
+        <p id="aboutsite">This site is a personal place of mine to save interesting things I find on the web or anywhere else. I might upload clothing I like or tech I'm saving up for. Possibly some of my own graphic work as well.</p>
+      </div>
+      <div class="clothing">
+        <h2>Clothing</h2>
+        <p id="pclothing">Clothing brands or specific pieces I like</p>
+        <div class="w3-content w3-display-container">
+  <img class="mySlides1" src="https://imgix.ttcdn.co/i/product/original/0/96374-302f352b3bf14e129a70eb5c23d40eb6.jpeg?q=100&auto=format%2Ccompress&w=1000" style="width:100%">
+  <img class="mySlides1" src="https://imgix.ttcdn.co/i/product/original/0/96374-03f761bbcc654fad99825f371c2d78a6.jpeg?q=100&auto=format%2Ccompress&w=1000" style="width:100%">
+  <img class="mySlides1" src="https://imgix.ttcdn.co/i/product/original/0/96374-e31a8b023b6e4a63a593b071f9bb90c6.jpeg?q=100&auto=format%2Ccompress&w=1000" style="width:100%">
+  <img class="mySlides1" src="https://static1.squarespace.com/static/589ffa75893fc0b6d3d41695/58aa3e20579fb32b00000253/5a8fad598165f52cea54997d/1519367357785/YEARONE_BROWN_FRONT.png?format=500w" style="width:100%">
+  <button class="w3-button w3-black w3-display-left" onclick="plusDivs(-1, 0)">&#10094;</button>
+  <button class="w3-button w3-black w3-display-right" onclick="plusDivs(1, 0)">&#10095;</button>
+</div>
+
+<div class="w3-content w3-display-container">
+  <img class="mySlides2" src="https://www.w3schools.com/w3css/img_la.jpg" style="width:100%">
+  <img class="mySlides2" src="https://www.w3schools.com/w3css/img_ny.jpg" style="width:100%">
+  <img class="mySlides2" src="https://www.w3schools.com/w3css/img_chicago.jpg" style="width:100%">
+  <button class="w3-button w3-black w3-display-left" onclick="plusDivs(-1, 1)">&#10094;</button>
+  <button class="w3-button w3-black w3-display-right" onclick="plusDivs(1, 1)">&#10095;</button>
+</div>
+
+<script>
+var slideIndex = [1,1];
+var slideId = ["mySlides1", "mySlides2"]
+showDivs(1, 0);
+showDivs(1, 1);
+
+function plusDivs(n, no) {
+  showDivs(slideIndex[no] += n, no);
+}
+
+function showDivs(n, no) {
+  var i;
+  var x = document.getElementsByClassName(slideId[no]);
+  if (n > x.length) {slideIndex[no] = 1}
+  if (n < 1) {slideIndex[no] = x.length}
+  for (i = 0; i < x.length; i++) {
+     x[i].style.display = "none";
+  }
+  x[slideIndex[no]-1].style.display = "block";
+}
+</script>
+      </div>
+    </div>
+    <script>
+    function displayFunction() {
+        var x = document.getElementById("aboutsite");
+        if (x.style.display === "none") {
+            x.style.display = "block";
+        } else {
+            x.style.display = "none";
+        }
+    }
+    </script>
+
+  </body>
+</html>
