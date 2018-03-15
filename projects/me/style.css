@@ -9,16 +9,18 @@
   height: 40vh;
   background-image: url('j.png');
   background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
   /*background-attachment: fixed;*/
 }
 
 .content {
-  max-width: 50vw;
+  max-width: 95vw;
   margin: auto;
   margin-top: 0vh;
   background-color: white;
-  border-left: 5px blue dashed;
-  border-right: 5px red dashed;
+  /*border-left: 5px blue dashed;
+  border-right: 5px red dashed;*/
   height: 100vh;
   padding: 1rem;
 }
@@ -81,9 +83,22 @@ p {
 .w3-content {
   max-width: 300px!important;
   margin: auto;
-
+  display: inline-block;
+  margin-left: 222rem;
+  margin-right: 233rem;
 }
 
 .w3-button:hover {
   background-color: yellow!important;
+}
+
+/* ----------- Non-Retina Laptops ----------- */
+@media screen
+  and (min-device-width: 1200px)
+  and (max-device-width: 1600px)
+  and (-webkit-min-device-pixel-ratio: 1) {
+  .header {
+    background-position: center center;
+    background-size: cover;
+  }
 }
