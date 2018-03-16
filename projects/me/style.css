@@ -49,3 +49,12 @@
 	padding: 1rem;
 }
 }
+
+@media screen and (max-width: 1023px) {
+.hero.is-dark .navbar-menu {
+    background-color: transparent!important;
+}}
+
+.hero.is-dark a.navbar-item:hover, .hero.is-dark a.navbar-item.is-active, .hero.is-dark .navbar-link:hover, .hero.is-dark .navbar-link.is-active {
+	background-color: transparent;
+}
