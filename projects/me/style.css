@@ -2,6 +2,13 @@
   filter: invert(100);
 }
 
+.hero.is-dark {
+	background-image: url('Wallpaper1080.png')!important;
+	background-position: center center;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
 .para {
   width: 20vw!important;
 }
