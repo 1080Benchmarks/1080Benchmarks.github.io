@@ -108,24 +108,43 @@
   </div>
 </section>
 <section style="padding-top: 3rem;">
-  <div class="container is-widescreen">
+  <div class="container is-widescreen" id="containeryoutube">
     <h3 class="title is-3">GTX 1080 Benchmarks</h1>
-      <p>I run a Youtube channel dedicated to benchmarking the GTX 1080 and I7-7700. I upload videos displaying performance in today's latest games and older games as well. Below is a trailer of what my channel is about.</p>
-      <article class="media" style="padding-top: 2rem;">
-        <figure class="media-left">
-          <p class="image is-64x64">
-            <img src="https://yt3.ggpht.com/-FPn0rHdrnT0/AAAAAAAAAAI/AAAAAAAAAAA/s7gCHxScjew/s288-mo-c-c0xffffffff-rj-k-no/photo.jpg">
-          </p>
-        </figure>
-        <div class="media-content">
-          <div class="content">
-          <iframe width="560" height="315" src="https://www.youtube.com/embed/N6L1YHTYKG0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
-          </div>
+      <p id="aboutyoutube">I run a Youtube channel dedicated to benchmarking the GTX 1080 and I7-7700. I upload videos displaying performance in today's latest games and older games as well. Below is a trailer of what my channel is about.</p>
 
-        </div>
-        
-      </article>
+            <div class="videoWrapper">
+      <!-- Copy & Pasted from YouTube -->
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/N6L1YHTYKG0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+  </div>
+
   </div>
 </section>
+<script>
+document.addEventListener('DOMContentLoaded', function () {
+
+// Get all "navbar-burger" elements
+var $navbarBurgers = Array.prototype.slice.call(document.querySelectorAll('.navbar-burger'), 0);
+
+// Check if there are any navbar burgers
+if ($navbarBurgers.length > 0) {
+
+  // Add a click event on each of them
+  $navbarBurgers.forEach(function ($el) {
+    $el.addEventListener('click', function () {
+
+      // Get the target from the "data-target" attribute
+      var target = $el.dataset.target;
+      var $target = document.getElementById(target);
+
+      // Toggle the class on both the "navbar-burger" and the "navbar-menu"
+      $el.classList.toggle('is-active');
+      $target.classList.toggle('is-active');
+
+    });
+  });
+}
+
+});
+</script>
   </body>
 </html>
