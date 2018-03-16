@@ -2,74 +2,130 @@
 <html>
   <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Jude Wallach</title>
-    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,500" rel="stylesheet">
-    <script defer src="https://use.fontawesome.com/releases/v5.0.8/js/all.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.6.2/css/bulma.css">
+    <script defer src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
     <link rel="stylesheet" href="style.css">
-    <script src="http://code.jquery.com/jquery-latest.min.js"></script>
-    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
   </head>
   <body>
-    <div class="header">
-    </div>
-    <div class="content">
-      <div class="about">
-        <button onclick="displayFunction()">About this Site <i class="fas fa-caret-down"></i></button>
-        <p id="aboutsite">This site is a personal place of mine to save interesting things I find on the web or anywhere else. I might upload clothing I like or tech I'm saving up for. Possibly some of my own graphic work as well.</p>
+    <section class="hero is-primary is-medium">
+  <!-- Hero head: will stick at the top -->
+  <div class="hero-head">
+    <nav class="navbar">
+      <div class="container">
+        <div class="navbar-brand">
+          <a class="navbar-item">
+            <img src="logo.png" alt="Logo" id="Logo1080">
+          </a>
+          <span class="navbar-burger burger" data-target="navbarMenuHeroA">
+            <span></span>
+            <span></span>
+            <span></span>
+          </span>
+        </div>
+        <div id="navbarMenuHeroA" class="navbar-menu">
+          <div class="navbar-end">
+            <a class="navbar-item is-active">
+              Home
+            </a>
+            <a class="navbar-item">
+              About
+            </a>
+            <a class="navbar-item">
+              Work
+            </a>
+            <span class="navbar-item">
+              <a class="button is-primary is-inverted">
+                <span class="icon">
+                  <i class="fas fa-phone"></i>
+                </span>
+                <span>Contact</span>
+              </a>
+            </span>
+          </div>
+        </div>
       </div>
-      <div class="clothing">
-        <h2>Clothing</h2>
-        <p id="pclothing">Clothing brands or specific pieces I like</p>
-        <div class="w3-content w3-display-container">
-  <img class="mySlides1" src="https://imgix.ttcdn.co/i/product/original/0/96374-302f352b3bf14e129a70eb5c23d40eb6.jpeg?q=100&auto=format%2Ccompress&w=1000" style="width:100%">
-  <img class="mySlides1" src="https://imgix.ttcdn.co/i/product/original/0/96374-03f761bbcc654fad99825f371c2d78a6.jpeg?q=100&auto=format%2Ccompress&w=1000" style="width:100%">
-  <img class="mySlides1" src="https://imgix.ttcdn.co/i/product/original/0/96374-e31a8b023b6e4a63a593b071f9bb90c6.jpeg?q=100&auto=format%2Ccompress&w=1000" style="width:100%">
-  <img class="mySlides1" src="https://static1.squarespace.com/static/589ffa75893fc0b6d3d41695/58aa3e20579fb32b00000253/5a8fad598165f52cea54997d/1519367357785/YEARONE_BROWN_FRONT.png?format=500w" style="width:100%">
-  <button class="w3-button w3-black w3-display-left" onclick="plusDivs(-1, 0)">&#10094;</button>
-  <button class="w3-button w3-black w3-display-right" onclick="plusDivs(1, 0)">&#10095;</button>
-</div>
+    </nav>
+  </div>
 
-<div class="w3-content w3-display-container">
-  <img class="mySlides2" src="https://cdn.shopify.com/s/files/1/0612/2005/products/the_quiet_life_overdye_jogger_pants_purple_grande.jpg?v=1516228219" style="width:100%">
-  <img class="mySlides2" src="https://cdn.shopify.com/s/files/1/0612/2005/products/the_quiet_life_overdye_jogger_pants_light_coral_grande.jpg?v=1516228219" style="width:100%">
-  <img class="mySlides2" src="https://eng.sputnik1985.com/wp-content/uploads/2017/04/IMG_9671.jpg" style="width:100%">
-  <button class="w3-button w3-black w3-display-left" onclick="plusDivs(-1, 1)">&#10094;</button>
-  <button class="w3-button w3-black w3-display-right" onclick="plusDivs(1, 1)">&#10095;</button>
-</div>
-
-<script>
-var slideIndex = [1,1];
-var slideId = ["mySlides1", "mySlides2"]
-showDivs(1, 0);
-showDivs(1, 1);
-
-function plusDivs(n, no) {
-  showDivs(slideIndex[no] += n, no);
-}
-
-function showDivs(n, no) {
-  var i;
-  var x = document.getElementsByClassName(slideId[no]);
-  if (n > x.length) {slideIndex[no] = 1}
-  if (n < 1) {slideIndex[no] = x.length}
-  for (i = 0; i < x.length; i++) {
-     x[i].style.display = "none";
-  }
-  x[slideIndex[no]-1].style.display = "block";
-}
-</script>
-      </div>
+  <!-- Hero content: will be in the middle -->
+  <div class="hero-body">
+    <div class="container has-text-centered">
+      <h1 class="title">
+        Jude Wallach
+      </h1>
+      <h2 class="subtitle">
+        Web & Graphic Designer + Youtuber
+      </h2>
     </div>
-    <script>
-    function displayFunction() {
-        var x = document.getElementById("aboutsite");
-        if (x.style.display === "none") {
-            x.style.display = "block";
-        } else {
-            x.style.display = "none";
-        }
-    }
-    </script>
+  </div>
 
+  <!-- Hero footer: will stick at the bottom -->
+  <div class="hero-foot">
+    <nav class="tabs">
+      <div class="container">
+        <ul>
+          <li class="is-active"><a>Overview</a></li>
+          <li><a>Interests</a></li>
+          <li><a>Youtube Channel</a></li>
+          <li><a>Featured Work</a></li>
+          <li><a>Contact</a></li>
+          <li><a>Social Media</a></li>
+        </ul>
+      </div>
+    </nav>
+  </div>
+</section>
+<section style="padding: 5rem;" class="interests">
+  <div class="container is-widescreen">
+    <nav class="level">
+  <div class="level-item has-text-centered">
+    <div>
+      <span class="icon">
+        <i class="fas fa-paint-brush fa-2x"></i>
+      </span>
+      <p class="para">In my free time I am a graphic designer focusing on programs like Photoshop creating all sorts of art</p>
+    </div>
+  </div>
+  <div class="level-item has-text-centered">
+    <div>
+      <span class="icon">
+        <i class="fas fa-archive fa-2x"></i>
+      </span>
+      <p class="para">In my free time I am a graphic designer focusing on programs like Photoshop creating all sorts of art</p>
+    </div>
+  </div>
+  <div class="level-item has-text-centered">
+    <div>
+      <span class="icon">
+        <i class="fab fa-youtube fa-2x"></i>
+      </span>
+      <p class="para">In my free time I am a graphic designer focusing on programs like Photoshop creating all sorts of art</p>
+    </div>
+  </div>
+</nav>
+  </div>
+</section>
+<section style="padding-top: 3rem;">
+  <div class="container is-widescreen">
+    <h3 class="title is-3">GTX 1080 Benchmarks</h1>
+      <p>I run a Youtube channel dedicated to benchmarking the GTX 1080 and I7-7700. I upload videos displaying performance in today's latest games and older games as well. Below is a trailer of what my channel is about.</p>
+      <article class="media" style="padding-top: 2rem;">
+        <figure class="media-left">
+          <p class="image is-64x64">
+            <img src="https://yt3.ggpht.com/-FPn0rHdrnT0/AAAAAAAAAAI/AAAAAAAAAAA/s7gCHxScjew/s288-mo-c-c0xffffffff-rj-k-no/photo.jpg">
+          </p>
+        </figure>
+        <div class="media-content">
+          <div class="content">
+          <iframe width="560" height="315" src="https://www.youtube.com/embed/N6L1YHTYKG0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+          </div>
+
+        </div>
+        
+      </article>
+  </div>
+</section>
   </body>
 </html>
