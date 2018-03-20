@@ -35,6 +35,20 @@
 	padding-bottom: 1rem;
 }
 
+
+.featuredwork {
+	padding-top: 3rem;
+}
+
+.contactme {
+	padding-top: 3rem;
+}
+
+.input, .textarea {
+	-webkit-box-shadow: none!important;
+	box-shadow: none!important;
+}
+
 /* Portrait Large Phones */
 @media only screen
   and (min-device-width: 414px)
