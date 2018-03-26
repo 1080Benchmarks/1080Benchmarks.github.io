@@ -1,0 +1,306 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+.navigation {
+	width: 100vw;
+	height: 8vh;
+	display: flex;
+	position: fixed;
+	margin-top: 1rem;
+	z-index: 99999;
+}
+
+.leftnav {
+display: flex;
+	flex: 1;
+    justify-content: flex-start;
+    align-items: center;
+		padding-left: 1rem;
+}
+
+.middlenav {
+display: flex;
+flex: 1;
+    justify-content: center;
+    align-items: center
+
+}
+
+.rightnav {
+	display: flex;
+	flex: 1;
+    justify-content: flex-end;
+    align-items: center;
+padding-right: 1rem;
+}
+
+li {
+	display: inline-block;
+}
+
+.leftnav p {
+	font-family: 'Open Sans', sans-serif;
+	font-weight: 600;
+	color: white;
+
+}
+
+li a {
+	font-family: 'Open Sans', sans-serif;
+	font-weight: 400;
+	color: white;
+	text-decoration: none;
+	font-size: 1rem;
+	padding: .5rem;
+}
+
+.navlink {
+	position: relative;
+	text-decoration: none;
+
+}
+
+.navlink::before {
+	content: "";
+	position: absolute;
+
+	height: 2px;
+	background-color: white;
+	bottom: 2.5px;
+	left: 0;
+	width: 0%;
+	transition: all .25s ease-in-out;
+}
+
+.navlink:hover:before {
+	width: 100%;
+}
+
+#activenavlink::before {
+	content: "";
+	position: absolute;
+
+	height: 2px;
+	background-color: white;
+	bottom: 2.5px;
+	left: 0;
+	width: 100%;
+}
+
+
+.headingtext {
+
+position: absolute;
+transform: translateY(-50%);
+top: 50%;
+left: 15%;
+
+}
+
+.headingtext h1 {
+	color: white;
+		font-family: 'Open Sans', sans-serif;
+		font-weight: 700;
+		font-size: 3.5rem;
+}
+
+.headingtext p {
+	font-size: 1.5rem;
+	color: white;
+		font-family: 'Open Sans', sans-serif;
+		font-weight: 700;
+}
+
+sup {
+	font-size: .75rem;
+	color: white;
+		font-family: 'Open Sans', sans-serif;
+		font-weight: 700;
+}
+
+.headingtext small {
+
+	color: white;
+		font-family: 'Open Sans', sans-serif;
+		font-weight: 500;
+}
+
+.hero {
+	background-image: url('https://images.unsplash.com/photo-1520257119747-9591a2d38189?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=89acb684d21ffbb4b1224d1034a262e8&auto=format&fit=crop&w=2700&q=80');
+	background-position: center center;
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	height: 100vh;
+
+
+}
+
+.work {
+	height: 25vh;
+	width: 60%;
+	background-color: white;
+	position: absolute;
+	right: 0;
+	bottom: 0;
+	display: flex;
+}
+
+.scrolltext {
+
+	color: white;
+	font-family: 'Open Sans', sans-serif;
+		font-weight: 500;
+	position: absolute;
+	left: 0;
+	bottom: 0;
+	padding-bottom: 3rem;
+	padding-left: 1rem;
+
+}
+
+#scrolldown {
+	font-weight: 600;
+
+}
+
+.box1 {
+width: 33.3333333%;
+height: 25vh;
+background-color: black;
+
+	color: white;
+	font-family: 'Open Sans', sans-serif;
+		font-weight: 500;
+		position: relative;
+
+
+}
+
+.boxcontent {
+position: absolute;
+top: 50%;
+left: 50%;
+transform: translate(-50%, -50%);
+}
+
+.box2 {
+width: 33.3333333%;
+height: 25vh;
+background-color: black;
+
+	color: white;
+	font-family: 'Open Sans', sans-serif;
+		font-weight: 500;
+		position: relative;
+
+}
+
+.box3 {
+	width: 33.33333%;
+	height: 25vh;
+	background-image: url('logo.svg');
+	background-position: center center;
+	background-repeat: no-repeat;
+	background-size: 35%;
+}
+
+.sidetext {
+
+	position: absolute;
+transform: rotate(90deg) translateY(-50%);
+top: 50%;
+right: 0%;
+color: white;
+font-family: 'Open Sans', sans-serif;
+		font-weight: 500;
+
+}
+
+.boxtext {
+
+}
+
+.head {
+	position: relative;
+	height: 100vh;
+}
+
+.page {
+	width: 100vw;
+}
+
+.skills {
+	width: 60%;
+	padding: 4rem;
+	background-color: black;
+	float: right;
+}
+
+.skills p {
+	font-family: 'Open Sans', sans-serif;
+		font-weight: 400;
+		color: white;
+		opacity: .5;
+}
+
+h2 {
+	font-family: 'Open Sans', sans-serif;
+		font-weight: 600;
+		color: white;
+		font-size: 3rem;
+}
+
+.skill {
+	filter: invert(100);
+	width: 40px;
+	height: auto;
+}
+
+@media screen
+  and (min-device-width: 2000px)
+  and (max-device-width: 3000px)
+  and (-webkit-min-device-pixel-ratio: 1) {
+.headingtext h1 {
+	font-size: 7rem;
+}
+
+.headingtext p {
+	font-size: 2.25rem;
+}
+
+sup {
+	font-size: 1rem;
+}
+
+.headingtext small {
+	font-size: 1.5rem!important;
+}
+
+.leftnav p {
+	font-size: 2rem;
+}
+
+li a {
+	font-size: 1.25rem;
+}
+
+.leftnav {
+	padding-left: 2rem;
+}
+
+.rightnav {
+	padding-right: 2rem;
+}
+
+.boxtext {
+	font-size: 1.5rem;
+}
+
+#scrolldown {
+	font-size: 2rem;
+}
+}
