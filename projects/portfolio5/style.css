@@ -304,3 +304,70 @@ li a {
 	font-size: 2rem;
 }
 }
+
+/* Portrait Large Phones */
+@media only screen
+  and (min-device-width: 414px)
+  and (max-device-width: 736px)
+  and (-webkit-min-device-pixel-ratio: 3)
+  and (orientation: portrait) {
+	.work {
+		width: 100%;
+	}
+
+	#scrolldown, .scrolltext {
+		display: none;
+	}
+
+	.headingtext h1 {
+		font-size: 6rem;
+	}
+
+	.headingtext p {
+		font-size: 2rem;
+	}
+
+	sup {
+		font-size: 1rem;
+	}
+
+.headingtext {
+	top: 40%;
+}
+
+.sidetext {
+	top: 40%;
+	font-size: 1.5rem;
+}
+
+.boxtext {
+	font-size: 2rem;
+}
+
+.skills {
+	width: 100%;
+}
+
+h2 {
+	font-size: 4rem;
+}
+
+.skills p {
+	font-size: 1.25rem;
+}
+
+.leftnav p {
+	font-size: 2rem;
+}
+
+.leftnav {
+	padding-left: 2rem;
+}
+
+.rightnav {
+	padding-right: 2rem;
+}
+.middlenav {
+	display: none;
+}
+}
