@@ -1,0 +1,146 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.nav {
+  width: 75%;
+  height: 8vh;
+  background: green;
+  display: flex;
+  position: fixed;
+  z-index: 9999;
+}
+
+.section1 {
+  background-color: #1c1c1c;
+  width: 15%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.section2 {
+  width: 85%;
+  height: 100%;
+  background: white;
+  display: flex;
+
+  align-items: center;
+  padding-left:   5%;
+}
+
+.one {
+  display: flex;
+  width: 25%;
+  justify-content: center;
+}
+
+.active {
+  font-weight: 600;
+}
+
+#logo {
+  color: white;
+  font-family: 'Open Sans', sans-serif;
+font-weight: 600;
+text-transform: uppercase;
+font-size: 1.25rem;
+}
+
+li a {
+  color: black;
+  text-decoration: none;
+  font-family: 'Open Sans', sans-serif;
+font-weight: 400;
+padding: 1rem;
+}
+
+li {
+  list-style: none;
+}
+
+.heroside {
+  width: 40%;
+  height: 100%;
+  background: white;
+  position: relative;
+
+}
+
+.top {
+  height: 45%;
+  display: flex;
+  align-items: flex-end;
+  justify-content: flex-start;
+  margin-left: 10%;
+  margin-bottom: 10%;
+}
+
+.bottom {
+  height: 50%;
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  margin-left: 10%;
+
+}
+
+.bottom p {
+  font-family: 'Open Sans', sans-serif;
+font-weight: 400;
+width: 75%;
+}
+
+.hero {
+  width: 100vw;
+  height: 100vh;
+  /*background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;*/
+  background-image: url('https://images.unsplash.com/photo-1432145760194-7ad0fcd4e57c?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=d68a31d26a4a1944361bc864de174f58&auto=format&fit=crop&w=2700&q=80');
+}
+
+h1 {
+  color: black;
+  font-family: 'Open Sans', sans-serif;
+font-weight: 600;
+font-size: 5rem;
+}
+
+.yellow {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  background: #ffc001;
+  width: 85%;
+  height: 10%;
+  padding-left: 18%;
+  display: flex;
+  align-items: center;
+  font-family: 'Open Sans', sans-serif;
+font-weight: 600;
+font-size: 1;
+font-size: 1.5rem;
+}
+
+.grey {
+  position: absolute;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 5rem;
+font-weight: 600;
+display: flex;
+align-items: center;
+justify-content: center;
+  bottom: 0;
+  color: white;
+  right: -20%;
+  background: #1c1c1c;
+  width: 60%;
+  height: 18%;
+  z-index: 99999;
+
+}
