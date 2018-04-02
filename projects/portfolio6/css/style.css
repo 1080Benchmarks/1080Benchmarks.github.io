@@ -271,4 +271,8 @@ justify-content: center;
     .top {
       margin-bottom: 5%;
     }
+    
+    .burger {
+      margin-top: 1rem;
+    }
 }
