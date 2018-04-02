@@ -7,10 +7,10 @@
 .nav {
   width: 75%;
   height: 8vh;
-  background: green;
+  background: white;
   display: flex;
   position: fixed;
-  z-index: 9999;
+  z-index: 999999;
 }
 
 .section1 {
@@ -62,12 +62,67 @@ li {
   list-style: none;
 }
 
+.sidebar {
+  width: 5vw;
+  height: 100vh;
+  background: white;
+  position: fixed;
+  top: 0;
+  right: 0;
+  text-align: center;
+  display: flex;
+  flex-flow: column;
+  z-index: 999999;
+}
+
+#navburger {
+text-decoration: none;
+color: black;
+font-size: 3rem;
+}
+
+.burger {
+  margin-top: 3rem;
+}
+
+.sidebarelement {
+  transform: rotate(90deg);
+  padding: 2.5vw;
+  font-family: 'Open Sans', sans-serif;
+font-weight: 400;
+}
+
 .heroside {
   width: 40%;
   height: 100%;
   background: white;
   position: relative;
 
+}
+
+.halfone {
+  display: flex;
+  height: 50%;
+  width: 100%;
+  justify-content: center;
+  overflow: scroll;
+}
+
+.halftwo {
+  display: flex;
+  height: 50%;
+  width: 100%;
+  justify-content: center;
+  align-items: flex-end;
+}
+
+.scrolldown {
+  width: 100%;
+  height: 20%;
+  background: #ffc001;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .top {
@@ -97,10 +152,10 @@ width: 75%;
 .hero {
   width: 100vw;
   height: 100vh;
-  /*background-position: center center;
+  background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
-  background-attachment: fixed;*/
+  background-attachment: fixed;
   background-image: url('https://images.unsplash.com/photo-1432145760194-7ad0fcd4e57c?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=d68a31d26a4a1944361bc864de174f58&auto=format&fit=crop&w=2700&q=80');
 }
 
@@ -143,4 +198,77 @@ justify-content: center;
   height: 18%;
   z-index: 99999;
 
+}
+
+.page {
+  width: 100vw;
+  height: 100vh;
+}
+
+/* Portrait Large Phones */
+@media only screen
+  and (min-device-width: 414px)
+  and (max-device-width: 736px)
+  and (-webkit-min-device-pixel-ratio: 3)
+  and (orientation: portrait) {
+    .sidebar {
+      width: 15vw;
+    }
+
+    .sidebarelement {
+      font-size: 1.75rem;
+      padding: 5rem;
+    }
+
+    .nav {
+      width: 100%;
+    }
+
+    li a {
+      font-size: 1.5rem;
+    }
+
+    .heroside {
+      width: 60%;
+    }
+
+    .grey {
+      height: 12%;
+      font-size: 2.5rem;
+    }
+
+    .bottom p {
+      font-size: 1.5rem;
+
+    }
+
+    .top {
+      height: 40%;
+    }
+}
+
+/* ----------- Non-Retina Laptops ----------- */
+@media screen
+  and (min-device-width: 1200px)
+  and (max-device-width: 1600px)
+  and (-webkit-min-device-pixel-ratio: 1) {
+    .grey {
+      font-size: 2rem;
+    }
+
+    .yellow {
+      padding-left: 13%;
+    }
+
+    .sidebar {
+      width: 6vw;
+    }
+
+    h1 {
+      font-size: 4rem;
+    }
+
+    .top {
+      margin-bottom: 5%;
+    }
 }
