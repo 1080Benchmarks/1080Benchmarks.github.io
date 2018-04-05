@@ -129,7 +129,7 @@ padding-left: 3rem;
     display: flex;
     background: transparent;
       /*border: 5px red solid;*/
-      border-left: 2px white solid;
+      border-left: 1px white solid;
       flex-flow: column;
 }
 
@@ -176,7 +176,7 @@ flex: 1.10;
 display: flex;
 justify-content: flex-start;
   padding-left: 2rem;
-border-bottom: 2px white solid;
+border-bottom: 1px white solid;
     align-items: center;
 }
 
