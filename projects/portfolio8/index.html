@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Jude Wallach</title>
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,500" rel="stylesheet">
+    <script defer src="https://use.fontawesome.com/releases/v5.0.9/js/all.js" integrity="sha384-8iPTk2s/jMVj81dnzb/iFR2sdA7u06vHJyyLlAd4snFpCl/SnyUjRrbdJsw1pGIl" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="css/style.css">
+        <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.0/jquery.min.js"></script>
+  </head>
+  <body>
+
+<div class="hero">
+
+
+<div class="herocontent">
+  <div class="nav">
+<div class="leftnav">
+<img src="logo.svg" id="logo" alt="">
+</div>
+<div class="rightnav">
+<ul>
+<a href="#"><i class="fas fa-bars fa-2x" onclick="openNav()" style="z-index:;"></i></a>
+</ul>
+</div>
+</div>
+<div id="myNav" class="overlay">
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+  <div class="overlay-content">
+    <a href="#" id="active">Home</a>
+    <a href="#">Portfolio</a>
+    <a href="#">About</a>
+    <a href="#">Contact</a>
+  </div>
+</div>
+
+<div class="herocontentleft">
+  <div class="headtext">
+    <h1 onclick="openNav" >Jude T. Wallach</h1>
+    <p>Graphic / Web Designer & Youtuber <br>Latitude: 24.19330, Longitude: -152.69561</p>
+  </div>
+  <i class="fas fa-chevron-circle-down fa-4x" id="down" style="color: white;"></i>
+<div class="topics">
+   <p class="page">Page 1</p>
+<div class="shape"> </div>
+<div class="shapesmall"></div>
+<div class="shapesmall"></div>
+</div>
+</div>
+<div class="herocontentright">
+<div class="headerimage">
+<img id="headerimage" src="https://source.unsplash.com/collection/641379/
+" alt="">
+</div>
+<div class="randomimg">
+<div class="ri">
+<a href="#"><i class="fas fa-chevron-left fa-2x"></i></a>
+<p style="display: inline-block;" id="imageslider">Previous / Next</p>
+<a href="#"><i class="fas fa-chevron-right fa-2x"></i></a>
+</div>
+</div>
+</div>
+</div>
+</div>
+<script>
+function openNav() {
+document.getElementById("myNav").style.width = "77%";
+}
+
+function closeNav() {
+document.getElementById("myNav").style.width = "0%";
+}
+</script>
+
+
+
+  </body>
+</html>
