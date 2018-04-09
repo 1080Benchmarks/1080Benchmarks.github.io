@@ -252,6 +252,14 @@ p {
   font-size: 2.5rem;
 }
 
+.nav {
+  width: 85vw;
+}
+
+.herocontent {
+  width: 85vw;
+}
+
 }
 
 /* Portrait Large Phones */
