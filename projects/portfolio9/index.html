@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Jude Wallach</title>
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Playfair+Display" rel="stylesheet">
+    <script defer src="https://use.fontawesome.com/releases/v5.0.10/js/all.js" integrity="sha384-slN8GvtUJGnv6ca26v8EzVaR9DC58QEwsIk9q1QXdCU8Yu8ck/tL/5szYlBbqmS+" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="css/style.css">
+  </head>
+  <body>
+    <div class="hero">
+      <div class="content">
+        <div class="bgimg">
+          <div class="headtext">
+<h1>Jude T. Wallach</h1>
+<p>Latitude: -59.20141, Longitude: -131.26356</p>
+          </div>
+          <div class="opennav">
+<i class="fas fa-bars" onclick="openNav()"></i>
+          </div>
+          <div class="borderbottomleft">
+<img src="border.png" class="border" alt="">
+          </div>
+          <div class="bordertopright">
+<img src="border.png" class="border" id="flippedborder" alt="">
+          </div>
+          <div class="scrolldown">
+<a href="#"> <i class="fas fa-caret-down"></i></a>
+          </div>
+          <div id="myNav" class="overlay">
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()"><i class="fas fa-times"></i></a>
+  <div class="overlay-content">
+    <a href="#" id="active">Home</a>
+    <a href="#">Portfolio</a>
+    <a href="#">About</a>
+    <a href="#">Contact</a>
+  </div>
+</div>
+
+        </div>
+
+      </div>
+    </div>
+    <script>
+function openNav() {
+document.getElementById("myNav").style.width = "100%";
+}
+
+function closeNav() {
+document.getElementById("myNav").style.width = "0%";
+}
+</script>
+
+  </body>
+</html>

@@ -1,0 +1,165 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.hero {
+  width: 100vw;
+  height: 100vh;
+  background: black;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+}
+
+h1 {
+    font-family: 'Futura';
+    font-weight: bold;
+    font-style: normal;
+    color: white;
+    font-size: 4rem;
+}
+
+p {
+  font-family: 'Playfair Display', serif;
+  font-size: 1.25rem;
+    color: #8a1e6a;
+
+}
+
+.content {
+  width: 77vw;
+  height: 80vh;
+  display: flex;
+  justify-content: center;
+  margin-left: 10%;
+  align-items: center;
+}
+
+.scrolldown {
+  color: white;
+  font-size: 6rem;
+  bottom: -40%;
+  right: 0;
+  position: absolute;
+}
+
+.scrolldown a {
+  color: white;
+}
+
+
+.bgimg {
+width: 55%;
+height: 60%;
+background-image: url('https://images.unsplash.com/photo-1474770337042-bd7e2ccb4f39?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=449c34d5dcd34814b1595734eaacb5cb&auto=format&fit=crop&w=2990&q=80');
+background-position: center center;
+background-repeat: no-repeat;
+background-size: cover;
+position: relative;
+}
+
+.headtext {
+  position: absolute;
+  top: 25%;
+  left: -40%;
+  z-index: 99;
+}
+
+.opennav {
+  position: absolute;
+  top: 0;
+  right: 0;
+  color: white;
+  padding: 1rem;
+  font-size: 2.5rem;
+}
+
+.opennav:hover {
+  cursor: not-allowed;
+}
+
+.border {
+  width: 100px;
+  height: auto;
+}
+
+#flippedborder {
+  transform: scaleX(-1) scaleY(-1);
+}
+
+.borderbottomleft {
+  bottom: -15%;
+  left: -7.5%;
+  position: absolute;
+}
+
+.bordertopright {
+  top: -15%;
+  right: -7.5%;
+  position: absolute;
+}
+
+.overlay {
+    height: 100%;
+    width: 0%;
+    position: absolute;
+    z-index: 4;
+    background: black;
+    overflow-x: hidden;
+    transition: 0.5s;
+    display: flex;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.overlay-content {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center
+    ;
+    text-align: center;
+
+    width: 100%;
+    text-align: center;
+    padding-left: 5rem;
+    flex-flow: column;
+}
+
+.overlay a {
+    padding: 8px;
+    text-decoration: none;
+    font-size: 3rem;
+    color: #818181;
+    display: block;
+    transition: 0.3s all ease-in-out;
+    font-family: 'Roboto', sans-serif;
+
+    font-weight: 300;
+
+}
+
+.overlay a:hover, .overlay a:focus {
+    color: #8a1e6a;
+}
+
+.overlay .closebtn {
+    position: absolute;
+    top: 0;
+    right: 0;
+
+    z-index: 9999999;
+}
+
+@media screen and (max-height: 450px) {
+  .overlay a {font-size: 20px}
+  .overlay .closebtn {
+    font-size: 40px;
+    top: 15px;
+    right: 35px;
+  }
+}
