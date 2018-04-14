@@ -103,7 +103,7 @@ position: relative;
 }
 
 .overlay {
-    height: 100%;
+    height: 100.5%;
     width: 0%;
     position: absolute;
     z-index: 4;
@@ -126,7 +126,7 @@ position: relative;
 
     width: 100%;
     text-align: center;
-    padding-left: 5rem;
+
     flex-flow: column;
 }
 
@@ -162,4 +162,265 @@ position: relative;
     top: 15px;
     right: 35px;
   }
+}
+
+.page {
+background: black;
+height: 100vh;
+max-width: 68vw;
+margin: auto;
+margin-top: 10vh;
+}
+
+body {
+  background: black;
+}
+
+.header {
+  display: inline;
+  padding: .5rem;
+  font-size: 3rem;
+}
+
+.ptext {
+  color: white;
+  font-family: 'Roboto', arial, sans-serif;
+  font-size: 1.5rem;
+  padding-top: 2rem;
+}
+
+.skills {
+  float: right;
+}
+
+.featured {
+  width: 100%;
+  height: 25vh;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  position: relative;
+}
+
+.featured:hover .info {
+  width: 100%;
+  visibility: visible;
+}
+
+h2 {
+  opacity: 0;
+  transition: all .65s ease-in-out;
+}
+
+.info p {
+  opacity: 0;
+  transition: all .65s ease-in-out;
+}
+
+.featured:hover .info h2 {
+  opacity: 1;
+}
+
+.featured:hover .info p {
+  opacity: 1;
+}
+
+h2 {
+  color: white;
+  font-family: 'Futura', arial, sans-serif;
+  font-size: 3rem;
+}
+
+.infop {
+  color: white;
+  font-family: 'Roboto', arial, sans-serif;
+}
+
+
+.info {
+  position: absolute;
+  visibility: hidden;
+  top: 0;
+  left: 0;
+  background: black;
+  width: 0%;
+  height: 100%;
+  transition: all .5s ease-in-out;
+  padding: 2rem;
+}
+
+.featured:hover {
+
+}
+
+.work {
+  margin-top: 5rem;
+}
+
+#piece1 {
+  background-image: url('https://images.unsplash.com/photo-1495171730477-a61f1827fc1f?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=0c410976d6bbf2bfa79a6dba6dbfadb5&auto=format&fit=crop&w=2704&q=80');
+
+}
+
+#piece2 {
+  background-image: url('https://images.unsplash.com/photo-1485838744144-fad9fe873ff6?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=7838743c4e0d77af701d371776f83a20&auto=format&fit=crop&w=2700&q=80');
+
+}
+
+#piece3 {
+  background-image: url('https://images.unsplash.com/photo-1502622796232-e88458466c33?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=910d6fef5cb61eea66b236d356cb187e&auto=format&fit=crop&w=3264&q=80');
+}
+
+#piece4 {
+  background-image: url('https://images.unsplash.com/photo-1487837647815-bbc1f30cd0d2?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=8baa4175fc826de805f96bc428c653a0&auto=format&fit=crop&w=2467&q=80');
+
+}
+
+.footer {
+  width: 100%;
+  height: 20vh;
+  background: ;
+  margin-top: 10vh;
+  display: flex;
+  justify-content: center;
+}
+
+.footer1 {
+flex: .3333333333;
+justify-content: center;
+display: flex;
+align-items: center;
+}
+
+.footer2 {
+  flex: .3333333333;
+  justify-content: center;
+  display: flex;
+
+  align-items: center;
+
+}
+
+.footer3 {
+  flex: .3333333333;
+  justify-content: center;
+  display: flex;
+
+  align-items: center;
+
+}
+
+a {
+  font-family: 'Roboto', arial, sans-serif;
+  text-decoration: none;
+  font-size: 1.25rem;
+}
+
+.scrolldown a {
+  font-size: 5rem;
+}
+
+#flippedborder {
+  z-index: 19;
+}
+
+.opennav {
+  z-index: 22;
+}
+
+.overlay {
+  z-index: 30;
+}
+
+/* ----------- Non-Retina Laptops ----------- */
+@media screen
+  and (min-device-width: 1200px)
+  and (max-device-width: 1600px)
+  and (-webkit-min-device-pixel-ratio: 1) {
+.bgimg {
+  width: 65%;
+}
+
+h1 {
+  font-size: 3rem;
+}
+
+p {
+  font-size: .75rem;
+}
+
+.scrolldown {
+  font-size: 4.5rem;
+}
+
+.opennav {
+  font-size: 1.5rem;
+}
+
+.overlay a {
+  font-size: 2.5rem;
+}
+
+.ptext {
+  font-size: 1.25rem;
+}
+
+.footer2 h1 {
+  font-size: 2.25rem;
+}
+
+.info h2 {
+  font-size: 2.5rem;
+}
+
+.scrolldown a {
+  font-size: 3rem;
+}
+}
+
+/* Portrait Large Phones */
+@media only screen
+  and (min-device-width: 414px)
+  and (max-device-width: 736px)
+  and (-webkit-min-device-pixel-ratio: 3)
+  and (orientation: portrait) {
+    .bgimg {
+      width: 77%;
+    }
+
+    .content {
+      margin-left: 18%;
+    }
+
+    .overlay-content {
+      padding-left: 0;
+    }
+
+    .footer2 h1 {
+      font-size: 2.5rem;
+      text-align: center;
+    }
+
+    a {
+      font-size: 1.5rem;
+    }
+
+    .scrolldown a {
+      font-size: 4rem;
+    }
+}
+
+/* Portrait Small Phones */
+@media only screen
+  and (min-device-width: 375px)
+  and (max-device-width: 667px)
+  and (-webkit-min-device-pixel-ratio: 2)
+  and (orientation: portrait) {
+.bgimg {
+  width: 75%;
+}
+
+.footer2 h1 {
+  text-align: center;
+}
 }

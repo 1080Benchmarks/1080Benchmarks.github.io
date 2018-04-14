@@ -1,0 +1,19 @@
+p {
+    color: #feca01;
+}
+
+.bgimg {
+background-image: url('https://images.unsplash.com/photo-1436262513933-a0b06755c784?ixlib=rb-0.3.5&s=588575ea74cf8bf0b4d9fe49e59af31a&auto=format&fit=crop&w=2702&q=80');
+}
+
+.overlay a:hover, .overlay a:focus {
+    color: #feca01;
+}
+
+#aboutheader {
+  background: #feca01;
+}
+
+a {
+  color: #feca01;
+}
