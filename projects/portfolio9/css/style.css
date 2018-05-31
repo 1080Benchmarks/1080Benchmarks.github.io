@@ -209,12 +209,12 @@ body {
 
 h2 {
   opacity: 0;
-  transition: all .65s ease-in-out;
+  transition: all .4s ease-in-out;
 }
 
 .info p {
   opacity: 0;
-  transition: all .65s ease-in-out;
+  transition: all .4s ease-in-out;
 }
 
 .featured:hover .info h2 {
