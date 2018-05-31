@@ -1,0 +1,314 @@
+* {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+}
+
+html {
+
+}
+
+.hero {
+	width: 100vw;
+	height: 100vh;
+	background-image: url(heroimage.svg);
+	background-size: 47%;
+	background-repeat: no-repeat;
+	background-position: bottom right;
+	padding-top: 15%;
+	padding-left: 5%;
+}
+
+.nav {
+	width: 100vw;
+	height: 8vh;
+	display: flex;
+	position: fixed;
+	padding: 1rem;
+
+
+}
+
+.nav1 {
+	flex: .25;
+		display: flex;
+	align-items: center;
+	height: 8vh;
+}
+
+.nav2 {
+	flex: .75;
+	display: flex;
+	justify-content: flex-end;
+	padding-right: 1rem;
+	line-height: 8vh;
+	height: 8vh;
+}
+
+#logo {
+	filter: invert(100) hue-rotate(100deg);
+	width: 100px;
+	height: auto;
+}
+
+li {
+	list-style-type: none;
+	display: inline-block;
+}
+
+li i {
+	font-size: 1.5rem;
+	padding-left: .5rem;
+	padding-right: .5rem;
+}
+
+#head {
+	font-family: 'Cabin', sans-serif;
+	font-size: 6rem;
+}
+
+.subhead {
+	font-family: 'PT Sans', sans-serif;
+	color: #797979;
+	font-size: 1.25rem;
+}
+
+.herotext button {
+	background: #009688;
+	border: none;
+	color: white;
+	padding: 1rem;
+	font-size: 1.25rem;
+	font-family: 'Cabin', sans-serif;
+	border-radius: 2rem;
+	margin-top: 2rem;
+}
+
+h2 {
+	font-family: 'Cabin', sans-serif;
+	font-size: 3rem;
+}
+
+.about p {
+	font-family: 'PT Sans', sans-serif;
+	font-size: 1.125rem;
+}
+
+.about {
+	background-color: #f5f5f5;
+	padding-left: 2.5%;
+	padding-top: 5%;
+	padding-bottom: 5%;
+}
+
+#lnk {
+  display: none;
+}
+
+input[type="text"] {
+  padding: .25rem;
+  padding-left: .5rem;
+  font-size: 1.5rem;
+  border-radius: .25em;
+  border: 2px #747474 solid;
+
+}
+
+span {
+	font-family: 'Cabin', sans-serif;
+	padding-left: .5rem;
+	padding-right: .5rem;
+}
+
+#comparebutton {
+		background: #009688;
+	border: none;
+	color: white;
+	padding: 1rem;
+	font-size: 1.25rem;
+	font-family: 'Cabin', sans-serif;
+	border-radius: 2rem;
+}
+
+.input {
+	padding-top: 2rem;
+}
+
+.trending {
+	padding-left: 1rem;
+	padding-top: 3rem;
+}
+
+.galleryitem {
+  height: 250px;
+  width: auto;
+}
+
+   figure {
+     flex: 0 0 31.3333%;
+/*margin: 3% 0 0;*/
+   }
+
+   figure img {
+     width: 100%;
+vertical-align:top;
+transition: all .5s ease-in-out;
+   }
+
+   /*figure img:hover {
+     filter: brightness(0.9);
+   }*/
+
+   .gallery {
+     display: flex;
+     flex-flow: wrap;
+     justify-content: flex-start;
+   }
+
+figcaption {
+  font-family: 'PT Sans', arial, sans-serif;
+  color: #009688;
+}
+
+@media only screen and (max-device-width: 599px) {
+    figure {
+      flex: 0 0 31.3333%;
+ margin: 10% 0 0;
+    }
+
+    .gallery figure {
+    flex: 0 0 50%;
+    }
+  }
+
+.footer {
+	width: 100vw;
+	height: 30vh;
+	display: flex;
+	margin-top: 10vh;
+
+}
+
+.sec1 {
+flex:.33333333;
+background-color: #f5f5f5;
+display: flex;
+	justify-content: center;
+	align-items: center;
+
+}
+
+.sec2 {
+flex:.33333333;
+background-color: #ebebeb;
+display: flex;
+	justify-content: center;
+	align-items: center;
+
+}
+
+.sec3 {
+flex:.33333333;
+background-color: #e7e7e7;
+font-family: 'Cabin', arial, sans-serif;
+display: flex;
+	justify-content: center;
+	align-items: center;	
+
+}
+
+.footerlogo {
+		filter: invert(100) hue-rotate(100deg);
+	width: 200px;
+	height: auto;
+}
+
+.sec2 li a {
+	text-decoration: none;
+	color: #009688;
+	font-family: "PT Sans", arial, sans-serif;
+
+}
+
+/* Portrait Large Phones */
+@media only screen 
+  and (min-device-width: 414px) 
+  and (max-device-width: 736px) 
+  and (-webkit-min-device-pixel-ratio: 3)
+  and (orientation: portrait) { 
+.hero {
+	background-size: 75%;
+	padding-top: 50%;
+}
+
+.about p {
+	font-size: 1.5rem;
+}
+
+#comparebutton {
+	font-size: 1.75rem;
+}
+
+input[type="text"] {
+	font-size: 1.75rem;
+}
+
+span {
+	font-size: 1.5rem;
+}
+
+figcaption {
+	font-size: 2rem;
+}
+
+.sec2 li a {
+	font-size: 1.5rem;
+}
+
+.sec2 {
+	text-align: center;
+}
+
+#logo {
+	width: 150px;
+	height: auto;
+}
+
+li i {
+	font-size: 2rem;
+}
+
+}
+
+/* Portrait Phones */
+@media only screen 
+  and (min-device-width: 375px) 
+  and (max-device-width: 667px) 
+  and (-webkit-min-device-pixel-ratio: 2)
+  and (orientation: portrait) { 
+  		.hero {
+  			background-size: 80%;
+  			padding-top: 55%;
+  		}
+
+  		#logo {
+	width: 150px;
+	height: auto;
+}
+
+li i {
+	font-size: 2rem;
+}
+
+.sec2 li a {
+	font-size: 1.5rem;
+}
+
+.sec2 {
+	text-align: center;
+}
+
+figcaption {
+	font-size: 1.75rem;
+}
+}
