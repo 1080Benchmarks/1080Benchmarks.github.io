@@ -55,7 +55,7 @@ button {
 	color: white;
 	padding: .5rem;
 	border-radius: .5em;
-	font-size: 1rem;	
+	font-size: 1rem;
 }
 
 .fa-phone {
@@ -175,7 +175,7 @@ height: 100%;
  	 	width: 100%;
  	 	display: flex;
  	 	align-items: center;
- 	 	justify-content: center;	
+ 	 	justify-content: center;
  	transition: all .25s ease-in-out;
  	position: absolute;
  	bottom: 0;
@@ -195,7 +195,7 @@ height: 100%;
 
  .itemlink {
  	  display: none;
- 	    
+
 
  }
 
@@ -208,7 +208,7 @@ height: 100%;
   display: block;
 }
 
-  
+
 
  .itemlink2 {
  	 	  display: none;
@@ -299,15 +299,15 @@ height: 100%;
 
 
 
- 
+
 
 /* Portrait Large Phones */
-@media only screen 
-  and (min-device-width: 414px) 
-  and (max-device-width: 736px) 
+@media only screen
+  and (min-device-width: 414px)
+  and (max-device-width: 736px)
   and (-webkit-min-device-pixel-ratio: 3)
-  and (orientation: portrait) { 
- 
+  and (orientation: portrait) {
+
 
   .itemlink2 {
  	  display: inline-block;
@@ -317,7 +317,7 @@ height: 100%;
 
   .itemlink {
  	  display: none;
- 	    
+
 
  }
 
@@ -331,4 +331,55 @@ height: 100%;
 }
 
 
+}
+/*4k Screens*/
+@media screen and (min-width: 1900px) {
+	.itemlink2 {
+		display: inline-block;
+	margin-bottom: 20px;
+	width: calc(14% - 4px);
+ }
+
+	.itemlink {
+		display: none;
+
+
+ }
+
+ .itemcontainer {
+	display: none;
+		margin-bottom: 20px;
+	width: calc(14% - 4px);
+ }
+ .show {
+	display: block;
+}
+
+.slick-slide img {
+	width: 75%;
+}
+
+h1 {
+	font-size: 5rem;
+}
+
+.hero span {
+	font-size: 1.25rem;
+}
+
+.content h2 {
+	font-size: 2em;
+}
+
+#logo {
+	font-size: 2rem;
+}
+
+a {
+	font-size: 1.25rem;
+}
+
+button {
+	font-size: 1.125rem;
+}
 }

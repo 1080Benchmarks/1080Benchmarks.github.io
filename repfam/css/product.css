@@ -56,7 +56,7 @@ button {
   color: white;
   padding: .5rem;
   border-radius: .5em;
-  font-size: 1rem;  
+  font-size: 1rem;
 }
 
 .fa-phone {
@@ -95,7 +95,7 @@ button {
     .product {
       display: flex;
       flex-flow:;
-    } 
+    }
 
     .productinfo {
       padding-left: 2rem;
@@ -123,7 +123,7 @@ button {
     p {
       font-family: 'Roboto', arial, sans-serif;
       font-size: 1.125rem;
-      
+
     }
 
 
@@ -216,7 +216,7 @@ button {
     width: 100%;
     display: flex;
     align-items: center;
-    justify-content: center;  
+    justify-content: center;
   transition: all .25s ease-in-out;
   position: absolute;
   bottom: 0;
@@ -232,4 +232,27 @@ button {
 
  .content figure {
   margin-left: 0;
+ }
+
+ /*4k Screens*/
+ @media screen and (min-width: 1900px) {
+   .itemcontainer {
+   display: inline-block;
+   flex-flow: column;
+     margin-bottom: 20px;
+   width: calc(13% - 4px);
+  }
+
+  .content {
+    margin-top: 5vh;
+  }
+
+  .custom {
+    width: 420px;
+    height: auto;
+  }
+
+  .productinfo {
+    width: 40%;
+  }
  }
