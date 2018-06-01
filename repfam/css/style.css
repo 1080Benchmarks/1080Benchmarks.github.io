@@ -330,6 +330,10 @@ height: 100%;
   display: block;
 }
 
+.hero {
+	background-attachment: inherit;
+}
+
 
 }
 /*4k Screens*/
