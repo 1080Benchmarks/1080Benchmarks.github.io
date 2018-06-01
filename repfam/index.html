@@ -83,7 +83,7 @@
     <div class="dropdown-content">
       <div class="dropdown-item">
 
-          
+
 <div id="myBtnContainer">
   <p class="btn active" onclick="filterSelection('all')"> Show all</p>
   <p class="btn" onclick="filterSelection('ss')"> Short Sleeve</p>
@@ -132,7 +132,7 @@
         </figure>
       </a></div>
       <div class="itemcontainer ow">
-      <a href="" class="itemlink ow"> 
+      <a href="" class="itemlink ow">
         <figure style="background-image: url(images/basic/sherpahoodie.jpg);">
           <figcaption>Sherpa Zip Up</figcaption>
         </figure>
@@ -239,7 +239,7 @@
           <figcaption>Gosha Arrows Tee</figcaption>
         </figure>
       </a>
-      <a href="" class="itemlink2"> 
+      <a href="" class="itemlink2">
         <figure class="curated" style="background-image: url(images/ow/ow1991.jpg);">
           <figcaption>OW 1991 Tee</figcaption>
         </figure>
@@ -271,7 +271,7 @@
         <li class="footerlink"><a href="" class="footerlink">Trusted Shops</a></li>
         <li class="footerlink"><a href="" class="footerlink">About</a></li>
         <li class="footerlink"><a href="" class="footerlink">Contact</a></li>
-      </ul> 
+      </ul>
   </div>
     <div class="footersection2">
       <h3><strong>RepFam</strong></h3>
@@ -288,7 +288,7 @@
   <script src="./slick/slick.min.js" type="text/javascript" charset="utf-8"></script>
   <script type="text/javascript">
     $(document).on('ready', function() {
-     
+
       $(".regular").slick({
         dots: false,
         infinite: true,
@@ -297,7 +297,7 @@
         arrows: true,
 
       });
-      
+
     });
 </script>
 <script type="text/javascript">
@@ -307,7 +307,7 @@
         e.preventDefault();
         $(".itemlink:hidden").slice(0, 10).show(); // select next 10 hidden divs and show them
         if($(".itemlink:hidden").length == 0){ // check if any hidden divs still exist
-            
+
         }
     });
 });
@@ -319,7 +319,7 @@
         e.preventDefault();
         $(".itemlink2:hidden").slice(0, 10).show(); // select next 10 hidden divs and show them
         if($(".itemlink2:hidden").length == 0){ // check if any hidden divs still exist
-            
+
         }
     });
 });
@@ -356,7 +356,7 @@ function w3RemoveClass(element, name) {
   arr2 = name.split(" ");
   for (i = 0; i < arr2.length; i++) {
     while (arr1.indexOf(arr2[i]) > -1) {
-      arr1.splice(arr1.indexOf(arr2[i]), 1); 
+      arr1.splice(arr1.indexOf(arr2[i]), 1);
     }
   }
   element.className = arr1.join(" ");
@@ -374,9 +374,9 @@ for (var i = 0; i < btns.length; i++) {
 }
 </script>
 <!--<script type="text/javascript">
-$(document).ready(function(){       
+$(document).ready(function(){
             var scroll_pos = 0;
-            $(document).scroll(function() { 
+            $(document).scroll(function() {
                 scroll_pos = $(this).scrollTop();
                 if(scroll_pos > 350) {
                     $("#nav").css('background-color', 'white');
