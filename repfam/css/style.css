@@ -201,6 +201,12 @@ height: 100%;
 
  }
 
+ .itemlinkcurated {
+		 display: none;
+
+
+ }
+
  .itemcontainer {
  	display: none;
  	  margin-bottom: 20px;
@@ -208,6 +214,15 @@ height: 100%;
  }
  .show {
   display: block;
+}
+
+.itemcontainer2 {
+ display: none;
+	 margin-bottom: 20px;
+ width: calc(20% - 4px);
+}
+.show {
+ display: block;
 }
 
 
@@ -229,6 +244,7 @@ height: 100%;
 
  #loadmore {
  	margin-top: 2rem;
+	margin-bottom: 2rem;
  }
 
  .curatedgallery {
@@ -297,6 +313,7 @@ height: 100%;
  .btn {
  	background: none;
  	color: black;
+	cursor: pointer;
  }
 
 
@@ -356,6 +373,18 @@ height: 100%;
 	display: none;
 		margin-bottom: 20px;
 	width: calc(14% - 4px);
+ }
+
+ .itemlinkcurated {
+	 display: none;
+
+
+ }
+
+ .itemcontainer2 {
+ display: none;
+	 margin-bottom: 20px;
+ width: calc(14% - 4px);
  }
  .show {
 	display: block;
