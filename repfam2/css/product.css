@@ -1,0 +1,60 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+@font-face {
+    font-family: 'Futura';
+    src: url('Futura-Bold.woff2') format('woff2'),
+        url('Futura-Bold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+}
+
+.content {
+  width: 100vw;
+  display: flex;
+}
+
+.itemview {
+  height: 100vh;
+  width: 30vw;
+  background-image: url(../images/stone/stonejoggers.jpg);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.desc h2 {
+  font-family: 'Futura', arial, sans-serif;
+  font-size: 4rem;
+}
+
+.desc {
+  padding: 3rem;
+}
+
+span a {
+  text-decoration: none;
+  font-family: 'Open Sans', arial, sans-serif;
+  font-size: 1.25rem;
+  color: black;
+}
+
+li {
+  list-style: none;
+  font-family: 'Open Sans', arial, sans-serif;
+  font-size: 1.5rem;
+}
+
+ul {
+  margin-top: 2rem;
+}
+
+img {
+  display: inline;
+  width: 25px;
+  height: auto;
+  vertical-align: middle;
+}
