@@ -12,12 +12,33 @@
     font-style: normal;
 }
 
+.nav {
+  width: 175px;
+  background: black;
+  position: fixed;
+  z-index: 999;
+  transition: all .5s ease-in-out;
+  overflow: hidden;
+  color: white;
+  visibility: hidden;
+  padding: 1rem;
+}
+
+.fa-bars {
+  font-size: 1.25rem;
+}
+
+.nav h1 {
+  font-family: 'Futura', arial, sans-serif;
+}
+
 
 
 .content {
     display: flex;
     flex-wrap: wrap;
     width: 100vw;
+    z-index: 9999999;
 }
 
 .item {
@@ -29,6 +50,7 @@
     background-size: cover;
     position: relative;
     overflow: hidden;
+    z-index: ;
 }
 
 .overlay {
@@ -70,4 +92,120 @@
   padding-top: .5rem;
   padding-bottom: 0;
   /*display: none;*/
+}
+
+.overlay2 {
+
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    background-color: rgb(0,0,0);
+    overflow-x: hidden;
+    transition: 0.5s;
+    font-family: 'Futura', arial, sans-serif;
+}
+
+.overlay-content {
+    position: relative;
+    top: 25%;
+    width: 100%;
+    left: 10%;
+    text-align: center;
+    margin-top: 30px;
+}
+
+.overlay2 a {
+    padding: 8px;
+    text-decoration: none;
+    font-size: 5rem;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+    text-align: left;
+}
+
+
+.overlay2 a:hover, .overlay2 a:focus {
+    color: #f1f1f1;
+}
+
+
+.overlay2 .closebtn {
+    position: absolute;
+    top: 20px;
+    right: 45px;
+    font-size: 60px;
+}
+
+@media screen and (max-height: 450px) {
+    .overlay2 a {font-size: 20px}
+    .overlay2 .closebtn {
+        font-size: 40px;
+        top: 15px;
+        right: 35px;
+    }
+}
+
+/* ----------- Non-Retina Laptops ----------- */
+@media screen
+  and (min-device-width: 1200px)
+  and (max-device-width: 1600px)
+  and (-webkit-min-device-pixel-ratio: 1) {
+    .item {
+      width: 33%;
+    }
+
+    .overlay2 a {
+      font-size: 3.5rem;
+    }
+}
+
+/* Portrait Phones */
+@media only screen
+  and (min-device-width: 375px)
+  and (max-device-width: 667px)
+  and (-webkit-min-device-pixel-ratio: 2)
+  and (orientation: portrait) {
+    .item {
+      width: 100%;
+    }
+
+    .nav h1 {
+      font-size: 3rem;
+    }
+
+    .nav {
+      width: 250px;
+    }
+
+    .fa-bars {
+      font-size: 1.5rem;
+    }
+}
+
+/* Bezeless Phones */
+@media only screen
+  and (min-device-width: 375px)
+  and (max-device-width: 812px)
+  and (-webkit-min-device-pixel-ratio: 3)
+  and (orientation: portrait) {
+
+}
+
+/* Tablets */
+@media only screen
+  and (min-device-width: 768px)
+  and (max-device-width: 1024px)
+  and (orientation: landscape)
+  and (-webkit-min-device-pixel-ratio: 2) {
+    .item {
+      width: 33.3333333%;
+    }
+
+    .overlay2 a {
+      font-size: 3rem;
+    }
 }

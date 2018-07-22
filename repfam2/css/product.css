@@ -17,6 +17,10 @@
   display: flex;
 }
 
+.padding {
+  padding: 3rem;
+}
+
 .itemview {
   height: 100vh;
   width: 30vw;
@@ -32,7 +36,14 @@
 }
 
 .desc {
-  padding: 3rem;
+  padding: 0rem;
+/* border: 2px blue solid; */
+width: 70%;
+position: relative;
+}
+
+.add {
+
 }
 
 span a {
@@ -57,4 +68,216 @@ img {
   width: 25px;
   height: auto;
   vertical-align: middle;
+}
+
+.buy {
+  margin-top: 5rem;
+}
+
+button {
+  background: black;
+  border: none;
+  color: white;
+  padding: .65rem;
+  font-size: 1.75rem;
+  border-radius: .35em;
+  font-family: 'Open Sans', arial, sans-serif;
+  margin-bottom: 1.5rem;
+}
+
+span {
+  font-family: 'Open Sans', arial, sans-serif;
+  font-size: 1.5rem;
+}
+
+.box {
+border-bottom: 2px lightgrey solid;
+display: flex;
+align-items: flex-end;
+margin-bottom: 1rem;
+position: relative;
+width: 90%;
+}
+
+.p {
+  position: absolute;
+  margin-top: .5rem;
+float: right;
+align-items: center;
+display: flex;
+justify-content: flex-end;
+right: 0;
+font-family: 'Open Sans', arial, sans-serif;
+font-size: 1.25rem;
+padding-bottom: 1rem;
+position: absolute;
+}
+
+.related {
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+  display: flex;
+
+}
+
+.itemone {
+  height: 100%;
+  flex: .3333333;
+  height: 350px;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+#relateditems {
+  position: absolute;
+bottom: 375px;
+font-size: 3rem;
+padding-left: 3rem;
+}
+
+/* ----------- Non-Retina Laptops ----------- */
+@media screen
+  and (min-device-width: 1200px)
+  and (max-device-width: 1600px)
+  and (-webkit-min-device-pixel-ratio: 1) {
+    .desc h2 {
+      font-size: 2.5rem;
+    }
+
+    .p {
+      font-size: 1rem;
+    }
+
+    span a {
+      font-size: 1rem;
+    }
+
+    .box {
+      margin-bottom: .25rem;
+    }
+
+    li {
+      font-size: 1.25rem;
+    }
+
+    .itemone {
+      height: 190px;
+    }
+
+    #relateditems {
+      bottom: 200px;
+      font-size: 2rem;
+    }
+
+    button {
+      font-size: 1.25rem;
+      padding: .5rem;
+    }
+
+    .buy {
+      margin-top: 2rem;
+    }
+
+    span {
+      font-size: 1.25rem;
+    }
+}
+
+/* Portrait Phones */
+@media only screen
+  and (min-device-width: 375px)
+  and (max-device-width: 667px)
+  and (-webkit-min-device-pixel-ratio: 2)
+  and (orientation: portrait) {
+    .itemview {
+      width: 100vw;
+      height: 30vh;
+    }
+
+    .content {
+      display: inherit;
+    }
+
+    .desc {
+      width: 100vw;
+      height: 70vh;
+    }
+
+    .box {
+      display: inherit;
+    }
+
+    .add {
+      font-size: 1.5rem;
+    }
+
+    span a {
+      font-size: 1.5rem;
+    }
+
+    li {
+      font-size: 2rem;
+    }
+
+    button {
+      font-size: 2.5rem;
+    }
+
+    span {
+      font-size: 2rem;
+    }
+}
+
+/* Tablets */
+@media only screen
+  and (min-device-width: 768px)
+  and (max-device-width: 1024px)
+  and (orientation: landscape)
+  and (-webkit-min-device-pixel-ratio: 2) {
+    .desc h2 {
+      font-size: 2.5rem;
+    }
+
+    .box {
+      display: inherit;
+    }
+
+    span a {
+      font-size: 1rem;
+    }
+
+    .box {
+      margin-bottom: 0;
+    }
+
+    .add {
+      font-size: 1rem;
+    }
+
+    .itemone {
+      height: 200px;
+    }
+
+    #relateditems {
+      bottom: 210px;
+      font-size: 2rem;
+    }
+
+   li {
+     font-size: 1.25rem;
+   }
+
+   button {
+     font-size: 1.25rem;
+   }
+
+   .buy {
+     margin-top: 2rem;
+   }
+
+   span {
+     font-size: 1.25rem;
+   }
 }
