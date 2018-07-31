@@ -8,14 +8,35 @@
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.1/css/all.css" integrity="sha384-O8whS3fhG2OnA5Kas0Y9l3cfpmYjapjI0E4theH4iuMD+pLhbf6JI0jIMfYcK3yZ" crossorigin="anonymous">
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,400i" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
-    
+
   </head>
   <body>
+
     <div class="nav" id="nav">
       <h1>RepFam</h1>
       <i class="fas fa-bars" onclick="openNav()"></i>
     </div>
+    <div class="navcontainer">
 
+
+    <div class="filter" id="filter">
+      <p><strong>Filter by:</strong> </p>
+      <ul>
+        <li class="button" onclick="filterSelect('all')">All</li>
+        <li class="button" onclick="filterSelect('bape')">Bape</li>
+        <li class="button" onclick="filterSelect('burberry')">Burberry</li>
+        <li class="button" onclick="filterSelect('cdg')">CDG</li>
+        <li class="button" onclick="filterSelect('fog')">FOG</li>
+        <li class="button" onclick="filterSelect('gucci')">Gucci</li>
+        <li class="button" onclick="filterSelect('offwhite')">Off White</li>
+        <li class="button" onclick="filterSelect('stoneisland')">Stone Island</li>
+        <li class="button" onclick="filterSelect('stussy')">Stussy</li>
+        <li class="button" onclick="filterSelect('supreme')">Supreme</li>
+        <li class="button" onclick="filterSelect('vetements')">Vetements</li>
+        <li class="button" onclick="filterSelect('other')">Other</li>
+      </ul>
+    </div>
+</div>
     <div id="myNav" class="overlay2">
 
   <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
@@ -30,7 +51,7 @@
 </div>
     <div class="content">
 
-      <div class="item wow fadeIn" style="background-image: url(images/stone/stonejoggers.jpg)">
+      <div class="item wow fadeIn stoneisland" style="background-image: url(images/stone/stonejoggers.jpg)">
         <a href="pages/products/stonejoggers.html">
         <div class="overlay">
           <h2>Stone Island Joggers</h2>
@@ -40,154 +61,154 @@
         </a>
       </div>
 
-      <div class="item wow fadeIn" style="background-image: url(images/supreme/daggerjoggers.jpg);">
+      <div class="item wow fadeIn supreme" style="background-image: url(images/supreme/daggerjoggers.jpg);">
         <div class="overlay">
           <h2>Supreme Joggers</h2>
           <p>Brand: Supreme</p>
           <p>Price: ¥220</p>
         </div>
       </div>
-      <div class="item wow fadeIn" style="background-image: url(images/supreme/molotovtee.jpg);">
+      <div class="item wow fadeIn supreme" style="background-image: url(images/supreme/molotovtee.jpg);">
         <div class="overlay">
           <h2>Supreme Molotov</h2>
           <p>Brand: Supreme</p>
           <p>Price: ¥220</p>
         </div>
       </div>
-      <div class="item wow fadeIn" style="background-image: url(images/assc/porsche.png);">
+      <div class="item wow fadeIn other" style="background-image: url(images/assc/porsche.png);">
         <div class="overlay">
           <h2>ASSC Porsche</h2>
           <p>Brand: ASSC</p>
           <p>Price: ¥220</p>
         </div>
       </div>
-      <div class="item wow fadeIn" style="background-image: url(images/hp/hphoodie.jpg);">
+      <div class="item wow fadeIn other" style="background-image: url(images/hp/hphoodie.jpg);">
         <div class="overlay">
           <h2>Heron Hoodie</h2>
           <p>Brand: Heron Preston</p>
           <p>Price: ¥220</p>
         </div>
       </div>
-      <div class="item wow fadeIn" style="background-image: url(images/basic/sherpahoodie.jpg);">
+      <div class="item wow fadeIn other" style="background-image: url(images/basic/sherpahoodie.jpg);">
         <div class="overlay">
           <h2>Sherpa Hoodie</h2>
           <p>Brand: Basic</p>
           <p>Price: ¥220</p>
         </div>
       </div>
-      <div class="item wow fadeIn" style="background-image: url(images/palace/zodiactee.jpg);">
+      <div class="item wow fadeIn other" style="background-image: url(images/palace/zodiactee.jpg);">
         <div class="overlay">
           <h2>Palace Zodiac</h2>
           <p>Brand: Palace</p>
           <p>Price: ¥220</p>
         </div>
       </div>
-      <div class="item wow fadeIn" style="background-image: url(images/ow/photocopyhoodie.jpg);">
+      <div class="item wow fadeIn offwhite" style="background-image: url(images/ow/photocopyhoodie.jpg);">
         <div class="overlay">
           <h2>OW Photocopy</h2>
           <p>Brand: Off White</p>
           <p>Price: ¥220</p>
         </div>
       </div>
-      <div class="item wow fadeIn" style="background-image: url(images/guess/guessby.jpg);">
+      <div class="item wow fadeIn other" style="background-image: url(images/guess/guessby.jpg);">
         <div class="overlay">
           <h2>Guess x Asap</h2>
           <p>Brand: Guess</p>
           <p>Price: ¥220</p>
         </div>
       </div>
-      <div class="item wow fadeIn" style="background-image: url(images/acw/acwbag.jpg);">
+      <div class="item wow fadeIn other" style="background-image: url(images/acw/acwbag.jpg);">
         <div class="overlay">
           <h2>ACW Canvas Bag</h2>
           <p>Brand: A Cold Wall</p>
           <p>Price: ¥220</p>
         </div>
       </div>
-      <div class="item wow fadeIn" style="background-image: url(images/basic/cargotech.jpg);">
+      <div class="item wow fadeIn other" style="background-image: url(images/basic/cargotech.jpg);">
         <div class="overlay">
           <h2>Cargo Techwear</h2>
           <p>Brand: Basic</p>
           <p>Price: ¥220</p>
         </div>
       </div>
-      <div class="item wow fadeIn" style="background-image: url(images/gosha/arrowss18.jpg);">
+      <div class="item wow fadeIn other" style="background-image: url(images/gosha/arrowss18.jpg);">
         <div class="overlay">
           <h2>Gosha Arrows</h2>
           <p>Brand: Gosha</p>
           <p>Price: ¥220</p>
         </div>
       </div>
-      <div class="item wow fadeIn" style="background-image: url(images/ow/ow1991.jpg)">
+      <div class="item wow fadeIn offwhite" style="background-image: url(images/ow/ow1991.jpg)">
         <div class="overlay">
           <h2>OW 1991 Tee</h2>
           <p>Brand: Off White</p>
           <p>Price: ¥220</p>
         </div>
       </div>
-      <div class="item wow fadeIn" style="background-image: url(images/ow/ownotreal.jpg);">
+      <div class="item wow fadeIn offwhite" style="background-image: url(images/ow/ownotreal.jpg);">
         <div class="overlay">
           <h2>OW Not Real</h2>
           <p>Brand: Off White</p>
           <p>Price: ¥220</p>
         </div>
       </div>
-      <div class="item wow fadeIn" style="background-image: url(images/vet/polizei.jpg);">
+      <div class="item wow fadeIn vetements" style="background-image: url(images/vet/polizei.jpg);">
         <div class="overlay">
           <h2>Vetements Polizei</h2>
           <p>Brand: Vetements</p>
           <p>Price: ¥220</p>
         </div>
       </div>
-      <div class="item wow fadeIn" style="background-image: url(images/burberry/rainbow.jpg);">
+      <div class="item wow fadeIn burberry" style="background-image: url(images/burberry/rainbow.jpg);">
         <div class="overlay">
           <h2>Burberry Rainbow</h2>
           <p>Brand: Burberry</p>
           <p>Price: ¥220</p>
         </div>
       </div>
-      <div class="item wow fadeIn" style="background-image: url(images/stone/crewneck.jpg);">
+      <div class="item wow fadeIn stoneisland" style="background-image: url(images/stone/crewneck.jpg);">
         <div class="overlay">
           <h2>Stone Island Crewneck</h2>
           <p>Price: ¥220</p>
         </div>
       </div>
-      <div class="item wow fadeIn" style="background-image: url(images/palace/italyshorts.jpg);">
+      <div class="item wow fadeIn other" style="background-image: url(images/palace/italyshorts.jpg);">
         <div class="overlay">
           <h2>Palace Italy Shorts</h2>
           <p>Price: ¥220</p>
         </div>
       </div>
-      <div class="item wow fadeIn" style="background-image: url(images/palace/italyshorts.jpg);">
+      <div class="item wow fadeIn other" style="background-image: url(images/palace/italyshorts.jpg);">
         <div class="overlay">
           <h2>Palace Italy Shorts</h2>
           <p>Price: ¥220</p>
         </div>
       </div>
-      <div class="item wow fadeIn" style="background-image: url(images/palace/italyshorts.jpg);">
+      <div class="item wow fadeIn other" style="background-image: url(images/palace/italyshorts.jpg);">
         <div class="overlay">
           <h2>Palace Italy Shorts</h2>
           <p>Price: ¥220</p>
         </div>
       </div>
-      <div class="item wow fadeIn" style="background-image: url(images/palace/italyshorts.jpg);">
+      <div class="item wow fadeIn other" style="background-image: url(images/palace/italyshorts.jpg);">
         <div class="overlay">
           <h2>Palace Italy Shorts</h2>
           <p>Price: ¥220</p>
         </div>
       </div>
-      <div class="item wow fadeIn" style="background-image: url(images/palace/italyshorts.jpg);">
+      <div class="item wow fadeIn other" style="background-image: url(images/palace/italyshorts.jpg);">
         <div class="overlay">
           <h2>Palace Italy Shorts</h2>
           <p>Price: ¥220</p>
         </div>
       </div>
-      <div class="item wow fadeIn" style="background-image: url(images/palace/italyshorts.jpg);">
+      <div class="item wow fadeIn other" style="background-image: url(images/palace/italyshorts.jpg);">
         <div class="overlay">
           <h2>Palace Italy Shorts</h2>
           <p>Price: ¥220</p>
         </div>
       </div>
-      <div class="item wow fadeIn" style="background-image: url(images/palace/italyshorts.jpg);">
+      <div class="item wow fadeIn other" style="background-image: url(images/palace/italyshorts.jpg);">
         <div class="overlay">
           <h2>Palace Italy Shorts</h2>
           <p>Price: ¥220</p>
@@ -223,15 +244,10 @@
                      var scroll_pos = 0;
                      $(document).scroll(function() {
                          scroll_pos = $(this).scrollTop();
-                         if(scroll_pos < 100) {
-                             $("#nav").css('height', '0');
-                             $("#nav").css('visibility', 'hidden');
-                             $("adw").css('color', 'black');
-
-                         } else {
-                             $("#nav").css('height', '100px');
+                         if(scroll_pos >= 100) {
+                             $("#nav").css('height', '100');
                              $("#nav").css('visibility', 'visible');
-                             $("adwe").css('color', 'white');
+                             $("adw").css('color', 'black');
 
                          }
                      });
@@ -242,19 +258,46 @@ else {
               var scroll_pos = 0;
               $(document).scroll(function() {
                   scroll_pos = $(this).scrollTop();
-                  if(scroll_pos < 100) {
-                      $("#nav").css('height', '0');
-                      $("#nav").css('visibility', 'hidden');
-                      $("adw").css('color', 'black');
-
-                  } else {
+                  if(scroll_pos >= 100) {
                       $("#nav").css('height', '150px');
                       $("#nav").css('visibility', 'visible');
-                      $("adwe").css('color', 'white');
+                      $("adw").css('color', 'black');
 
                   }
               });
           });
+}
+
+</script>
+<script>
+
+   if ( $(window).width() > 980) {
+     $(document).ready(function(){
+                 var scroll_pos = 0;
+                 $(document).scroll(function() {
+                     scroll_pos = $(this).scrollTop();
+                     if(scroll_pos >= 100) {
+                         $("#filter").css('height', '60');
+                         $("#filter").css('visibility', 'visible');
+                         $("adw").css('color', 'black');
+
+                     }
+                 });
+             });
+}
+else {
+$(document).ready(function(){
+          var scroll_pos = 0;
+          $(document).scroll(function() {
+              scroll_pos = $(this).scrollTop();
+              if(scroll_pos >= 100) {
+                  $("#filter").css('height', '100px');
+                  $("#filter").css('visibility', 'visible');
+                  $("adw").css('color', 'black');
+
+              } 
+          });
+      });
 }
 
 </script>
@@ -280,6 +323,52 @@ function closeNav() {
 }
 }
 
+</script>
+<!--Credit to W3schools -->
+<script type="text/javascript">
+filterSelect("all")
+function filterSelect(c) {
+var x, i;
+x = document.getElementsByClassName("item");
+if (c == "all") c = "";
+for (i = 0; i < x.length; i++) {
+  w3RemoveClass(x[i], "show");
+  if (x[i].className.indexOf(c) > -1) w3AddClass(x[i], "show");
+}
+}
+
+function w3AddClass(element, name) {
+var i, arr1, arr2;
+arr1 = element.className.split(" ");
+arr2 = name.split(" ");
+for (i = 0; i < arr2.length; i++) {
+  if (arr1.indexOf(arr2[i]) == -1) {
+    element.className += " " + arr2[i];
+  }
+}
+}
+
+function w3RemoveClass(element, name) {
+var i, arr1, arr2;
+arr1 = element.className.split(" ");
+arr2 = name.split(" ");
+for (i = 0; i < arr2.length; i++) {
+  while (arr1.indexOf(arr2[i]) > -1) {
+    arr1.splice(arr1.indexOf(arr2[i]), 1);
+  }
+}
+element.className = arr1.join(" ");
+}
+
+var btnContainer = document.getElementById("myBtnContainer");
+var btns = btnContainer.getElementsByClassName("btn");
+for (var i = 0; i < btns.length; i++) {
+btns[i].addEventListener("click", function() {
+  var current = document.getElementsByClassName("active");
+  current[0].className = current[0].className.replace(" active", "");
+  this.className += " active";
+});
+}
 </script>
 <script type="text/javascript" src="dist/wow.min.js">
 
