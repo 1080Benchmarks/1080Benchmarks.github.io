@@ -182,7 +182,17 @@
     }
 
     .fa-bars {
-      font-size: 1.5rem;
+      font-size: 2rem;
+      padding-top: .5rem;
+    }
+
+    .overlay2 a {
+      font-size: 8rem;
+      text-align: center;
+    }
+
+    .overlay-content {
+      left: 0;
     }
 }
 

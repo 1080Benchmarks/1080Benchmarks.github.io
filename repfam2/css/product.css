@@ -228,6 +228,14 @@ padding-left: 3rem;
     span {
       font-size: 2rem;
     }
+
+    .itemone {
+      height: 300px;
+    }
+
+    #relateditems {
+      bottom: 325px;
+    }
 }
 
 /* Tablets */
