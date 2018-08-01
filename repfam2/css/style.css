@@ -271,6 +271,7 @@ ul {
       -webkit-touch-callout: none;
       display: block;
       opacity: 1;
+      height: 100%;
     }
 
     .overlay h2 {
@@ -297,6 +298,7 @@ ul {
       -webkit-touch-callout: none;
       display: block;
       opacity: 1;
+      height: 100%;
     }
 
     .overlay h2 {
