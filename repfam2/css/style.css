@@ -263,6 +263,18 @@ ul {
     .overlay-content {
       left: 0;
     }
+
+    .overlay {
+      -webkit-touch-callout: none;
+    }
+
+    .overlay h2 {
+      -webkit-touch-callout: none;
+    }
+
+    .overlay p {
+      -webkit-touch-callout: none;
+    }
 }
 
 /* Bezeless Phones */
