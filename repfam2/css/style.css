@@ -228,6 +228,7 @@ ul {
   and (orientation: portrait) {
     .item {
       width: 100%;
+      height: 600px;
     }
 
     .nav h1 {
