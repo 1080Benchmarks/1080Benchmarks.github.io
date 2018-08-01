@@ -270,8 +270,7 @@ ul {
     .overlay {
       -webkit-touch-callout: none;
       display: block;
-      opacity: 1;
-      height: 100%;
+      opacity: 0;
     }
 
     .overlay h2 {
@@ -297,8 +296,7 @@ ul {
     .overlay {
       -webkit-touch-callout: none;
       display: block;
-      opacity: 1;
-      height: 100%;
+      opacity: 0;
     }
 
     .overlay h2 {
