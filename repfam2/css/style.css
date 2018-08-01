@@ -269,8 +269,7 @@ ul {
 
     .overlay {
       -webkit-touch-callout: none;
-      display: block;
-      opacity: 0;
+      display: none;
     }
 
     .overlay h2 {
@@ -284,7 +283,7 @@ ul {
       display: none;
 
     }
-
+  
 }
 
 /* Portrait Large Phones */
@@ -295,8 +294,7 @@ ul {
   and (orientation: portrait) {
     .overlay {
       -webkit-touch-callout: none;
-      display: block;
-      opacity: 0;
+      display: none;
     }
 
     .overlay h2 {
