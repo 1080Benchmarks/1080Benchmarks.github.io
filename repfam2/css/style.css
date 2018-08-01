@@ -266,16 +266,46 @@ ul {
 
     .overlay {
       -webkit-touch-callout: none;
+      display: none;
     }
 
     .overlay h2 {
       -webkit-touch-callout: none;
+      display: none;
+
     }
 
     .overlay p {
       -webkit-touch-callout: none;
+      display: none;
+
     }
 }
+
+/* Portrait Large Phones */
+@media only screen
+  and (min-device-width: 414px)
+  and (max-device-width: 736px)
+  and (-webkit-min-device-pixel-ratio: 3)
+  and (orientation: portrait) {
+    .overlay {
+      -webkit-touch-callout: none;
+      display: none;
+    }
+
+    .overlay h2 {
+      -webkit-touch-callout: none;
+      display: none;
+
+    }
+
+    .overlay p {
+      -webkit-touch-callout: none;
+      display: none;
+
+    }
+}
+
 
 /* Bezeless Phones */
 @media only screen
