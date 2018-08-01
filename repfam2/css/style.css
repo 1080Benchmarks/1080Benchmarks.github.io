@@ -220,6 +220,16 @@ ul {
     .overlay2 a {
       font-size: 3.5rem;
     }
+
+    .nav {
+      width: 12%;
+    }
+
+    .filter {
+      width: 88%;
+    }
+
+
 }
 
 /* Portrait Phones */
@@ -259,7 +269,7 @@ ul {
     }
 
     .overlay2 a {
-      font-size: 8rem;
+      font-size: 7rem;
       text-align: center;
     }
 
@@ -283,7 +293,7 @@ ul {
       display: none;
 
     }
-  
+
 }
 
 /* Portrait Large Phones */
