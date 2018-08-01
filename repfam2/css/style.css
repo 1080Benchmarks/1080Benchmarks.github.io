@@ -235,12 +235,24 @@ ul {
     }
 
     .nav {
-      width: 250px;
+      width: 25%;
+    }
+
+    .filter {
+      width: 75%;
+      overflow-x: scroll;
+      white-space: nowrap;
+      -webkit-overflow-scrolling: touch;
+      font-size: 2rem;
     }
 
     .fa-bars {
       font-size: 2rem;
       padding-top: .5rem;
+    }
+
+    p strong {
+      padding-right: .5rem;
     }
 
     .overlay2 a {
