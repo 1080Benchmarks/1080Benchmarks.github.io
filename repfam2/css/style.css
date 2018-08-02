@@ -278,20 +278,7 @@ ul {
     }
 
     .overlay {
-      -webkit-touch-callout: none;
-      display: none;
-    }
-
-    .overlay h2 {
-      -webkit-touch-callout: none;
-      display: none;
-
-    }
-
-    .overlay p {
-      -webkit-touch-callout: none;
-      display: none;
-
+      height: 100%;
     }
 
 }
@@ -318,6 +305,8 @@ ul {
       display: none;
 
     }
+
+
 
 }
 
