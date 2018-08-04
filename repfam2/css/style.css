@@ -310,6 +310,7 @@ ul {
 
     .overlay {
       height: 100%;
+      opacity: 0;
     }
 
 
