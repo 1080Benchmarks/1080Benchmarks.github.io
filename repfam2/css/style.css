@@ -199,6 +199,24 @@ ul {
     font-size: 60px;
 }
 
+.footer {
+  width: 100vw;
+  background: black;
+  height: 4vh;
+  display: flex;
+  color: white;
+  align-items: center;
+}
+
+.footersec {
+  flex: .33333;
+  display: flex;
+}
+
+.sec1 {
+  font-family: 'Open Sans', arial, sans-serif;
+}
+
 @media screen and (max-height: 450px) {
     .overlay2 a {font-size: 20px}
     .overlay2 .closebtn {
@@ -289,23 +307,10 @@ ul {
   and (max-device-width: 736px)
   and (-webkit-min-device-pixel-ratio: 3)
   and (orientation: portrait) {
+
     .overlay {
-      -webkit-touch-callout: none;
-      display: none;
+      height: 100%;
     }
-
-    .overlay h2 {
-      -webkit-touch-callout: none;
-      display: none;
-
-    }
-
-    .overlay p {
-      -webkit-touch-callout: none;
-      display: none;
-
-    }
-
 
 
 }
