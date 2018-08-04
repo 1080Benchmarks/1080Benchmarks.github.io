@@ -12,6 +12,11 @@
     font-style: normal;
 }
 
+  html, body {
+    height: 100%;
+  }
+
+
 .nav {
   width: 8%;
   background: black;
@@ -206,11 +211,29 @@ ul {
   display: flex;
   color: white;
   align-items: center;
+  padding: 2rem;
+
+ width: 100%;
 }
 
 .footersec {
   flex: .33333;
   display: flex;
+  font-family: 'Open Sans', arial, sans-serif;
+
+}
+
+.footer h2 {
+  font-family: 'Futura', 'Open Sans', arial, sans-serif
+}
+
+#middle {
+  justify-content: center;
+}
+
+#end {
+  justify-content: flex-end;
+  vertical-align: middle;
 }
 
 .sec1 {
@@ -297,6 +320,7 @@ ul {
 
     .overlay {
       height: 100%;
+      opacity: 0;
     }
 
 }

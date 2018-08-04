@@ -23,8 +23,9 @@
 
 
 .content {
-  margin: 0 auto;
-  padding: 3rem;
+  width: 900px;
+	margin: 0 auto;
+  margin-top: 5rem;
 }
 
 
@@ -47,7 +48,7 @@
 
 #span2 {
   font-family: 'Futura', arial, sans-serif;
-  text-transform: uppercase;
+  text-transform: ;
 }
 
 span {
@@ -83,6 +84,41 @@ p {
 
 .block {
   margin-bottom: 2rem;
-    width: 50%;
+
     vertical-align: bottom;
+}
+
+.footer {
+  width: 100vw;
+  background: black;
+  height: 4vh;
+  display: flex;
+  color: white;
+  align-items: center;
+  padding: 2rem;
+  margin-top: 5rem;
+}
+
+.footersec {
+  flex: .33333;
+  display: flex;
+  font-family: 'Open Sans', arial, sans-serif;
+
+}
+
+.footer h2 {
+  font-family: 'Futura', 'Open Sans', arial, sans-serif
+}
+
+#middle {
+  justify-content: center;
+}
+
+#end {
+  justify-content: flex-end;
+  vertical-align: middle;
+}
+
+.sec1 {
+  font-family: 'Open Sans', arial, sans-serif;
 }
