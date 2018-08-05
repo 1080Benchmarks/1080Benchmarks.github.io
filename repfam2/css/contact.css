@@ -27,7 +27,7 @@ body {
 .content {
   width: 75%;
 	margin: 0 auto;
-  margin-top: 12.5%;
+  margin-top: 10%;
   display: flex;
   flex-flow: column;
   align-items: center;
@@ -59,9 +59,18 @@ input{
 
 .name {
   border-top: white solid 3px;
-  border-left: white solid 3px;
-  border-right: white solid 3px;
+
   border-bottom: white solid 1.5px;
+}
+
+#first {
+border-right: white solid 1.5px;
+border-left: white solid 3px;
+}
+
+#last {
+border-left: white solid 1.5px;
+border-right: white solid 3px;
 }
 
 .email {
