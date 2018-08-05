@@ -148,6 +148,11 @@ input[type=submit] {
     input {
       line-height: 7rem;
     }
+
+    .footer {
+      position: absolute;
+      bottom: 0;
+    }
 }
 
 /* Tablets Landscape */
@@ -170,5 +175,65 @@ input[type=submit] {
 
     textarea {
       height: 40vh;
+    }
+
+    .footer {
+      display: none;
+    }
+}
+
+.footer {
+  width: 100vw;
+  background: black;
+  height: 4vh;
+  display: flex;
+  color: white;
+  align-items: center;
+  padding: 2rem;
+  position: absolute;
+  bottom: 0;
+}
+
+.footersec {
+  flex: .33333;
+  display: flex;
+  font-family: 'Open Sans', arial, sans-serif;
+
+}
+
+.footer h2 {
+  font-family: 'Futura', 'Open Sans', arial, sans-serif
+}
+
+#middle {
+  justify-content: center;
+}
+
+#end {
+  justify-content: flex-end;
+  vertical-align: middle;
+}
+
+.sec1 {
+  font-family: 'Open Sans', arial, sans-serif;
+}
+
+/* ----------- Retina Laptop ----------- */
+@media screen
+  and (min-device-width: 1200px)
+  and (max-device-width: 1600px)
+  and (-webkit-min-device-pixel-ratio: 2)
+  and (min-resolution: 192dpi) {
+    .footer {
+      position: inherit;
+      margin-top: 5rem;
+    }
+
+    .content {
+      margin-top: 5%;
+    }
+
+    form {
+      width: 85%;
     }
 }
