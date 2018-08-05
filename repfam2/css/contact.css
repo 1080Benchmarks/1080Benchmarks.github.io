@@ -1,0 +1,165 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+@font-face {
+    font-family: 'Futura';
+    src: url('Futura-Bold.woff2') format('woff2'),
+        url('Futura-Bold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Futural';
+    src: url('FuturaBT-Light.woff2') format('woff2'),
+        url('FuturaBT-Light.woff') format('woff');
+    font-weight: 300;
+    font-style: normal;
+}
+
+body {
+  background: black;
+}
+
+.content {
+  width: 75%;
+	margin: 0 auto;
+  margin-top: 12.5%;
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+}
+
+  h1 {
+    font-family: 'Futura', 'Open Sans', arial, sans-serif;
+    color: white;
+    text-align: center;
+    font-size: 4rem;
+  }
+
+  form{
+    width: 50%;
+    overflow: hidden;
+    margin-top: 2rem;
+}
+input{
+    width: 100%;
+    line-height: 5rem;
+    background: none;
+
+    font-family: 'Futura', 'Open Sans', arial, sans-serif;
+    font-weight: bold;
+    color: white;
+    font-size: 2rem;
+    padding-left: 2rem;
+}
+
+.name {
+  border-top: white solid 3px;
+  border-left: white solid 3px;
+  border-right: white solid 3px;
+  border-bottom: white solid 1.5px;
+}
+
+.email {
+  border-top: white solid 3px;
+  border-left: white solid 3px;
+  border-right: white solid 3px;
+  border-bottom: white solid 1.5px;
+}
+
+input:active input:focus {
+  outline: 0;
+  -moz-outline-style: none;
+}
+
+:focus {
+  outline: none;
+}
+
+::placeholder {
+  color: white;
+  opacity: 0.75;
+}
+span {
+    overflow: hidden;
+}
+
+textarea {
+  width: 100%;
+  background: none;
+  color: white;
+  padding-left: 2rem;
+  padding-right: 2rem;
+  padding-top: 2rem;
+  font-family: 'Open Sans', arial, sans-serif;
+  font-size: 2rem;
+  display: list-item;
+  border-top: white solid 3px;
+  border-left: white solid 3px;
+  border-right: white solid 3px;
+  border-bottom: white solid 1.5px;
+}
+
+textarea::placeholder {
+  font-family: 'Futura', 'Open Sans', arial, sans-serif;
+  font-weight: bold;
+  font-size: 2rem;
+}
+
+input[type=submit] {
+  border-top: white solid 1.5px;
+  border-left: white solid 3px;
+  border-right: white solid 3px;
+  border-bottom: white solid 3px;
+}
+
+/* Portrait Phones */
+@media only screen
+  and (min-device-width: 375px)
+  and (max-device-width: 667px)
+  and (-webkit-min-device-pixel-ratio: 2)
+  and (orientation: portrait) {
+    .content {
+      width: 75%;
+      margin-top: 40%;
+    }
+
+    form {
+      width: 100%;
+    }
+
+    h1 {
+      font-size: 3.75rem;
+    }
+
+    input {
+      line-height: 7rem;
+    }
+}
+
+/* Tablets Landscape */
+@media only screen
+  and (min-device-width: 768px)
+  and (max-device-width: 1024px)
+  and (orientation: landscape)
+  and (-webkit-min-device-pixel-ratio: 2) {
+    form {
+      width: 100%;
+    }
+
+    .content {
+      margin-top: 5%;
+    }
+
+    input {
+      line-height: 4.5rem;
+    }
+
+    textarea {
+      height: 40vh;
+    }
+}

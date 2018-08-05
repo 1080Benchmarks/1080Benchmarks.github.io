@@ -122,3 +122,22 @@ p {
 .sec1 {
   font-family: 'Open Sans', arial, sans-serif;
 }
+
+/* Portrait Phones */
+@media only screen
+  and (min-device-width: 375px)
+  and (max-device-width: 667px)
+  and (-webkit-min-device-pixel-ratio: 2)
+  and (orientation: portrait) {
+    .hero {
+      padding-top: 25rem;
+    }
+
+    #span2 {
+      font-size: 6rem;
+    }
+
+    .hero p {
+      font-size: 2rem;
+    }
+}

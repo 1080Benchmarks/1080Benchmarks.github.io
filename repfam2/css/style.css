@@ -79,6 +79,10 @@ ul {
     width: 100vw;
     z-index: 9999999;
     overflow: hidden;
+    min-height: 100%;
+    height: auto !important;
+    height: 100%;
+    margin: 0 auto -4vh;
 }
 
 .item {
@@ -207,13 +211,18 @@ ul {
 .footer {
   width: 100vw;
   background: black;
-  height: 4vh;
+  height: 4vh;;
   display: flex;
   color: white;
   align-items: center;
   padding: 2rem;
-
+  margin-top: 4vh;
  width: 100%;
+}
+
+.push {
+  height: 4vh;
+
 }
 
 .footersec {
@@ -255,7 +264,7 @@ ul {
   and (max-device-width: 1600px)
   and (-webkit-min-device-pixel-ratio: 1) {
     .item {
-      width: 33%;
+      width: 33.333333333333333333333%;
     }
 
     .overlay2 a {
@@ -323,6 +332,10 @@ ul {
       opacity: 0;
     }
 
+    .sec1 h3 {
+      font-size: 1rem;
+    }
+
 }
 
 /* Portrait Large Phones */
@@ -335,6 +348,10 @@ ul {
     .overlay {
       height: 100%;
       opacity: 0;
+    }
+
+    .sec1 h3 {
+      font-size: 1rem;
     }
 
 
