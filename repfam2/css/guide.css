@@ -20,6 +20,76 @@
     font-style: normal;
 }
 
+.nav {
+  width: 8%;
+  background: black;
+  position: fixed;
+  z-index: 999;
+  transition: all .5s ease-in-out;
+  overflow: hidden;
+  color: white;
+  visibility: hidden;
+  padding: 1rem;
+  height: 0px;
+  font-family: 'Futura', arial, sans-serif;
+}
+
+.overlay h2 {
+  font-family: 'Futura';
+  color: black;
+  font-size: 3.5rem;
+  padding: 1.5rem;
+  padding-bottom: 1rem;
+  /*display: none;*/
+  transition: all .5s ease-in-out;
+}
+
+.overlay2 {
+
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 9999;
+    left: 0;
+    top: 0;
+    background-color: rgb(0,0,0);
+    overflow-x: hidden;
+    transition: 0.5s;
+    font-family: 'Futura', arial, sans-serif;
+}
+
+.overlay-content {
+    position: relative;
+    top: 25%;
+    width: 100%;
+    left: 10%;
+    text-align: center;
+    margin-top: 30px;
+}
+
+.overlay2 a {
+    padding: 8px;
+    text-decoration: none;
+    font-size: 5rem;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+    text-align: left;
+}
+
+
+.overlay2 a:hover, .overlay2 a:focus {
+    color: #f1f1f1;
+}
+
+
+.overlay2 .closebtn {
+    position: absolute;
+    top: 20px;
+    right: 45px;
+    font-size: 60px;
+}
+
 
 
 .content {
@@ -148,7 +218,7 @@ ul {
   and (-webkit-min-device-pixel-ratio: 2)
   and (orientation: portrait) {
     .hero {
-      padding-top: 25rem;
+      padding-top: 22rem;
     }
 
     #span2 {
