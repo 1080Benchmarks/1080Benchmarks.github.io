@@ -1,0 +1,144 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+@font-face {
+    font-family: 'Futura';
+    src: url('Futura-Bold.woff2') format('woff2'),
+        url('Futura-Bold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Futural';
+    src: url('FuturaBT-Light.woff2') format('woff2'),
+        url('FuturaBT-Light.woff') format('woff');
+    font-weight: 300;
+    font-style: normal;
+}
+
+
+
+.content {
+  width: 900px;
+	margin: 0 auto;
+  margin-top: 5rem;
+}
+
+
+
+.hero {
+  width: 100vw;
+  height: 40vh;
+  background-image: url(https://images.unsplash.com/photo-1441986300917-64674bd600d8?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=d62aa1141ac7384a3124dec53ee2256a&auto=format&fit=crop&w=2550&q=80);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 5rem;
+  filter: grayscale(1) contrast(1.125);
+}
+
+#span1 {
+  font-family: 'Futura', arial, sans-serif;
+  font-weight: 300;
+  text-transform: lowercase;
+}
+
+#span2 {
+  font-family: 'Futura', arial, sans-serif;
+  text-transform: ;
+}
+
+span {
+  font-size: 5rem;
+  color: white;
+}
+
+.hero p {
+  color: white;
+  font-family: 'Open Sans', arial, sans-serif;
+  font-size: 1.5rem;
+  text-transform: capitalize;
+}
+
+.history img {
+  width: 250px;
+  height: auto;
+  float: right;
+  margin-left: 7rem;
+  vertical-align: middle;
+}
+
+h2 {
+  font-family: 'Futura', arial, sans-serif;
+  font-size: 2.25rem;
+}
+
+p {
+  font-family: 'Open Sans', arial, sans-serif;
+  font-size: 1.25rem;
+
+}
+
+.block {
+  margin-bottom: 2rem;
+
+    vertical-align: bottom;
+}
+
+.footer {
+  width: 100vw;
+  background: black;
+  height: 4vh;
+  display: flex;
+  color: white;
+  align-items: center;
+  padding: 2rem;
+  margin-top: 5rem;
+}
+
+.footersec {
+  flex: .33333;
+  display: flex;
+  font-family: 'Open Sans', arial, sans-serif;
+
+}
+
+.footer h2 {
+  font-family: 'Futura', 'Open Sans', arial, sans-serif
+}
+
+#middle {
+  justify-content: center;
+}
+
+#end {
+  justify-content: flex-end;
+  vertical-align: middle;
+}
+
+.sec1 {
+  font-family: 'Open Sans', arial, sans-serif;
+}
+
+/* Portrait Phones */
+@media only screen
+  and (min-device-width: 375px)
+  and (max-device-width: 667px)
+  and (-webkit-min-device-pixel-ratio: 2)
+  and (orientation: portrait) {
+    .hero {
+      padding-top: 25rem;
+    }
+
+    #span2 {
+      font-size: 6rem;
+    }
+
+    .hero p {
+      font-size: 2rem;
+    }
+}
