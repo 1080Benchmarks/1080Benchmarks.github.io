@@ -124,6 +124,23 @@ p {
   font-family: 'Open Sans', arial, sans-serif;
 }
 
+.divide {
+  width: 100%;
+  height: 2px;
+  background-color: lightgrey;
+  margin-bottom: 1rem;
+}
+
+li {
+  font-family: 'Open Sans', arial, sans-serif;
+  font-size: 1.25rem;
+}
+
+ul {
+  padding: 2rem;
+  list-style-type: square;
+}
+
 /* Portrait Phones */
 @media only screen
   and (min-device-width: 375px)
