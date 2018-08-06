@@ -228,4 +228,56 @@ ul {
     .hero p {
       font-size: 2rem;
     }
+
+    .nav h1 {
+      font-size: 3rem;
+    }
+
+    .nav {
+      width: 25%;
+    }
+
+
+
+    .fa-bars {
+      font-size: 2rem;
+      padding-top: .5rem;
+    }
+
+    p strong {
+      padding-right: .5rem;
+    }
+
+    .overlay2 a {
+      font-size: 7rem;
+      text-align: center;
+    }
+
+    .overlay-content {
+      left: 0;
+    }
+
+    .overlay {
+      height: 100%;
+      opacity: 0;
+    }
+}
+
+/* ----------- Non-Retina Laptops ----------- */
+@media screen
+  and (min-device-width: 1200px)
+  and (max-device-width: 1600px)
+  and (-webkit-min-device-pixel-ratio: 1) {
+
+
+    .overlay2 a {
+      font-size: 3.5rem;
+    }
+
+    .nav {
+      width: 12%;
+    }
+
+
+
 }

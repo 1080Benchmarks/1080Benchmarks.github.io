@@ -8,7 +8,22 @@
     <link rel="stylesheet" href="../css/contact.css">
   </head>
   <body>
+    <div class="nav" id="nav">
+      <h1 id="repfamlogo">RepFam</h1>
+      <i class="fas fa-bars" onclick="openNav()"></i>
+    </div>
+    <div id="myNav" class="overlay2">
 
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+
+  <div class="overlay-content">
+    <a href="../index.html">Home</a>
+    <a href="guide.html">Resources</a>
+    <a href="about.html">About</a>
+    <a href="https://1080benchmarks.github.io/projects/portfolio6">Jude Wallach</a>
+  </div>
+
+</div>
     <div class="content">
       <h1>Concerns or Requests?</h1>
       <form method="post">
@@ -30,5 +45,28 @@
     <a href="#" style="display: inline; text-decoration: none; color: white;"> <i class="fas fa-chevron-up" style="display: ; align-items: ; padding-right: .5rem;"></i></a> <a href="#" style="color: white; text-decoration: none;"> <h3>Back to top</h3></a>
     </div>
     </div>
+    <script src="https://code.jquery.com/jquery-2.2.0.min.js" type="text/javascript"></script>
+    <script>
+
+       if ( $(window).width() > 980) {
+    function openNav() {
+    document.getElementById("myNav").style.width = "33.33333%";
+    }
+
+    function closeNav() {
+    document.getElementById("myNav").style.width = "0%";
+    }
+    }
+    else {
+    function openNav() {
+    document.getElementById("myNav").style.width = "100%";
+    }
+
+    function closeNav() {
+    document.getElementById("myNav").style.width = "0%";
+    }
+    }
+
+    </script>
   </body>
 </html>
