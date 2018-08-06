@@ -79,7 +79,7 @@ ul {
     width: 100vw;
     z-index: 9999999;
     overflow: hidden;
-    min-height: 100%;
+    /*min-height: 100%;*/
     height: auto !important;
     height: 100%;
     margin: 0 auto -4vh;
