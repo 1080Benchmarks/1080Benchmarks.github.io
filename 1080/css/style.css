@@ -1,0 +1,292 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Geforce';
+}
+
+body {
+	background: black;
+}
+
+@font-face {
+    font-family: 'GeForce';
+    src: url('GeForce-Light.woff2') format('woff2'),
+        url('GeForce-Light.woff') format('woff');
+    font-weight: 300;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'GeForce';
+    src: url('GeForce-Bold.woff2') format('woff2'),
+        url('GeForce-Bold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+}
+
+.nav {
+	display: flex;
+	width: 100vw;
+	height: 8vh;
+	background-color: transparent;
+	padding: 1rem;
+	z-index: 999;
+	transition: all .25s ease-in-out;
+	position: absolute;
+	padding-left: 7.5rem;
+	padding-right: 7.5rem;
+}
+
+
+.logo {
+	flex: .6;
+	display: flex;
+	justify-content: flex-start;
+	align-items: center;
+	font-family: 'Geforce', arial, sans-serif;
+	font-weight: 300;
+}
+
+.navlinks {
+	flex: .4;
+	display: flex;
+	justify-content: flex-end;
+	align-items: center;
+	padding: 1rem;
+}
+
+li {
+	display: inline-block;
+	padding: .25rem;
+}
+
+a {
+	color: white;
+	text-decoration: none;
+	font-family: 'Open Sans', sans-serif;
+	font-size: 1.25rem;
+	font-weight: 500;
+}
+
+#logo {
+	font-family: 'Geforce', arial, sans-serif;
+	font-weight: 300;
+	font-size: 3rem;
+	padding-right: 2rem;
+}
+
+button {
+	border: none;
+	font-family: 'Open Sans', sans-serif;
+	background-color: white;
+	color: black;
+	padding: .5rem;
+	border-radius: .25em;
+	font-size: 1.25rem;
+
+
+}
+
+#padding {
+	padding-right: 1.75rem;
+}
+
+.fa-envelope {
+	padding-right: .25rem;
+}
+
+.hero {
+  background: black;
+  width: 100vw;
+  height: 100vh;
+  position: relative;
+}
+
+.card img {
+  width: 1800px;
+  height: auto;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+}
+
+.header {
+  padding-top: 20rem;
+  padding-left: 7.5rem;
+}
+
+.header h1 {
+  color: #76b900;
+  text-transform: uppercase;
+  font-family: 'Geforce', arial, sans-serif;
+  font-size: 9.5rem;
+  line-height: 125px;
+}
+
+.header p {
+  color: white;
+  font-size: 3rem;
+  padding-left: .5rem;
+}
+
+.about {
+	width: 100vw;
+	background: black;
+	text-align: center;
+	margin-top: 15vh;
+	display: flex;
+	justify-content: center;
+	flex-flow: column;
+}
+
+.about p {
+	color: white;
+	text-align: left;
+	font-size: 1.5rem;
+	width: 75%;
+}
+
+.text {
+	display: flex;
+	justify-content: center;
+	padding-top: 2rem;
+}
+
+.about h2 {
+	color: #76b900;
+	font-size: 5rem;
+}
+
+.about img {
+	width: 1250px;
+	height: auto;
+}
+
+.transition {
+	position: relative;
+	height: 444px;
+	background: black;
+}
+
+.card2 img {
+	width: 1800px;
+	height: auto;
+	position: absolute;
+	top: 0;
+	right: 0;
+}
+
+.specs {
+	width: 100vw;
+	background-color: black;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	margin-top: 5vh;
+}
+
+.specs img {
+	width: 750px;
+	height: auto;
+}
+
+
+
+.pc {
+	position: relative;
+	margin-top: 5vh;
+	margin-bottom: 5vh;
+}
+
+.transition2 {
+	width: 50%;
+	height: 5vh;
+
+	display: flex;
+}
+
+
+.sec {
+	display: flex;
+	height: 5vh;
+	flex: .5;
+	justify-content: center;
+	align-items: center;
+}
+
+.sec a {
+	font-family: 'Geforce', 'Open Sans', arial, sans-serif;
+	font-size: 2rem;
+}
+
+ .two {
+	border-left: 3px black solid;
+	background: #76b900;
+	transition: all .5s ease-in-out;
+}
+
+.one {
+border-right: 3px black solid;
+background: #76b900;
+transition: all .5s ease-in-out;
+}
+
+.one:hover {
+	background: #659e00;
+}
+
+.two:hover {
+	background: #659e00;
+}
+
+.transitioncontainer {
+	width: 100vw;
+	display: flex;
+	justify-content: center;
+	margin-bottom: 5vh;
+}
+
+.contact {
+	display: flex;
+	justify-content: center;
+}
+
+.footing {
+	height: 8vh;
+	width: 100vw;
+	margin-top: 10vh;
+	display: flex;
+	align-items: center;
+
+}
+
+.footing1 {
+	display: flex;
+	flex: .33333333;
+}
+
+.footing1 p {
+	font-family: 'Open Sans', arial, sans-serif;
+	font-size: 1.25rem;
+}
+
+.footing #logo {
+	padding-right: 0;
+	color: white;
+}
+
+.side {
+padding-left: 7.5rem;
+}
+
+.side2 {
+	display: flex;
+	justify-content: flex-end;
+	padding-right: 7.5rem;
+}
+
+.footing a {
+	color: #76b900;
+	text-decoration: underline;
+}

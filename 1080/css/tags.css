@@ -1,0 +1,166 @@
+.overlay {
+	position: absolute;
+	width: 30px;
+	height: 30px;
+	background: white;
+	border-radius: 100%;
+	top: 26.5%;
+	left: 24%;
+}
+
+
+	.overlay::before {
+		content: "i7-7700 4.1GHz";
+		color: white;
+		font-size: 2rem;
+		position: absolute;
+		top: 50%;
+		right: 0;
+		width: 0;
+		opacity: 0;
+		display: flex;
+		align-items: flex-end;
+		height: 2px;
+		background: white;
+		transition: all .75s ease-in-out;
+	}
+
+	.overlay:hover:before {
+		width: 500px;
+		opacity: 1;
+	}
+	/*Overlay 2*/
+
+	.overlay2 {
+		position: absolute;
+		width: 30px;
+		height: 30px;
+		background: white;
+		border-radius: 100%;
+		top: 47.5%;
+		left: 34%;
+	}
+
+
+		.overlay2::before {
+			content: "MSI Geforce GTX 1080";
+			color: white;
+			font-size: 2rem;
+			position: absolute;
+			top: 50%;
+			right: 0;
+			width: 0;
+			opacity: 0;
+			display: flex;
+			align-items: flex-end;
+			height: 2px;
+			background: white;
+			transition: all .75s ease-in-out;
+		}
+
+		.overlay2:hover:before {
+			width: 500px;
+			opacity: 1;
+		}
+		/*Overlay 3*/
+		.overlay3 {
+			position: absolute;
+			width: 30px;
+			height: 30px;
+			background: white;
+			border-radius: 100%;
+			top: 70%;
+			left: 20%;
+		}
+
+
+			.overlay3::before {
+				content: "Corsair CX750M";
+				color: white;
+				font-size: 2rem;
+				position: absolute;
+				top: 50%;
+				right: 0;
+				width: 0;
+				opacity: 0;
+				display: flex;
+				align-items: flex-end;
+				height: 2px;
+				background: white;
+				transition: all .75s ease-in-out;
+			}
+
+			.overlay3:hover:before {
+				width: 500px;
+				opacity: 1;
+			}
+			/*Overlay 4*/
+
+			.overlay4 {
+				position: absolute;
+				width: 30px;
+				height: 30px;
+				background: white;
+				border-radius: 100%;
+				top: 66%;
+				right: 27%;
+			}
+
+
+				.overlay4::before {
+					content: "2TB Western Digital 7200RPM";
+					color: white;
+					font-size: 2rem;
+					position: absolute;
+					top: 50%;
+					width: 0;
+					opacity: 0;
+					display: flex;
+					align-items: flex-end;
+					justify-content: flex-end;
+					height: 2px;
+					background: white;
+					transition: all .75s ease-in-out;
+				}
+
+				.overlay4:hover:before {
+					width: 500px;
+					opacity: 1;
+				}
+
+				/* Overlay 5*/
+
+				.overlay5 {
+					position: absolute;
+					width: 30px;
+					height: 30px;
+					background: white;
+					border-radius: 100%;
+					top: 26.5%;
+					right: 57.5%;
+					
+				}
+
+
+
+
+					.overlay5::before {
+						content: "16GB DDR4 2000MHz";
+						color: white;
+						font-size: 2rem;
+						position: absolute;
+						top: 50%;
+						width: 0;
+						opacity: 0;
+						display: flex;
+						align-items: flex-end;
+						justify-content: flex-end;
+						height: 2px;
+						background: white;
+						transition: all .75s ease-in-out;
+					}
+
+					.overlay5:hover:before {
+						width: 500px;
+						opacity: 1;
+					}
