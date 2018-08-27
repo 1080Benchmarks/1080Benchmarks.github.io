@@ -99,10 +99,7 @@ and (min-device-width: 375px)
 and (max-device-width: 667px)
 and (-webkit-min-device-pixel-ratio: 2)
 and (orientation: portrait) {
-  .content {
-    width: 75%;
-    margin-top: 40%;
-  }
+
 
   form {
     width: 100%;
@@ -116,47 +113,10 @@ and (orientation: portrait) {
     line-height: 7rem;
   }
 
-  .footer {
-    position: absolute;
-    bottom: 0;
-  }
-
-  .nav h1 {
-    font-size: 3rem;
-  }
-
-  .nav {
-    width: 25%;
-  }
 
 
 
-  .fa-bars {
-    font-size: 2rem;
-    padding-top: .5rem;
-  }
 
-  p strong {
-    padding-right: .5rem;
-  }
-
-  .overlay2 a {
-    font-size: 7rem;
-    text-align: center;
-  }
-
-  .overlay-content {
-    left: 0;
-  }
-
-  .overlay {
-    height: 100%;
-    opacity: 0;
-  }
-
-  #repfamlogo {
-    font-size: 3rem;
-  }
 }
 
 /* Tablets Landscape */
@@ -169,9 +129,7 @@ and (-webkit-min-device-pixel-ratio: 2) {
     width: 100%;
   }
 
-  .content {
-    margin-top: 5%;
-  }
+
 
   input {
     line-height: 4.5rem;
@@ -181,9 +139,7 @@ and (-webkit-min-device-pixel-ratio: 2) {
     height: 40vh;
   }
 
-  .footer {
-    display: none;
-  }
+
 }
 
 .footer {
@@ -228,35 +184,9 @@ and (min-device-width: 1200px)
 and (max-device-width: 1600px)
 and (-webkit-min-device-pixel-ratio: 2)
 and (min-resolution: 192dpi) {
-  .footer {
-    position: inherit;
-    margin-top: 5rem;
-  }
 
-  .content {
-    margin-top: 5%;
-  }
 
   form {
     width: 85%;
   }
-}
-
-/* ----------- Non-Retina Laptops ----------- */
-@media screen
-and (min-device-width: 1200px)
-and (max-device-width: 1600px)
-and (-webkit-min-device-pixel-ratio: 1) {
-
-
-  .overlay2 a {
-    font-size: 3.5rem;
-  }
-
-  .nav {
-    width: 12%;
-  }
-
-
-
 }

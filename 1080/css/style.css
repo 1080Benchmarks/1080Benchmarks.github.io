@@ -290,3 +290,79 @@ padding-left: 7.5rem;
 	color: #76b900;
 	text-decoration: underline;
 }
+
+/* ----------- Retina Laptops ----------- */
+@media screen
+  and (min-device-width: 1200px)
+  and (max-device-width: 1600px)
+  and (-webkit-min-device-pixel-ratio: 2)
+  and (min-resolution: 192dpi) {
+		.card img {
+			width: 1125px;
+			height: auto;
+		}
+
+		.card2 img {
+			width: 1125px;
+		}
+
+		.about p {
+			width: 80%;
+		}
+
+		.transition2 {
+			width: 85%;
+		}
+
+		.sec {
+			height: 8vh;
+		}
+
+		.header h1 {
+			font-size: 6rem;
+			line-height: 100px;
+		}
+
+		.header p {
+			font-size: 2.5rem;
+		}
+
+		.header {
+			padding-top: 10rem;
+		}
+
+		.nav {
+			padding-top: 2rem;
+		}
+
+		.footing {
+			height: 10vh;
+		}
+}
+
+/*Desktops?*/
+@media (min-width: 1281px) {
+
+
+}
+@media screen
+  and (min-device-width: 1920px)
+  and (max-device-width: 1920px)
+	and (min-device-height: 1080px)
+	and (max-device-height: 1920px) {
+		.card img {
+			width: 1400px;
+		}
+
+		.card2 img {
+			width: 1400px;
+		}
+
+		.header h1 {
+			font-size: 8rem;
+		}
+
+		.header {
+			padding-top: 15rem;
+		}
+	}
