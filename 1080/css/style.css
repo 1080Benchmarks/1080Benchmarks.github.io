@@ -11,16 +11,16 @@ body {
 
 @font-face {
     font-family: 'GeForce';
-    src: url('GeForce-Light.woff2') format('woff2'),
-        url('GeForce-Light.woff') format('woff');
+    src: url('../GeForce-Light.woff2') format('woff2'),
+        url('../GeForce-Light.woff') format('woff');
     font-weight: 300;
     font-style: normal;
 }
 
 @font-face {
     font-family: 'GeForce';
-    src: url('GeForce-Bold.woff2') format('woff2'),
-        url('GeForce-Bold.woff') format('woff');
+    src: url('../GeForce-Bold.woff2') format('woff2'),
+        url('../GeForce-Bold.woff') format('woff');
     font-weight: bold;
     font-style: normal;
 }
