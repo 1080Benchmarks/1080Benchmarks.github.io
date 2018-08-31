@@ -11,16 +11,16 @@ body {
 
 @font-face {
     font-family: 'GeForce';
-    src: url('GeForce-Light.woff2') format('woff2'),
-        url('GeForce-Light.woff') format('woff');
+    src: url('../GeForce-Light.woff2') format('woff2'),
+        url('../GeForce-Light.woff') format('woff');
     font-weight: 300;
     font-style: normal;
 }
 
 @font-face {
     font-family: 'GeForce';
-    src: url('GeForce-Bold.woff2') format('woff2'),
-        url('GeForce-Bold.woff') format('woff');
+    src: url('../GeForce-Bold.woff2') format('woff2'),
+        url('../GeForce-Bold.woff') format('woff');
     font-weight: bold;
     font-style: normal;
 }
@@ -145,6 +145,7 @@ button {
 	text-align: left;
 	font-size: 1.5rem;
 	width: 75%;
+	font-family: 'Open Sans', 'Geforce', arial, sans-serif;
 }
 
 .text {
