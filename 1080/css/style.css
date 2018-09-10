@@ -104,7 +104,7 @@ button {
 }
 
 .card img {
-  width: 1800px;
+  width: 1500px;
   height: auto;
   position: absolute;
   bottom: 0;
@@ -112,7 +112,7 @@ button {
 }
 
 .header {
-  padding-top: 20rem;
+  padding-top: 12.5rem;
   padding-left: 7.5rem;
 }
 
@@ -120,7 +120,7 @@ button {
   color: #76b900;
   text-transform: uppercase;
   font-family: 'Geforce', arial, sans-serif;
-  font-size: 9.5rem;
+  font-size: 8.5rem;
   line-height: 125px;
 }
 
@@ -171,7 +171,7 @@ button {
 }
 
 .card2 img {
-	width: 1800px;
+	width: 1500px;
 	height: auto;
 	position: absolute;
 	top: 0;
@@ -341,29 +341,22 @@ padding-left: 7.5rem;
 		}
 }
 
-/*Desktops?*/
-@media (min-width: 1281px) {
 
 
-}
-@media screen
-  and (min-device-width: 1920px)
-  and (max-device-width: 1920px)
-	and (min-device-height: 1080px)
-	and (max-device-height: 1920px) {
-		.card img {
-			width: 1400px;
-		}
-
-		.card2 img {
-			width: 1400px;
-		}
-
-		.header h1 {
-			font-size: 8rem;
-		}
-
-		.header {
-			padding-top: 15rem;
-		}
+@media screen and (min-width: 1900px) {
+	.card img {
+		width: 1800px;
 	}
+
+	.card2 img {
+		width: 1800px;
+	}
+
+	.header h1 {
+		font-size: 10rem;
+	}
+
+	.header {
+		padding-top: 20rem;
+	}
+}
