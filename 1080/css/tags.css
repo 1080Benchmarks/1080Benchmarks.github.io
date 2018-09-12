@@ -138,7 +138,7 @@
 					border-radius: 100%;
 					top: 26.5%;
 					right: 57.5%;
-					
+
 				}
 
 
@@ -164,3 +164,32 @@
 						width: 500px;
 						opacity: 1;
 					}
+
+					/* Portrait Large Phones */
+					@media only screen
+					  and (min-device-width: 414px)
+					  and (max-device-width: 736px)
+					  and (-webkit-min-device-pixel-ratio: 3)
+					  and (orientation: portrait) {
+							.overlay::before {
+								width: 300px;
+								opacity: 1;
+							}
+							.overlay2::before {
+								width: 325px;
+								opacity: 1;
+							}
+							.overlay3::before {
+								width: 275px;
+								opacity: 1;
+							}
+							.overlay4::before {
+								width: 325px;
+								opacity: 1;
+								font-size: 1.5rem;
+							}
+							.overlay5::before {
+								width: 325px;
+								opacity: 1;
+							}
+						}

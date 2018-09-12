@@ -358,18 +358,154 @@ padding-left: 7.5rem;
 
 @media screen and (min-width: 1900px) {
 	.card img {
-		width: 1800px;
+		width: 1400px;
 	}
 
 	.card2 img {
-		width: 1800px;
+		width: 1400px;
 	}
 
 	.header h1 {
-		font-size: 10rem;
+		font-size: 9rem;
 	}
 
 	.header {
-		padding-top: 20rem;
+		padding-top: 15rem;
 	}
+}
+/*Laptops*/
+@media (min-width: 1025px) and (max-width: 1280px) {
+	.card img {
+		width: 1000px
+	}
+
+	.card2 img {
+		width: 1000px;
+	}
+
+	.header h1 {
+		font-size: 6.5rem;
+		line-height: 100px;
+	}
+
+	.header {
+		padding-left: 5rem;
+		padding-top: 10rem;
+	}
+
+	.nav {
+		padding-top: 2rem;
+		padding-left: 5rem;
+		padding-right: 5rem;
+	}
+
+	.transition {
+		height: 375px;
+	}
+
+	.about p {
+		width: 85%;
+		font-size: 1.25rem;
+	}
+
+
+	.text {
+		padding-top: 0;
+	}
+
+	.specs img {
+		width: 575px;
+	}
+
+	form {
+		width: 75%!important;
+	}
+
+	.transition2 {
+		width: 75%;
+	}
+
+	.sec {
+		height: 7vh;
+	}
+
+	.footing1 p {
+		font-size: 1rem;
+	}
+}
+
+/* Portrait Large Phones */
+@media only screen
+  and (min-device-width: 414px)
+  and (max-device-width: 736px)
+  and (-webkit-min-device-pixel-ratio: 3)
+  and (orientation: portrait) {
+		.nav {
+			display: none;
+		}
+
+		.card img {
+
+		}
+
+		.card2 img {
+
+		}
+
+		.header {
+			padding: 0;
+			position: absolute;
+			padding-top: 50%;
+		}
+
+		.header h1 {
+				font-size: 8.75rem;
+		}
+
+		.header p {
+			font-size: 3.75rem;
+		}
+
+		.transition {
+			height: 300px;
+		}
+
+		.about h2 {
+			font-size: 7rem;
+		}
+
+		.about p {
+			font-size: 2rem;
+			width: 88%;
+		}
+
+		.hero {
+			display: flex;
+			justify-content: center;
+		}
+
+		.transition2 {
+			width: 100%;
+		}
+
+		.sec a {
+			font-size: 3rem;
+		}
+
+		form {
+			width: 90%!important;
+		}
+
+		.side {
+			padding-left: 5rem;
+		}
+
+		.side2 {
+			padding-right: 5rem;
+		}
+
+		.footing1 p {
+			font-size: 1.25rem;
+		}
+
 }
