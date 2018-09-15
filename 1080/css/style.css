@@ -104,7 +104,7 @@ button {
 }
 
 .card img {
-  width: 1500px;
+  width: 75%;
   height: auto;
   position: absolute;
   bottom: 0;
@@ -171,7 +171,7 @@ button {
 }
 
 .card2 img {
-	width: 1500px;
+	width: 75%;
 	height: auto;
 	position: absolute;
 	top: 0;
@@ -299,12 +299,12 @@ padding-left: 7.5rem;
   and (-webkit-min-device-pixel-ratio: 2)
   and (min-resolution: 192dpi) {
 		.card img {
-			width: 1125px;
+			/*width: 1125px;*/
 			height: auto;
 		}
 
 		.card2 img {
-			width: 1125px;
+			/*width: 1125px;*/
 		}
 
 		.about p {
@@ -358,15 +358,16 @@ padding-left: 7.5rem;
 
 @media screen and (min-width: 1900px) {
 	.card img {
-		width: 1400px;
+		/*width: 1400px;*/
 	}
 
 	.card2 img {
-		width: 1400px;
+		/*width: 1400px;*/
 	}
 
 	.header h1 {
-		font-size: 9rem;
+		font-size: 11rem;
+		line-height: 150px;
 	}
 
 	.header {
@@ -376,11 +377,11 @@ padding-left: 7.5rem;
 /*Laptops*/
 @media (min-width: 1025px) and (max-width: 1280px) {
 	.card img {
-		width: 1000px
+		/*width: 1000px*/
 	}
 
 	.card2 img {
-		width: 1000px;
+		/*width: 1000px;*/
 	}
 
 	.header h1 {
@@ -445,11 +446,86 @@ padding-left: 7.5rem;
 		}
 
 		.card img {
-
+			width: 150%;
 		}
 
 		.card2 img {
+			width: 150%;
+		}
 
+		.header {
+			padding: 0;
+			position: absolute;
+			padding-top: 50%;
+		}
+
+		.header h1 {
+				font-size: 8.75rem;
+		}
+
+		.header p {
+			font-size: 3.75rem;
+		}
+
+		.transition {
+			height: 300px;
+		}
+
+		.about h2 {
+			font-size: 7rem;
+		}
+
+		.about p {
+			font-size: 2rem;
+			width: 88%;
+		}
+
+		.hero {
+			display: flex;
+			justify-content: center;
+		}
+
+		.transition2 {
+			width: 100%;
+		}
+
+		.sec a {
+			font-size: 3rem;
+		}
+
+		form {
+			width: 90%!important;
+		}
+
+		.side {
+			padding-left: 5rem;
+		}
+
+		.side2 {
+			padding-right: 5rem;
+		}
+
+		.footing1 p {
+			font-size: 1.25rem;
+		}
+
+}
+
+@media only screen
+  and (min-device-width: 360px)
+  and (max-device-width: 768px)
+  and (-webkit-min-device-pixel-ratio: 3)
+  and (orientation: portrait) {
+		.nav {
+			display: none;
+		}
+
+		.card img {
+			width: 150%;
+		}
+
+		.card2 img {
+			width: 150%;
 		}
 
 		.header {
