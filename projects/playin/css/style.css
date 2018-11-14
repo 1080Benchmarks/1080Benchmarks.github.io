@@ -191,3 +191,167 @@ h2 {
 small {
   font-size: 1.25rem;
 }
+
+/* Desktops and laptops ----------- */
+@media only screen and (min-width: 1224px) {
+    .footer {
+      height: 35vh;
+    }
+
+    .body {
+      max-width: 80vw;
+    }
+
+    .quotecontainer {
+      height: 15vh;
+    }
+
+    .text p {
+      font-size: 1.333333rem;
+    }
+
+    .text {
+      padding-left: 1.25rem;
+      padding-right: 1.25rem;
+    }
+
+    .relatedcontainer {
+      padding-left: 1.25rem;
+      padding-right: 1.25rem;
+    }
+
+    h2 {
+      font-size: 2.85rem;
+    }
+}
+
+/* Large screens ----------- */
+@media only screen and (min-width: 1824px) {
+
+}
+
+/* Smartphones (portrait and landscape) ----------- */
+@media only screen and (min-device-width: 320px) and (max-device-width: 480px) {
+
+}
+
+/* Smartphones (landscape) ----------- */
+@media only screen and (min-width: 321px) {
+
+}
+
+/* Smartphones (portrait) ----------- */
+@media only screen
+  and (min-device-width: 375px)
+  and (max-device-width: 667px)
+  and (-webkit-min-device-pixel-ratio: 2)
+  and (orientation: portrait) {
+    .body {
+      max-width: 90vw;
+    }
+
+    .title h1 {
+      font-size: 5rem;
+    }
+
+    .articleinfo {
+      font-size: .9rem;
+    }
+
+    .text {
+      padding-left: 2rem;
+      padding-right: 2rem;
+      line-height: 40px;
+    }
+
+    .text p {
+      font-size: 1.25rem;
+    }
+
+    .quotecontainer {
+      height: 20vh;
+    }
+
+    .quote {
+      font-size: 3rem;
+      line-height: 45px;
+    }
+
+    .related {
+      flex-flow: column;
+      height: 80vh;
+    }
+
+    .ra1 {
+      flex: .29;
+    }
+
+    .ra2 {
+      flex: .29;
+    }
+
+    .ra3 {
+      flex: .29;
+    }
+
+    .caption {
+      font-size: 2.5rem;
+    }
+
+    .footer h3 {
+      font-size: 4.5rem;
+    }
+
+    .socialmedia {
+      padding-top: 3.5%;
+    }
+
+    .footerinfo {
+      margin-top: 4rem;
+    }
+
+    #backtotop {
+      font-size: 2.25rem;
+    }
+
+    span small em {
+      font-size: 2rem;
+    }
+
+    .nav .logo {
+      font-size: 2.25rem;
+    }
+
+    .navlink {
+      font-size: 1.75rem;
+    }
+
+    .furtherlinks input {
+      display: none;
+    }
+}
+
+/* Portrait Large Smartphones */
+@media only screen
+  and (min-device-width: 414px)
+  and (max-device-width: 736px)
+  and (-webkit-min-device-pixel-ratio: 3)
+  and (orientation: portrait) {
+
+}
+
+
+/* iPads (portrait and landscape) ----------- */
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) {
+
+}
+
+/* iPads (landscape) ----------- */
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: landscape) {
+
+}
+
+/* iPads (portrait) ----------- */
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: portrait) {
+
+}
