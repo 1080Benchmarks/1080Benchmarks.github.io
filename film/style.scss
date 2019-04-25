@@ -46,14 +46,7 @@ body {
     margin: 0 40px;
     overflow: hidden;
 
-    &::after, &::before { // these are used to create a shadow effect at the sides of the timeline
-      content: '';
-      position: absolute;
-      z-index: 2;
-      top: 0;
-      height: 100%;
-      width: 20px;
-    }
+
 
     &::before {
       left: 0;

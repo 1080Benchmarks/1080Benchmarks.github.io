@@ -4,10 +4,13 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <script>document.getElementsByTagName("html")[0].className += " js";</script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
   <link rel="stylesheet" href="timeline.css">
+    <link rel="stylesheet" href="effect.css">
   <title>History of Film</title>
 </head>
-<body>
+
+<body class="body">
   <section class="cd-h-timeline js-cd-h-timeline margin-bottom--md">
     <div class="cd-h-timeline__container container">
       <div class="cd-h-timeline__dates">
@@ -150,8 +153,48 @@
       </ol>
     </div> <!-- .cd-h-timeline__events -->
   </section>
+  <script src="baby.js"></script>
   <script src="util.js"></script> <!-- util functions included in the CodyHouse framework -->
   <script src="swipe-content.js"></script> <!-- A Vanilla JavaScript plugin to detect touch interactions -->
   <script src="main.js"></script>
+  <script type="text/javascript">
+  $(document).ready(function () {
+
+      var array = ["url(giphy.gif)", "url(SilentDeliciousKite-size_restricted.gif)", "url(giphy.gif)", "url(giphy.gif)", "url(giphy.gif)"]
+      var counter = 0;
+
+
+      $(document).keyup(function (event)
+                        {
+    event.preventDefault();
+    switch(event.which) {
+          case 37:
+            counter--;
+            if(counter ==-1)
+            {
+                counter=array.length-1;
+            }
+          $(".body").css("background-image", array[counter])
+
+          break;
+
+          case 39:
+             counter++;
+            if(counter == array.length)
+            {
+                counter=0;
+            }
+          $(".body").css("background-image", array[counter])
+
+          break;
+
+          default: return;
+      }
+                        });
+
+  });
+
+
+  </script>
 </body>
 </html>

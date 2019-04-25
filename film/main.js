@@ -4,7 +4,7 @@
 		this.element = element;
 		this.datesContainer = this.element.getElementsByClassName('cd-h-timeline__dates')[0];
 		this.line = this.datesContainer.getElementsByClassName('cd-h-timeline__line')[0]; // grey line in the top timeline section
-		this.fillingLine = this.datesContainer.getElementsByClassName('cd-h-timeline__filling-line')[0]; // green filling line in the top timeline section  
+		this.fillingLine = this.datesContainer.getElementsByClassName('cd-h-timeline__filling-line')[0]; // green filling line in the top timeline section
 		this.date = this.line.getElementsByClassName('cd-h-timeline__date');
 		this.selectedDate = this.line.getElementsByClassName('cd-h-timeline__date--selected')[0];
 		this.dateValues = parseDate(this);
@@ -12,12 +12,12 @@
 		this.navigation = this.element.getElementsByClassName('cd-h-timeline__navigation');
 		this.contentWrapper = this.element.getElementsByClassName('cd-h-timeline__events')[0];
 		this.content = this.contentWrapper.getElementsByClassName('cd-h-timeline__event');
-		
+
 		this.eventsMinDistance = 60; // min distance between two consecutive events (in px)
 		this.eventsMaxDistance = 200; // max distance between two consecutive events (in px)
 		this.translate = 0; // this will be used to store the translate value of this.line
 		this.lineLength = 0; //total length of this.line
-		
+
 		// store index of selected and previous selected dates
 		this.oldDateIndex = Util.getIndexInArray(this.date, this.selectedDate);
 		this.newDateIndex = this.oldDateIndex;
@@ -29,11 +29,11 @@
   function initTimeline(timeline) {
   	// set dates left position
   	var left = 0;
-		for (var i = 0; i < timeline.dateValues.length; i++) { 
+		for (var i = 0; i < timeline.dateValues.length; i++) {
 			var j = (i == 0) ? 0 : i - 1;
 	    var distance = daydiff(timeline.dateValues[j], timeline.dateValues[i]),
 	    	distanceNorm = (Math.round(distance/timeline.minLapse) + 2)*timeline.eventsMinDistance;
-	
+
 	    if(distanceNorm < timeline.eventsMinDistance) {
 	    	distanceNorm = timeline.eventsMinDistance;
 	    } else if(distanceNorm > timeline.eventsMaxDistance) {
@@ -42,7 +42,7 @@
 	    left = left + distanceNorm;
 	    timeline.date[i].setAttribute('style', 'left:' + left+'px');
 		}
-		
+
 		// set line/filling line dimensions
     timeline.line.style.width = (left + timeline.eventsMinDistance)+'px';
 		timeline.lineLength = left + timeline.eventsMinDistance;
@@ -74,9 +74,9 @@
 		});
 
 		//select a new event
-		for(var i = 0; i < self.date.length; i++) {
+			for(var i = 0; i < self.date.length; i++) {
 			(function(i){
-				self.date[i].addEventListener('click', function(event){
+				self.date[i].addEventListener('noclickrn', function(event){
 					event.preventDefault();
 					selectNewDate(self, event.target);
 				});
@@ -92,7 +92,7 @@
 		var dateStyle = window.getComputedStyle(timeline.selectedDate, null),
 			left = dateStyle.getPropertyValue("left"),
 			width = dateStyle.getPropertyValue("width");
-		
+
 		left = Number(left.replace('px', '')) + Number(width.replace('px', ''))/2;
 		timeline.fillingLine.style.transform = 'scaleX('+(left/timeline.lineLength)+')';
 	};
@@ -160,7 +160,7 @@
 		selectNewDate(timeline, timeline.date[newIndex]);
 		resetTimelinePosition(timeline, direction);
 	};
-	
+
 	function resetTimelinePosition(timeline, direction) { //translate timeline according to new selected event position
 		var eventStyle = window.getComputedStyle(timeline.selectedDate, null),
 			eventLeft = Number(eventStyle.getPropertyValue('left').replace('px', '')),
@@ -177,7 +177,7 @@
 		for(var i = 0; i < timeline.date.length; i++) {
 			var singleDate = timeline.date[i].getAttribute('data-date'),
 				dateComp = singleDate.split('T');
-			
+
 			if( dateComp.length > 1 ) { //both DD/MM/YEAR and time are provided
 				var dayComp = dateComp[0].split('/'),
 					timeComp = dateComp[1].split(':');
@@ -196,7 +196,7 @@
 
   function calcMinLapse(timeline) { // determine the minimum distance among events
 		var dateDistances = [];
-		for(var i = 1; i < timeline.dateValues.length; i++) { 
+		for(var i = 1; i < timeline.dateValues.length; i++) {
 	    var distance = daydiff(timeline.dateValues[i-1], timeline.dateValues[i]);
 	    if(distance > 0) dateDistances.push(distance);
 		}
@@ -214,7 +214,7 @@
   	horizontalTimelineTimelineArray = [];
   if(horizontalTimeline.length > 0) {
 		for(var i = 0; i < horizontalTimeline.length; i++) {
-			horizontalTimelineTimelineArray.push(new HorizontalTimeline(horizontalTimeline[i])); 
+			horizontalTimelineTimelineArray.push(new HorizontalTimeline(horizontalTimeline[i]));
 		}
 		// navigate the timeline when inside the viewport using the keyboard
 		document.addEventListener('keydown', function(event){
