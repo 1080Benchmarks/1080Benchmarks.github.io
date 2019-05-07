@@ -1,0 +1,141 @@
+@font-face {
+    font-family: 'FuturaBold';
+    src: url('Futura-Bold.woff2') format('woff2'),
+        url('Futura-Bold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Futura';
+    src: url('FuturaBT-Light.woff2') format('woff2'),
+        url('FuturaBT-Light.woff') format('woff');
+    font-weight: 300;
+    font-style: normal;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.navbutton {
+  position: fixed;
+  top: 4%;
+  right: 2%;
+  z-index: 1;
+}
+
+.nav {
+  width: 0;
+  height: 100%;
+  background: transparent;
+  position: absolute;
+  z-index: 998;
+  overflow-x: hidden;
+  transition: 0.5s;
+  right: 0;
+}
+
+.nav .closebtn {
+  position: absolute;
+  color: red;
+  top: 4%;
+  right: 2%;
+  z-index: 999999;
+}
+
+#closebtn {
+  color: white;
+}
+
+ul li a {
+  text-decoration: none;
+  color: white;
+  text-transform: uppercase;
+  font-family: 'FuturaBold', arial, sans-serif;
+  font-size: 8rem;
+  line-height: 150%;
+  transition: all .5s ease-in-out;
+  opacity: 1;
+}
+
+ul li a:hover {
+  opacity: .5;
+}
+
+li {
+  list-style-type: none;
+}
+
+ul {
+  position: absolute;
+  top: 50%;
+  left: 30%;
+  transform: translate(-50%, -50%);
+}
+
+ i {
+  color: white;
+}
+
+.hero {
+  width: 100vw;
+  height: 100vh;
+  background: black;
+  position: relative;
+  text-transform: uppercase;
+}
+
+.bgimage {
+  background-image: url(bg1.gif);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: 100%;
+  width: 40%;
+  height: 30%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  transition: background-size .5s ease-in;
+-moz-transition: background-size .5s ease-in;
+-ms-transition: background-size .5s ease-in;
+-o-transition: background-size .5s ease-in;
+-webkit-transition: background-size .5s ease-in;
+}
+
+.bgimage:hover {
+  background-size: 102%;
+}
+
+
+.herotext {
+  position: absolute;
+  bottom: -25%;
+  left: -25%;
+  opacity: 1;
+}
+
+#herotext {
+  opacity: 1;
+}
+
+.hero h1 {
+  color: white;
+  font-size: 6rem;
+  transition: all .25s ease-in-out;
+}
+
+.maintext {
+    font-family: 'FuturaBold';
+    font-weight: 300;
+    font-style: normal;
+}
+
+.subtext {
+  font-family: 'Futura';
+  font-weight: 300;
+  font-style: normal;
+}

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>The Origins of Film</title>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css">
+    <link rel="stylesheet" href="css/style.css">
+  </head>
+  <body>
+    <div class="navbutton" >
+      <i class="fas fa-bars fa-3x" onclick="openNav()"></i>
+    </div>
+    <div class="nav" id="nav">
+      <a href="javascript:void(0)" class="closebtn" onclick="closeNav()"><i class="fas fas fa-bars fa-3x" style="color: white;" id="closebtn"></i></a>
+      <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Contact</a></li>
+      </ul>
+    </div>
+    <div class="hero">
+      <div class="bgimage">
+        <div class="herotext animated fadeIn" >
+          <h1 class="subtext" id="herotext">The origins</h1>
+          <h1 class="maintext" id="herotext2">of film</h1>
+        </div>
+      </div>
+    </div>
+    <script type="text/javascript">
+    function openNav() {
+document.getElementById("nav").style.width = "100%";
+document.getElementById("herotext").style.color = "transparent";
+document.getElementById("herotext2").style.color = "transparent";
+document.getElementById("closebtn").style.color = "transparent";
+}
+function closeNav() {
+document.getElementById("nav").style.width = "0%";
+document.getElementById("herotext").style.color = "white";
+document.getElementById("herotext2").style.color = "white";
+document.getElementById("closebtn").style.color = "transparent";
+}
+    </script>
+  </body>
+</html>

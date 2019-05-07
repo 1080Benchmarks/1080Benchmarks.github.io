@@ -1,0 +1,52 @@
+@font-face {
+    font-family: 'FuturaBold';
+    src: url('Futura-Bold.woff2') format('woff2'),
+        url('Futura-Bold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Futura';
+    src: url('FuturaBT-Light.woff2') format('woff2'),
+        url('FuturaBT-Light.woff') format('woff');
+    font-weight: 300;
+    font-style: normal;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.hero {
+  width: 100vw;
+  height: 100vh;
+  background: black;
+  position: relative;
+  text-transform: uppercase;
+}
+
+.bgimage {
+  background-image: url(bg1.gif);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 40%;
+  height: 30%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.hero h1 {
+  color: white;
+}
+
+h1 {
+    font-family: 'Futura';
+    font-weight: 300;
+    font-style: normal;
+}
