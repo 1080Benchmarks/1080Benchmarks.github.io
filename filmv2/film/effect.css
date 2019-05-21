@@ -1,0 +1,9 @@
+body {
+  animation-name: fadeIn;
+  animation-duration: 1s;
+
+}
+
+.js .cd-h-timeline__event-title {
+  font-family: 'henave_regular_demoregular', times, serif;
+}
