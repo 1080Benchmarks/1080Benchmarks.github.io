@@ -14,6 +14,15 @@
     font-style: normal;
 }
 
+@font-face {
+    font-family: 'Futura Md BT';
+    src: url('FuturaBT-BoldItalic.woff2') format('woff2'),
+        url('FuturaBT-BoldItalic.woff') format('woff');
+    font-weight: bold;
+    font-style: italic;
+}
+
+
 * {
   margin: 0;
   padding: 0;
@@ -60,7 +69,7 @@ ul li a {
   color: white;
   text-transform: uppercase;
   font-family: 'FuturaBold', arial, sans-serif;
-  font-size: 8rem;
+  font-size: 7rem;
   line-height: 150%;
   transition: all .5s ease-in-out;
   opacity: 1;
@@ -91,6 +100,7 @@ ul {
   background: black;
   position: relative;
   text-transform: uppercase;
+  margin-bottom: 10vh;
 }
 
 .bgimage {
@@ -98,8 +108,8 @@ ul {
   background-position: center center;
   background-repeat: no-repeat;
   background-size: 100%;
-  width: 40%;
-  height: 30%;
+  width: 50%;
+  height: 40%;
   position: absolute;
   top: 50%;
   left: 50%;
@@ -140,7 +150,7 @@ ul {
 
 .hero h1 {
   color: white;
-  font-size: 6rem;
+  font-size: 5rem;
   transition: all .25s ease-in-out;
 }
 
@@ -156,64 +166,9 @@ ul {
   font-style: normal;
 }
 
-/* ----------- Retina Laptops ----------- */
-@media screen
-  and (min-device-width: 1200px)
-  and (max-device-width: 1600px)
- {
-    .hero h1 {
-      font-size: 4rem;
-    }
 
-    .bgimage {
-      width: 50%;
-      height: 40%;
-    }
 
-    i img {
-      width: 40px;
-    }
 
-    .scroll img {
-      width: 60px;
-    }
-
-    ul li a {
-      font-size: 5rem;
-    }
-
-    ul {
-      left: 26.5%;
-    }
-}
-
-/* Phones */
-@media only screen
-  and (min-device-width: 375px)
-  and (max-device-width: 667px)
-  and (-webkit-min-device-pixel-ratio: 2) {
-    .bgimage {
-      width: 55%;
-      height: 40%;
-      background-size: cover;
-    }
-
-    .navbutton {
-      right: 5%;
-    }
-
-    ul {
-      left: 40%;
-    }
-
-    ul li a {
-      font-size: rem;
-    }
-
-    .scroll img {
-      width: 100px;
-    }
-}
 
 /* Tabwets uwu */
 @media only screen
@@ -245,5 +200,338 @@ ul {
 
     ul li a {
       font-size: 4.5rem;
+    }
+}
+/*Big big big computer dekstops*/
+@media screen and (min-width: 1900px) {
+  ul {
+    left: 23%;
+  }
+  }
+
+.content {
+  max-width: 100vw;
+
+  border:  1px solid;
+}
+.content h2, h3 {
+  color: white;
+}
+
+.content h2 {
+  font-family: 'Futura';
+  text-transform: uppercase;
+  font-size: 3rem;
+  letter-spacing: 5px;
+}
+
+.content h3 {
+  font-family: 'FuturaBold';
+  text-transform: uppercase;
+  font-size: 3rem;
+  letter-spacing: 8px;
+  color: #f22929;
+}
+
+.content p {
+  color: white;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 1.5rem;
+  width: 75%;
+  margin-top: 2.5rem;
+  line-height: 40px;
+}
+
+.section1 {
+  display: flex;
+  flex: 1;
+  border: 2px  solid;
+  padding-left: 12.5%;
+}
+
+.exp {
+  flex: .5;
+}
+
+.imgexp {
+  flex: .5;
+  background-image: url(../Electirc-Theatre.jpg);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.section2 {
+  display: flex;
+  flex: 1;
+  border: 2px  solid;
+  margin-top: 15vw;
+}
+
+.exp2 {
+  flex: .5;
+  background-image: url(../influence.jpg);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.imgexp2 {
+  flex: .5;
+  padding-left: 12.5%;
+
+}
+
+.section1-3 {
+  margin-top: 15vw;
+}
+
+.imgexp1-3 {
+  background-image: url(../film-propaganda.jpg);
+}
+
+.explore {
+  width: 100vw;
+  text-align: justify;
+
+}
+
+.explore1 {
+  background-color: #f22929;
+  height: 40rem;
+  position: relative;
+  margin-top: 35vh;
+}
+
+.explore1 h1, h2 {
+  color: white;
+  font-family: 'FuturaBold';
+  text-transform: uppercase;
+}
+
+.explore h1 {
+    font-family: 'Futura Md BT';
+    font-weight: bold;
+    font-style: italic;
+    font-size: 4.69rem;
+}
+
+.explore h2 {
+  font-size: 15rem;
+  line-height: 250px;
+  letter-spacing: 3rem;
+}
+
+.exploretext {
+  width: auto;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.explore2 {
+  background-color: white;
+  color: #f22929;
+  height: 52rem;
+  position: absolute;
+  width: 100vw;
+}
+
+.explore2 button  {
+  font-family: 'FuturaBold'!important;
+  color: #f22929;
+  text-transform: uppercase;
+  font-size: 4rem;
+  text-align: center;
+  transition: all .5s ease-in-out;
+  background: none;
+  border: #f22929 5px solid;
+  padding: 2rem;
+  letter-spacing: .5rem;
+}
+
+.explore2 button:hover {
+  background: #f22929;
+}
+
+.explore2 button:hover a {
+  color: white;
+}
+
+.explore2 button a {
+  transition: all .66s ease-in-out;
+}
+
+.exptext {
+  position: relative;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.exptext a {
+  text-decoration: none;
+  color: #f22929;
+}
+
+.explore2 h3:hover {
+  color: #db1a1a;
+}
+
+button:focus {
+  outline: 0;
+}
+
+/* ----------- Retina Laptops ----------- */
+@media screen
+  and (min-device-width: 1200px)
+  and (max-device-width: 1600px)
+ {
+    .hero h1 {
+      font-size: 4rem;
+    }
+
+    .bgimage {
+      width: 50%;
+      height: 40%;
+    }
+
+    i img {
+      width: 40px;
+    }
+
+    .scroll img {
+      width: 60px;
+    }
+
+    ul li a {
+      font-size: 5rem;
+    }
+
+    ul {
+      left: 26.5%;
+    }
+
+    .content h2 {
+      font-size: 2.5rem;
+    }
+
+    .content h3 {
+      font-size: 2.75rem;
+    }
+
+    .content p {
+font-size: 1.25rem;
+width: 90%;
+line-height: 25px;
+    }
+
+    .explore h1 {
+      font-size: 3.5rem;
+    }
+
+    .explore h2 {
+      font-size: 10rem;
+      line-height: 150px;
+    }
+
+    .explore2 {
+      height: 35rem;
+    }
+
+    .explore2 button {
+      font-size: 3rem;
+      padding: 1.5rem;
+    }
+}
+
+/* Phones */
+@media only screen
+  and (min-device-width: 375px)
+  and (max-device-width: 667px)
+  and (-webkit-min-device-pixel-ratio: 2) {
+    .bgimage {
+      width: 55%;
+      height: 40%;
+      background-size: cover;
+    }
+
+    .navbutton {
+      right: 5%;
+    }
+
+    ul {
+      left: 40%;
+    }
+
+    ul li a {
+      font-size: rem;
+    }
+
+    .scroll img {
+      width: 100px;
+    }
+
+    .section1 {
+      display: inherit;
+      padding-left: 0;
+    }
+
+    .imgexp {
+      flex: 0;
+      width: 100vw;
+      height: 20vh;
+    }
+
+    .exp {
+      padding-left: 12.5%;
+    }
+
+    .content p {
+      margin-top: 1.5rem;
+      margin-bottom: 7.5rem;
+    }
+
+    .section2 {
+      display: inherit;
+      padding-left: 0;
+    }
+
+    .exp2 {
+      flex: 0;
+      width: 100vw;
+      height: 20vh;
+      margin-bottom: 10rem;
+    }
+
+    .imgexp2 {
+      padding-left: 12.5%;
+    }
+
+    .hero {
+      margin-bottom: 0;
+    }
+
+    .section1-3 {
+          margin-top: 7.5vw;
+    }
+
+    .imgexp1-3 {
+      display: none;
+    }
+
+    .explore1 {
+      margin-top: 15vh;
+    }
+
+    .explore h1 {
+        font-size: 3.5rem;
+    }
+
+    .explore h2 {
+      font-size: 10rem;
+      line-height: normal;
     }
 }
